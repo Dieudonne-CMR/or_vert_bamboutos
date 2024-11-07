@@ -1,4 +1,5 @@
 
+<?php // var_dump($services) ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -72,8 +73,8 @@
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Our Service</li>
+                    <li><a href="home">Accueil</a></li>
+                    <li>Nos Services</li>
                 </ul>
             </div>
         </div>

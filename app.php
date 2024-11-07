@@ -1,5 +1,5 @@
 <?php 
-include "includes/main_header/main_header.php" ;  
+// include "includes/main_header/main_header.php" ;  
 include "api/cle_api.php";
 
 $url="";
@@ -16,7 +16,7 @@ if(@$url[0]=='home' || @$url==''):
 endif;
 
 //--------Route page Apropos
-if(@$url[0]=='about' || @$url==''):
+if(@$url[0]=='about'):
     include_once("template/$url[0].php");
 endif;
 
@@ -42,6 +42,7 @@ endif;
 
 //------- Route page service
 if(@$url[0]=='service'):
+    $services = recup_services();
     include_once("template/$url[0].php");
 endif;
 
