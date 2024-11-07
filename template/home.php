@@ -81,33 +81,33 @@
                   <div class="col-lg-7 mx-auto">
                     <div class="hero-content text-center">
                       <h1 class="hero-title"><?= $titre_banniere1 ?></h1>
-                      <p class="hero-text">We Are Distributors Of Quality 100% Organic Herbs And Produce.</p>
+                      <p class="hero-text"><?= $description_baniere1 ?></p>
                       <a href="about.html" class="vs-btn">Discovre More</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="hero-slide" data-bg-src="assets/img/bg/hero-bg-1-2.jpg">
+            <div class="hero-slide" data-bg-src="<?= $image_banniere . $banniere2 ?>">
               <div class="container">
                 <div class="row align-items-center justify-content-between">
                   <div class="col-lg-7 mx-auto">
                     <div class="hero-content text-center">
-                      <h1 class="hero-title">Farming Products Organic Agriculture</h1>
-                      <p class="hero-text">We Are Distributors Of Quality 100% Organic Herbs And Produce.</p>
+                      <h1 class="hero-title"><?= $titre_banniere2 ?></h1>
+                      <p class="hero-text"><?= $description_baniere2 ?></p>
                       <a href="about.html" class="vs-btn">Discovre More</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="hero-slide" data-bg-src="assets/img/bg/hero-bg-1-3.jpg">
+            <div class="hero-slide" data-bg-src="<?= $image_banniere . $banniere3 ?>">
               <div class="container">
                 <div class="row align-items-center justify-content-between">
                   <div class="col-lg-7 mx-auto">
                     <div class="hero-content text-center">
-                      <h1 class="hero-title">Agricultural Products to Agriculture</h1>
-                      <p class="hero-text">We Are Distributors Of Quality 100% Organic Herbs And Produce.</p>
+                      <h1 class="hero-title"><?= $titre_banniere3 ?></h1>
+                      <p class="hero-text"><?= $description_baniere3 ?></p>
                       <a href="about.html" class="vs-btn">Read More</a>
                     </div>
                   </div>
@@ -133,8 +133,8 @@
                         <div class="service-img"><img src="assets/img/service/service-1-1.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-1.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html">Agriculture</a></h3>
-                            <p class="service-text">Veritatis eligendi, dignissimo fermentum mus aute pulvinar platea massa rutrum.</p>
+                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s1 ?></a></h3>
+                            <p class="service-text"><?= $discription_s1 ?></p>
                         </div>
                         <div class="link-btn">
                             <a href="#">Read More <i class="far fa-arrow-right"></i></a>
@@ -147,8 +147,8 @@
                         <div class="service-img"><img src="assets/img/service/service-1-2.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-2.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html">Vagatables</a></h3>
-                            <p class="service-text">Veritatis eligendi, dignissimo fermentum mus aute pulvinar platea massa rutrum.</p>
+                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s2 ?></a></h3>
+                            <p class="service-text"><?= $discription_s2 ?></p>
                         </div>
                         <div class="link-btn">
                             <a href="#">Read More <i class="far fa-arrow-right"></i></a>
@@ -161,8 +161,8 @@
                         <div class="service-img"><img src="assets/img/service/service-1-3.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-3.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html">Farm Factory</a></h3>
-                            <p class="service-text">Veritatis eligendi, dignissimo fermentum mus aute pulvinar platea massa rutrum.</p>
+                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s3 ?></a></h3>
+                            <p class="service-text"><?= $discription_s3 ?></p>
                         </div>
                         <div class="link-btn">
                             <a href="#">Read More <i class="far fa-arrow-right"></i></a>
@@ -175,8 +175,8 @@
                         <div class="service-img"><img src="assets/img/service/service-1-4.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-4.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html">Modern Technique</a></h3>
-                            <p class="service-text">Veritatis eligendi, dignissimo fermentum mus aute pulvinar platea massa rutrum.</p>
+                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s3 ?></a></h3>
+                            <p class="service-text"><?= $discription_s3 ?></p>
                         </div>
                         <div class="link-btn">
                             <a href="#">Read More <i class="far fa-arrow-right"></i></a>
@@ -189,8 +189,8 @@
                         <div class="service-img"><img src="assets/img/service/service-1-5.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-5.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html">Modern Technique</a></h3>
-                            <p class="service-text">Veritatis eligendi, dignissimo fermentum mus aute pulvinar platea massa rutrum.</p>
+                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s3 ?></a></h3>
+                            <p class="service-text"><?= $discription_s3 ?></p>
                         </div>
                         <div class="link-btn">
                             <a href="#">Read More <i class="far fa-arrow-right"></i></a>

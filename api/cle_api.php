@@ -12,7 +12,7 @@ $lien_logo ="https://akila.blog/logo_site/";
 $image_banniere="https://akila.blog/image_baniere/";
 
 include "bd/query.php" ;
-$matricule_entreprise = "662f2c0f2234e";
+$matricule_entreprise = "65c3e2b8e0756";
 include "api/api_info_entreprise.php";
 include "api/api_header.php";
 include "api/fonctionne.php";
