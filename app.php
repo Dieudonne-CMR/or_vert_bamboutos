@@ -1,5 +1,6 @@
 <?php 
-include "includes/main_header/main_header.php" ;
+include "includes/main_header/main_header.php" ;  
+include "api/cle_api.php";
 
 $url="";
 
