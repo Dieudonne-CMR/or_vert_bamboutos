@@ -18,13 +18,18 @@ include "api/fonctionne.php";
 // include "api/api_services.php";
 
 
-
+// [ville] => Douala
+//     [region] => Littoral
+//     [email] => lamaisondesbillets@gmail.com
+//     [quartier] => Bonadiotto
 //=====informations du fichier api_header.php o
 $logo         =       @$info_header->logo;
 $page1_menu1  =       @$info_header->page1;
 $page_nemu2   =       @$info_header->page2;
 $page_nemu3   =       @$info_header->page4;
 $whatsapp     =       @$info_header->whatsapp;
+$region        =       @$info_header->region;
+$quartier     =       @$info_header->quartier;
 $telephone    =       @$info_header->telephone;
 $lien_facebook=       @$info_header->lien_fb;
 $lien_twitter =       @$info_header->twitter;
