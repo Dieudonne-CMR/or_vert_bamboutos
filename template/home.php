@@ -75,12 +75,12 @@
     <div class="hero-layout1">
         <div class="position-relative">
           <div class="vs-carousel hero-slider1" data-slide-show="1" data-autoplay="true" data-fade="true">
-            <div class="hero-slide" data-bg-src="assets/img/bg/hero-bg-1-1.jpg">
+            <div class="hero-slide" data-bg-src="<?= $image_banniere . $banniere1 ?>">
               <div class="container">
                 <div class="row align-items-center justify-content-between">
                   <div class="col-lg-7 mx-auto">
                     <div class="hero-content text-center">
-                      <h1 class="hero-title">Organic Agriculture Farming Products</h1>
+                      <h1 class="hero-title"><?= $titre_banniere1 ?></h1>
                       <p class="hero-text">We Are Distributors Of Quality 100% Organic Herbs And Produce.</p>
                       <a href="about.html" class="vs-btn">Discovre More</a>
                     </div>

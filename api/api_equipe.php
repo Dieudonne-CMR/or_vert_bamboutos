@@ -4,7 +4,7 @@ $photo_equipe="https://akila.blog/photo_membrer/";  // lien des image des membre
 // $matricule_entreprise="654b7262c7d05"; 
 
 //===== les vues sur un articles===== 
-$equipe = info_equipe();
+// $equipe = info_equipe();
 // print_r($equipe);
 //==== fin de recuperation==========
 

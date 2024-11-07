@@ -130,10 +130,11 @@
                         <div class="header-links">
                            
                             <ul>
-                                <li><i class="far fa-map-marker-alt"></i><?= $region.'-'.$quartier ?></li>
-                                <li><i class="far fa-envelope"></i><a href="mailto:<?= $emal_entreprise  ?>"><?= $emal_entreprise ?></a></li>
-                                <li><i class="far fa-phone-alt"></i><a href="tel:<?= $telephone?>"><?= $telephone ?></a></li>
-                                <li><i class="far fa-clock"></i><?=  date('y') ?></li>
+
+                                <li><i class="far fa-map-marker-alt"></i><?=  $region .','.$ville .','. $quartier ?></li>
+                                <li><i class="far fa-envelope"></i><a href="mailto:<?= $emal_entreprise ?>"><?= $emal_entreprise ?></a></li>
+                                <li><i class="far fa-phone-alt"></i><a href="tel:<?= $telephone  ?>"><?= $telephone ?></a></li>
+                                <li><i class="far fa-clock"></i><?=  date('Y') ?></li>
                             </ul>
                         </div>
                     </div>

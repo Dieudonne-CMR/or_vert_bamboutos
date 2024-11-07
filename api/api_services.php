@@ -4,7 +4,7 @@ $img_service="https://akila.blog/img_service/";  // lien des image des membres
 // $matricule_entreprise="654b7262c7d05"; 
 
 //===== les vues sur un articles===== 
-$services = recup_services();
+// $services = recup_services();
 // print_r($services);
 //==== fin de recuperation==========
 

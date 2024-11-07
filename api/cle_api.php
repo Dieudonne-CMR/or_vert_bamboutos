@@ -8,12 +8,15 @@ $img_service="https://akila.blog/img_service/";
 $url_image="https://akila.blog/@ressouce/mg_etablissement/"; 
 //---------lien du logo de l'entreprise
 $lien_logo ="https://akila.blog/logo_site/"; 
+//---------lien pour les bannieres de l'entreprise
+$image_banniere="https://akila.blog/image_baniere/";
 
 include "bd/query.php" ;
 $matricule_entreprise = "662f2c0f2234e";
 include "api/api_info_entreprise.php";
 include "api/api_header.php";
 include "api/fonctionne.php";
+include "api/api_services.php";
 
 // include "api/api_services.php";
 
@@ -28,8 +31,11 @@ $page1_menu1  =       @$info_header->page1;
 $page_nemu2   =       @$info_header->page2;
 $page_nemu3   =       @$info_header->page4;
 $whatsapp     =       @$info_header->whatsapp;
+
 $region        =       @$info_header->region;
 $quartier     =       @$info_header->quartier;
+$ville     =       @$info_header->ville;
+
 $telephone    =       @$info_header->telephone;
 $lien_facebook=       @$info_header->lien_fb;
 $lien_twitter =       @$info_header->twitter;
