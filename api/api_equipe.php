@@ -1,5 +1,5 @@
 <?php
-$photo_equipe="https://akila.blog/photo_membrer/";  // lien des image des membres
+//$photo_equipe="https://akila.blog/photo_membrer/";  // lien des image des membres
 // $matricule_entreprise="1011121121";
 // $matricule_entreprise="654b7262c7d05"; 
 
@@ -30,6 +30,7 @@ function info_equipe(){
     }else{
         
     }
+
     //--- fin 
     /*
     Array
@@ -74,5 +75,5 @@ function info_equipe(){
 
 
     */
-  }
+}
   

@@ -12,6 +12,9 @@ endif;
 
 //--------Route page d'accuil
 if(@$url[0]=='home' || @$url[0]==''):
+    $services = recup_services();
+    $equipe = info_equipe();
+    $article = recup_article();
     include_once("template/home.php");
 endif;
 

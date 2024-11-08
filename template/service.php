@@ -137,13 +137,7 @@
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-1.png" alt="icon"></div>
                             <h3 class="service-title h5"><a href="service-details.html"><?= $values->nom ?></a></h3>
-                            <?php $des = $values->description;
-                                  $long= 150;
-                            if(strlen($des)>$long){
-                                $values->description = substr($des, 0, $long)."  ".".".".".".".".";
-                            }
-                            ?>
-                            <?php /*$values->description= mb_substr($values->description, 0, 200, 'UTF-8');*/?>
+                            <?php include "reduire-texte.php" ?>
                             <p class="service-text"><?= $values->description ?></p>
                         </div>
                         <div class="link-btn">

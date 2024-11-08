@@ -12,14 +12,18 @@ $lien_logo ="https://akila.blog/logo_site/";
 $image_banniere="https://akila.blog/image_baniere/";
 
 include "bd/query.php" ;
-$matricule_entreprise = "65c3e2b8e0756";
+$matricule_entreprise = "65707eb0c3041";
 include "api/api_info_entreprise.php";
 include "api/api_header.php";
 include "api/fonctionne.php";
 include "api/api_services.php";
+include "api/api_equipe.php";
+include "api/api_article.php";
+include "api/api_detail_post.php";
+include "api/api_info_admin.php";
+include "api/api_categorie.php";
 
 // include "api/api_services.php";
-
 
 // [ville] => Douala
 //     [region] => Littoral
