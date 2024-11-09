@@ -11,12 +11,15 @@ endif;
 //====== fin
 
 //--------Route page d'accuil
-if(@$url[0]=='home' || @$url==''):
+if(@$url[0]=='home' || @$url[0]==''):
+    $services = recup_services();
+    $equipe = info_equipe();
+    $article = recup_article();
     include_once("template/home.php");
 endif;
 
 //--------Route page Apropos
-if(@$url[0]=='about'):
+if(@$url[0]=='about' ):
     include_once("template/$url[0].php");
 endif;
 

@@ -1,5 +1,5 @@
 <?php
-$img_service="https://akila.blog/img_service/";  // lien des image des membres
+// $img_service="https://akila.blog/img_service/";  // lien des image des membres
 // $matricule_entreprise="1011121121";
 // $matricule_entreprise="654b7262c7d05"; 
 

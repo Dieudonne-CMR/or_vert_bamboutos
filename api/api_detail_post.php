@@ -1,6 +1,6 @@
 <?php 
 //----------- affiche le detail d'un post
-function recup_detail_post($mat_post){
+/*function recup_detail_post($mat_post){
     global $matricule_entreprise;
     $obj='';
     if(isset($mat_post)) {
@@ -21,4 +21,5 @@ function recup_detail_post($mat_post){
     }
     return  $obj[0];
   
-}
+}*/
+?>
