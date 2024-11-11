@@ -154,8 +154,11 @@
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto">
                                 <div class="header-logo">
-                                    <a href="home">
-                                        <img src="assets/img/logo.png" alt="logo">
+                                    <a href="home"> 
+                                        <img src="<?= $lien_logo . $logo ?>" alt="logo" style="    position: absolute;
+    top: 0px;
+    max-width: 80px;">
+                                        <!-- <img src="assets/img/logo.png" alt="logo"> -->
                                     </a>
                                 </div>
                             </div>
