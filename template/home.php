@@ -389,7 +389,7 @@
                             </div>
                             <h2 class="blog-title"><a href="blog-details/<?=  $value1->matricule ?>"><?= $value1->titre ?></a></h2>
                             <div class="blog-inner-author">
-                                <img src="<?= $url_image . $value1->photo ?>" alt="blog author">
+                                <img src="<?= info_admin($value1->matricule_admin)->profil ?>" alt="blog author">
                                 <div class="text">
                                     Par <a href="blog.html"><?= info_admin($value1->matricule_admin)->nom                     
                                     ?></a>

@@ -77,24 +77,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
+                    <?php foreach($article1 as $v) : ?>
                     <div class="vs-blog blog-single">
                         <div class="blog-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-1.png" alt="Blog Image"></a>
+                            <a href="blog-details.html"><img src="<?= $url_image.$v->photo ?>" alt="Blog Image"></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details.html">Harvest London Publishes Its First Annua</a></h2>
-                            <p class="blog-text">Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar ulum bib volutpat. Sociis, a eget mollis, exercitationem famesSu dapibus ac tellus.</p>
+                            <h2 class="blog-title"><a href="blog-details/<?= $v->matricule?>"><?= $v->titre ?></a></h2>
+                            <?php if(strlen($v->content) > 300){ $v->content = substr($v->content,0,300)."...";} ?>
+                            <p class="blog-text"><?= $v->content ?></p>
                             <div class="blog-inner-author">
-                                <img src="assets/img/blog/blog-auth-1-1.png" alt="blog author">
-                                by <a href="blog.html">Jakki James</a>
-                                <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                <img src="<?= info_admin($v->matricule_admin)->profil ?>" alt="blog author">
+                                Par <a href="blog.html"><?= info_admin($v->matricule_admin)->nom?></a>
+                                <a href="blog.html" class="blog-date"><?= $v->date ?></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="vs-blog blog-single">
+                    </div> 
+                    <?php endforeach ?>
+                    <?php /* <div class="vs-blog blog-single">
                         <div class="blog-img vs-carousel" data-arrows="true" data-autoplay="true" data-slide-show="1" data-fade="true">
                             <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
                             <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
@@ -111,7 +114,7 @@
                                 <a href="blog.html" class="blog-date">Dec 13, 2024</a>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div class="vs-blog blog-single">
                         <div class="blog-content">
                             <div class="blog-meta">
@@ -125,7 +128,7 @@
                                 <a href="blog.html" class="blog-date">Dec 13, 2024</a>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div class="vs-blog blog-single">
                         <div class="blog-img">
                             <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
@@ -142,7 +145,7 @@
                                 <a href="blog.html" class="blog-date">Dec 13, 2024</a>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div class="vs-blog blog-single">
                         <div class="blog-img">
                             <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-4.png" alt="Blog Image"></a>
@@ -159,7 +162,7 @@
                                 <a href="blog.html" class="blog-date">Dec 13, 2024</a>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div class="vs-blog blog-single">
                         <div class="blog-img">
                             <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-5.png" alt="Blog Image"></a>
@@ -176,7 +179,7 @@
                                 <a href="blog.html" class="blog-date">Dec 13, 2024</a>
                             </div>
                         </div>
-                    </div>
+                    </div> */ ?>
                     <div class="vs-pagination">
                         <ul>
                             <li class="arrow"><a href="#"><i class="fal fa-long-arrow-left"></i></a></li>
@@ -193,17 +196,25 @@
                         <div class="widget  ">
                             <h3 class="widget_title">Recent Posts</h3>
                             <div class="recent-post-wrap">
+                                <?php $c=count($article1); if($c>3){$k=$c-3;}else{$k=0;};
+                                while($c>$k){                                
+                                ?>
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
+                                    <a href="blog-details/<?= $article1[$c-1]->matricule?>"><img src="<?= $url_image.$article1[$c-1]->photo ?>" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">Dec 13, 2024</a>
+                                            <a href="blog.html"><?= $article1[$c-1]->date?></a>
                                         </div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Learn React JS Tutorial For Beginners</a></h4>
+                                        <?php if(strlen($article1[$c-1]->titre) > 42){ $article1[$c-1]->titre = substr($article1[$c-1]->titre,0,42)."...";} ?>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details/<?= $article1[$c-1]->matricule?>"><?= $article1[$c-1]->titre ?></a></h4>
                                     </div>
                                 </div>
+                                <?php
+                                $c--;
+                                } ?>
+                             <?php /*   
                                 <div class="recent-post">
                                     <div class="media-img">
                                         <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
@@ -224,8 +235,8 @@
                                             <a href="blog.html">Nov 07, 2024</a>
                                         </div>
                                         <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Learn React JS Tutorial For Beginners</a></h4>
-                                    </div>
-                                </div>
+                                    </div> 
+                                </div> */ ?>
                             </div>
                         </div>
                         <div class="widget widget_categories   ">
