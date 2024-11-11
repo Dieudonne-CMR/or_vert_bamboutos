@@ -719,7 +719,7 @@
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i><?= $value1->id_categorie ?></a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details.html"><?= $value1->titre ?></a></h2>
+                            <h2 class="blog-title"><a href="blog-details/<?=  $value1->matricule ?>"><?= $value1->titre ?></a></h2>
                             <div class="blog-inner-author">
                                 <img src="<?= $url_image . $value1->photo ?>" alt="blog author">
                                 <div class="text">

@@ -40,6 +40,7 @@ endif;
 
 //------- Route page blog-details
 if(@$url[0]=='blog-details'):
+    $mat_article= @$url[1]; //==Matricule de l'article
     include_once("template/$url[0].php");
 endif;
 

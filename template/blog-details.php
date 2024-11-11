@@ -5,6 +5,7 @@
 <!-- Mirrored from html.vecurosoft.com/farmix/demo/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:42 GMT -->
 <head>
     <meta charset="utf-8">
+    <base href="../">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Farmix - Agriculture & Farming Food Template - Blog Details</title>
     <meta name="author" content="Vecuro">
