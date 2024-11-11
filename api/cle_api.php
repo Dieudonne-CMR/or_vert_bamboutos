@@ -10,6 +10,9 @@ $url_image="https://akila.blog/@ressouce/mg_etablissement/";
 $lien_logo ="https://akila.blog/logo_site/"; 
 //---------lien pour les bannieres de l'entreprise
 $image_banniere="https://akila.blog/image_baniere/";
+//------- partenaire
+$logo_partenaire="https://akila.blog/@ressouce/logo_site/";   // lien des logos des partenaire
+
 
 include "bd/query.php" ;
 $matricule_entreprise = "6730f0f35735b";
@@ -22,6 +25,7 @@ include "api/api_article.php";
 include "api/api_detail_post.php";
 include "api/api_info_admin.php";
 include "api/api_categorie.php";
+include "api/api_partner.php";
 
 // include "api/api_services.php";
 
@@ -56,6 +60,18 @@ $google_map_entreprise = @$info_header->google_map;
 $couleur1_entreprise =   @$info_header->color1;
 $couleur2_entreprise =   @$info_header->color2;
 
+//=== Mentions 
+$mention_titre = @$info_header -> mention_titre;
+$mention_des = @$info_header ->mention_des;
+$mention1 = @$info_header -> mention1;
+$mention_titre1 = @$info_header -> mention_titre1;
+$mention2 = @$info_header -> mention2;
+$mention_titre2 = @$info_header -> mention_titre2;
+$mention3 = @$info_header -> mention3; 
+$mention_titre3 = @$info_header -> mention_titre3;
+$mention4 = @$info_header ->mention4;
+$mention_titre4 = @$info_header -> mention_titre4;
+
 //=======information du fichier api_info_entreprise.php
 $banniere1  =           @$dataEntreprise->about_image1;
 $banniere2 =            @$dataEntreprise->banniere_image2;
@@ -85,17 +101,7 @@ $motivation_desription =@$dataEntreprise->motivation_desription;
 $image_about =          @$dataEntreprise->banniere_site1;
 $motivation_img =       @$dataEntreprise->motivation_img;
 
-//=== Mentions 
-$mention_titre = $dataEntreprise -> mention_titre;
-$mention_des = $dataEntreprise ->mention_des;
-$mention1 = $dataEntreprise -> mention1;
-$mention_titre1 = $dataEntreprise -> mention_titre1;
-$mention2 = $dataEntreprise -> mention2;
-$mention_titre2 = $dataEntreprise -> mention_titre2;
-$mention3 = $dataEntreprise -> mention3; 
-$mention_titre3 = $dataEntreprise -> mention_titre3;
-$mention4 = $dataEntreprise ->mention4;
-$mention_titre4 = $dataEntreprise -> mention_titre4;
+
 //=== information sur les memebres : api_equipe
 
 //==== Notre particularité

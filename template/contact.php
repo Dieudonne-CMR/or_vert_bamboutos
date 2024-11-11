@@ -6,18 +6,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Farmix - Agriculture & Farming Food Template - Contact</title>
-    <meta name="author" content="Vecuro">
-    <meta name="description" content="Farmix - Agriculture & Farming Food Template">
-    <meta name="keywords" content="Farmix - Agriculture & Farming Food Template">
-    <meta name="robots" content="INDEX,FOLLOW">
+    <?php $titre='Contact'; include "includes/meta.php" ?>
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <!--==============================
 	  Google Fonts

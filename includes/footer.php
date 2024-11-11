@@ -25,7 +25,7 @@
                             <div class="media-icon"><img src="assets/img/icon/icon-1-3.png" alt="icon"></div>
                             <div class="media-body">
                                 <h3 class="media-title">Locatoin:</h3>
-                                <p class="media-info"><?= $region.'-'.$quartier ?></p>
+                                <p class="media-info"><?=  $region .','.$ville .','. $quartier ?></p>
                             </div>
                         </div>
                     </div>

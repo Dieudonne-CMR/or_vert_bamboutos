@@ -1,6 +1,6 @@
 <?php
 
-$logo_partenaire="https://akila.blog/@ressouce/logo_site/";   // lien des logos des partenaire
+// $logo_partenaire="https://akila.blog/@ressouce/logo_site/";   // lien des logos des partenaire
 
 // $matricule_entreprise="654b7262c7d05";
 //===== les vues sur un articles===== 
@@ -31,4 +31,11 @@ function info_partenaire(){
     }
     //--- fin 
   }
+/*
+  matricule_entreprise      => 
+  logo                      => 
+  nom                       => 
+  lien_site                 => 
+  at_date   
+  */
   

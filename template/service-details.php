@@ -6,19 +6,13 @@
 <!-- Mirrored from html.vecurosoft.com/farmix/demo/service-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:28 GMT -->
 <head>
     <meta charset="utf-8">
+    <base href="../">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Farmix - Agriculture & Farming Food Template - Service Details</title>
-    <meta name="author" content="Vecuro">
-    <meta name="description" content="Farmix - Agriculture & Farming Food Template">
-    <meta name="keywords" content="Farmix - Agriculture & Farming Food Template">
-    <meta name="robots" content="INDEX,FOLLOW">
+    <?php $titre='service detail'; include "includes/meta.php" ?>
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <!--==============================
 	  Google Fonts
@@ -74,7 +68,7 @@
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home">Accueil</a></li>
                     <li>Service Details</li>
                 </ul>
             </div>

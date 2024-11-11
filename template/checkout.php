@@ -6,11 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Farmix - Agriculture & Farming Food Template - Check Out</title>
-    <meta name="author" content="Vecuro">
-    <meta name="description" content="Farmix - Agriculture & Farming Food Template">
-    <meta name="keywords" content="Farmix - Agriculture & Farming Food Template">
-    <meta name="robots" content="INDEX,FOLLOW">
+    <?php $titre='Chechout'; include "includes/meta.php" ?>
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

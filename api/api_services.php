@@ -34,6 +34,17 @@ function recup_services(){
     
   }
 
+//------------recupe detail service
+  function Recuper_service_detail($mat_Services){
+    $service=[];
+    $data= recup_services();
+    foreach($data as $value){
+        if($value->matricule_entreprise == $mat_Services){
+            $services[]=$value;
+        }
+    }
+    return $service;
+}
   /*
   exemple des donnees recuperer sortant dans variable: $services 
 exemple d'affichage d'une valeur (du titre d'un service):

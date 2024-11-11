@@ -52,6 +52,12 @@ endif;
 
 //------- Route page service-details
 if(@$url[0]=='service-details'):
+    $mat_service= @$url[1];
+    $det_service= Recuper_service_detail($mat_service);
+    var_dump($det_service);
+    if(empty($det_service)):
+        // header("location: ../home");
+    endif;
     include_once("template/$url[0].php");
 endif;
 
