@@ -67,12 +67,12 @@
     <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Our Blogs</h1>
+                <h1 class="breadcumb-title">NOS BLOGS</h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Our Blogs</li>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li>Nos Blogs</li>
                 </ul>
             </div>
         </div>
@@ -94,7 +94,6 @@
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
                             <h2 class="blog-title"><a href="blog-details/<?= $v->matricule?>"><?= $v->titre ?></a></h2>
-                            <?php if(strlen($v->content) > 300){ $v->content = substr($v->content,0,300)."...";} ?>
                             <p class="blog-text"><?= $v->content ?></p>
                             <div class="blog-inner-author">
                                 <img src="<?= info_admin($v->matricule_admin)->profil ?>" alt="blog author">
@@ -215,7 +214,7 @@
                                             <a href="blog.html"><?= $article1[$c-1]->date?></a>
                                         </div>
                                         <?php if(strlen($article1[$c-1]->titre) > 42){ $article1[$c-1]->titre = substr($article1[$c-1]->titre,0,42)."...";} ?>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details/<?= $article1[$c-1]->matricule?>"><?= $article1[$c-1]->titre ?></a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details<?= $article1[$c-1]->matricule?>"><?= $article1[$c-1]->titre ?></a></h4>
                                     </div>
                                 </div>
                                 <?php
@@ -249,11 +248,15 @@
                         <div class="widget widget_categories   ">
                             <h3 class="widget_title">Categories</h3>
                             <ul>
+                                <?php $i=count($categories); $k=0;
+                                while($k<$i){
+                                ?>
                                 <li>
-                                    <a href="blog.html">Dairy farms</a>
+                                    <a href="blog.html"><?=$categories[$k]->nom ?></a>
                                     <span>23</span>
                                 </li>
-                                <li>
+                                <?php $k++; }?>
+                                 <?php /*<li>
                                     <a href="blog.html">Grain</a>
                                     <span>10</span>
                                 </li>
@@ -272,22 +275,22 @@
                                 <li>
                                     <a href="blog.html">Mixed farming</a>
                                     <span>12</span>
-                                </li>
+                                </li> */ ?>
                             </ul>
                         </div>
                         <div class="widget widget_nav_menu   ">
-                            <h3 class="widget_title">Useful Services</h3>
+                            <h3 class="widget_title">Services Utiles</h3>
                             <div class="menu-all-pages-container footer-menu">
                                 <ul class="menu">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="team.html">Meet Our Team</a></li>
+                                    <li><a href="about.html">À propos de nous</a></li>
+                                    <li><a href="team.html">Rencontrez notre équipe</a></li>
                                     <li><a href="services.html">Services</a></li>
-                                    <li><a href="blog.html">News & Media</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="blog.html">Infos & Media</a></li>
+                                    <li><a href="contact.html">Contactez-nous</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="widget widget_meta   ">
+                         <!-- <div class="widget widget_meta   ">
                             <h3 class="widget_title">Meta</h3>
                             <ul>
                                 <li><a href="#">Log in</a></li>
@@ -295,13 +298,13 @@
                                 <li><a href="#">Comments feed</a></li>
                                 <li><a href="#">WordPress.org</a></li>
                             </ul>
-                        </div>
+                          </div> -->
                         <div class="widget widget_newsletter  ">
-                            <h4 class="widget_title">Newsletter</h4>
+                            <h4 class="widget_title">Bulletin</h4>
                             <form class="newsletter-form">
-                                <p class="form_text">Enter your email and get recent news & recent offers update.</p>
-                                <input class="form-control" type="email" placeholder="Enter your email....">
-                                <button type="submit" class="vs-btn">Subscribe</button>
+                                <p class="form_text">Entrez votre e-mail et recevez les nouvelles récentes et les mises à jour des offres récentes.</p>
+                                <input class="form-control" type="email" placeholder="Entrez votre email....">
+                                <button type="submit" class="vs-btn">S'abonner</button>
                             </form>
                         </div>
                     </aside>

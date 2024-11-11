@@ -68,12 +68,12 @@
     <div class="breadcumb-wrapper Cover all esports & gamers needs" data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">BLOG DETAILS</h1>
+                <h1 class="breadcumb-title">DÉTAILS DU BLOG</h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li>BLOG DETAILS</li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li>DÉTAILS DU BLOG</li>
                 </ul>
             </div>
         </div>
@@ -89,47 +89,18 @@
                         <div class="blog-content">
                             
                             <div class="mb-30">
-                                <img src="assets/img/blog/blog-d-1-1.jpg" alt="blog image">
+                             <?php foreach($article2 as $valeur1 ) : 
+                                if($valeur1->matricule == $mat_article){ ?>
+                                <img src="<?= $url_image.$valeur1->photo ?>" alt="blog image">
                             </div>
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details.html">Harvest London Publishes Its First Annua</a></h2>
-                            <p class="blog-text">From the overarching goal of your website, to the images and videos within it, each element influences how yr users 
-                                perceive and navigate your website. However, even with the most engaging imagery or profound contenf the overall user experience feels 
-                                dated or unintuitive, then you lower your chances of converting your website v itors online. From the overarching goal of your website, 
-                                to the images and videos within it, each element influe users perceive and navigate your website. However, even with the most engaging 
-                                imagery or profound content, the overall user experience feels dated or unintuitive, then you lower your chances of converting your website 
-                                a itors online.
+                            <h2 class="blog-title"><a href="blog-details/<?= $valeur1->matricule?>"><?= $valeur1->titre ?></a></h2>
+                            <p class="blog-text"><?= $valeur1->content ?>
                             </p>
-                            <p class="blog-text">users perceive and navigate your website. However, even with the most engaging imagery or profound content, the overall user 
-                                experience feels dated or unintuitive, then you lower your chances of converting your website v itors online. From the overarching goal of 
-                                your website
-                            </p>
-                            <h4 class="blog-title">Custom Listing Stlyes</h4>
-                            <div class="list-style1">
-                                <ul class="list-unstyled">
-                                    <li><span class="icon"><img src="assets/img/icon/list-icon.png" alt="icon"></span>Before you can dive-in to creating an effective user experience</li>
-                                    <li><span class="icon"><img src="assets/img/icon/list-icon.png" alt="icon"></span>intuitive user experience for your users online.</li>
-                                    <li><span class="icon"><img src="assets/img/icon/list-icon.png" alt="icon"></span>Videos within it, each element influences</li>
-                                    <li><span class="icon"><img src="assets/img/icon/list-icon.png" alt="icon"></span>By providing an engaging user experience</li>
-                                    <li><span class="icon"><img src="assets/img/icon/list-icon.png" alt="icon"></span>Chances of converting your website visitors online.</li>
-                                    <li><span class="icon"><img src="assets/img/icon/list-icon.png" alt="icon"></span>From the overarching goal of your website, to the images and videos</li>
-                                </ul>
-                            </div>
-                            <blockquote class="vs-quote">
-                                <p>“Where as you may meet many sales people, heads of departments, marketing managers and CEO’s as part of your business fast growing with them”</p>
-                            </blockquote>
-                            <p>itors online. From the overarching goal of your website, to the images and videos within it, each element influe users perceive and navigate your website. However, even with the most engaging imagery or profound content, the overall user experience feels dated or unintuitive, then you lower your chances of converting your website v itors online.</p>
-                            <h4>User Experience Research </h4>
-                            <p>users perceive and navigate your website. However, even with the most engaging imagery or profound content, the overall user experience feels dated or unintuitive,</p>
-                            <p>users perceive and navigate your website. However, even with the most engaging imagery or profound content, the overall user experience feels dated or unintuitive, then you lower your chances of converting your website v itors online. From the overarching goal of your website</p>
-                            <div class="row mt-30">
-                                <div class="col-md-6 mb-30"><img src="assets/img/blog/blog-d-1-2.jpg" alt=""></div>
-                                <div class="col-md-6 mb-30"><img src="assets/img/blog/blog-d-1-3.jpg" alt=""></div>
-                            </div>
-                            <h4>Specific sample group of consumers</h4>
-                            <p>users perceive and navigate your website. However, even with the most engaging imagery or profound conten the overall user experience feels dated or unintuitive, then you lower your chances of converting your website itors online. From the overarching goal of your website users perceive and navigate your website. However, e ven with the most engaging imagery or profound conten <br> the overall user experience feels dated or unintuitive, then you lower your chances of converting your website itors online. From the overarching goal of your website</p>
+                            <?php break; } endforeach ?> 
+                                                       
                         </div>
                         <div class="share-links clearfix  ">
                             <div class="row justify-content-between">
@@ -151,6 +122,7 @@
                                 </div>
                             </div>
                         </div>
+                        <?php /*
                         <div class="vs-comments-wrap">
                             <h2 class="blog-inner-title">3 Comments</h2>
                             <ul class="comment-list">
@@ -204,8 +176,9 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */ ?>
                         <!-- Comment Form -->
+                         <?php /*
                         <div class="vs-comment-form  ">
                             <div id="respond" class="comment-respond">
                                 <div class="form-title">
@@ -234,6 +207,7 @@
                                 </div>
                             </div>
                         </div>
+                        */ ?>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -241,6 +215,25 @@
                         <div class="widget  ">
                             <h3 class="widget_title">Recent Posts</h3>
                             <div class="recent-post-wrap">
+                               <?php $c=count($article2); if($c>3){$k=$c-3;}else{$k=0;};
+                                while($c>$k){                                
+                                ?>
+                                <div class="recent-post">
+                                    <div class="media-img">
+                                    <a href="blog-details/<?= $article2[$c-1]->matricule?>"><img src="<?= $url_image.$article2[$c-1]->photo ?>" alt="Blog Image"></a>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="recent-post-meta">
+                                            <a href="blog.html"><?= $article2[$c-1]->date?></a>
+                                        </div>
+                                        <?php if(strlen($article2[$c-1]->titre) > 42){ $article2[$c-1]->titre = substr($article2[$c-1]->titre,0,42)."...";} ?>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details<?= $article2[$c-1]->matricule?>"><?= $article2[$c-1]->titre ?></a></h4>
+                                    </div>
+                                </div>
+                                <?php
+                                $c--;
+                                } ?>
+                                <?php /*
                                 <div class="recent-post">
                                     <div class="media-img">
                                         <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-1.jpg" alt="Blog Image"></a>
@@ -273,17 +266,21 @@
                                         </div>
                                         <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Learn React JS Tutorial For Beginners</a></h4>
                                     </div>
-                                </div>
+                                </div> */ ?>
                             </div>
                         </div>
                         <div class="widget widget_categories   ">
                             <h3 class="widget_title">Categories</h3>
                             <ul>
+                                <?php $i=count($categories1); $k=0;
+                                while($k<$i){
+                                ?>
                                 <li>
-                                    <a href="blog.html">Dairy farms</a>
+                                    <a href="blog.html"><?=$categories1[$k]->nom ?></a>
                                     <span>23</span>
                                 </li>
-                                <li>
+                                <?php $k++; }?>
+                                 <?php /*<li>
                                     <a href="blog.html">Grain</a>
                                     <span>10</span>
                                 </li>
@@ -302,22 +299,22 @@
                                 <li>
                                     <a href="blog.html">Mixed farming</a>
                                     <span>12</span>
-                                </li>
+                                </li> */ ?>
                             </ul>
                         </div>
                         <div class="widget widget_nav_menu   ">
-                            <h3 class="widget_title">Useful Services</h3>
+                        <h3 class="widget_title">Services Utiles</h3>
                             <div class="menu-all-pages-container footer-menu">
                                 <ul class="menu">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="team.html">Meet Our Team</a></li>
+                                    <li><a href="about.html">À propos de nous</a></li>
+                                    <li><a href="team.html">Rencontrez notre équipe</a></li>
                                     <li><a href="services.html">Services</a></li>
-                                    <li><a href="blog.html">News & Media</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="blog.html">Infos & Media</a></li>
+                                    <li><a href="contact.html">Contactez-nous</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="widget widget_meta   ">
+                         <!-- <div class="widget widget_meta   ">
                             <h3 class="widget_title">Meta</h3>
                             <ul>
                                 <li><a href="#">Log in</a></li>
@@ -325,13 +322,13 @@
                                 <li><a href="#">Comments feed</a></li>
                                 <li><a href="#">WordPress.org</a></li>
                             </ul>
-                        </div>
+                         </div> -->
                         <div class="widget widget_newsletter  ">
-                            <h4 class="widget_title">Newsletter</h4>
+                            <h4 class="widget_title">Bulletin</h4>
                             <form class="newsletter-form">
-                                <p class="form_text">Enter your email and get recent news & recent offers update.</p>
-                                <input class="form-control" type="email" placeholder="Enter your email....">
-                                <button type="submit" class="vs-btn">Subscribe</button>
+                                <p class="form_text">Entrez votre e-mail et recevez les nouvelles récentes et les mises à jour des offres récentes.</p>
+                                <input class="form-control" type="email" placeholder="Entrez votre email....">
+                                <button type="submit" class="vs-btn">S'abonner</button>
                             </form>
                         </div>
                     </aside>
