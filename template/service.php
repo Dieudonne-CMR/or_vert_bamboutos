@@ -1,4 +1,5 @@
 
+<?php // var_dump($services) ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -72,8 +73,8 @@
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Our Service</li>
+                    <li><a href="home">Accueil</a></li>
+                    <li>Nos Services</li>
                 </ul>
             </div>
         </div>
@@ -128,76 +129,84 @@
     <div class="service-layout1 space-bottom mt-0">
         <div class="container">
             <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="false">
+             <?php  foreach($services as $values ) : ?>
                 <div class="col-auto">
                     <div class="service-style1">
-                        <div class="service-img2"><img src="assets/img/service/service-1-1.jpg" alt="service thumbnail"></div>
-                        <div class="service-img"><img src="assets/img/service/service-1-1.jpg" alt="service thumbnail"></div>
+                        <div class="service-img2"><img src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
+                        <div class="service-img"><img src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-1.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html">Agriculture</a></h3>
-                            <p class="service-text">Veritatis eligendi, dignissimo fermentum mus aute pulvinar platea massa rutrum.</p>
+                            <h3 class="service-title h5"><a href="service-details.html"><?= $values->nom ?></a></h3>
+                            <?php include "reduire-texte.php" ?>
+                            <p class="service-text"><?= $values->description ?></p>
                         </div>
                         <div class="link-btn">
                             <a href="#">Read More <i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
+             <?php endforeach?>    
+                <?php /*
                 <div class="col-auto">
                     <div class="service-style1">
                         <div class="service-img2"><img src="assets/img/service/service-1-2.jpg" alt="service thumbnail"></div>
                         <div class="service-img"><img src="assets/img/service/service-1-2.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-2.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html">Vagatables</a></h3>
-                            <p class="service-text">Veritatis eligendi, dignissimo fermentum mus aute pulvinar platea massa rutrum.</p>
+                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s2 ?></a></h3>
+                            <p class="service-text"><?= $discription_s2 ?></p>
                         </div>
                         <div class="link-btn">
                             <a href="#">Read More <i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-auto">
                     <div class="service-style1">
                         <div class="service-img2"><img src="assets/img/service/service-1-3.jpg" alt="service thumbnail"></div>
                         <div class="service-img"><img src="assets/img/service/service-1-3.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-3.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html">Farm Factory</a></h3>
-                            <p class="service-text">Veritatis eligendi, dignissimo fermentum mus aute pulvinar platea massa rutrum.</p>
+                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s3 ?></a></h3>
+                            <p class="service-text"><?= $discription_s3 ?></p>
                         </div>
                         <div class="link-btn">
                             <a href="#">Read More <i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-auto">
                     <div class="service-style1">
                         <div class="service-img2"><img src="assets/img/service/service-1-4.jpg" alt="service thumbnail"></div>
                         <div class="service-img"><img src="assets/img/service/service-1-4.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-4.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html">Modern Technique</a></h3>
-                            <p class="service-text">Veritatis eligendi, dignissimo fermentum mus aute pulvinar platea massa rutrum.</p>
+                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s3 ?></a></h3>
+                            <p class="service-text"><?= $discription_s3 ?></p>
                         </div>
                         <div class="link-btn">
                             <a href="#">Read More <i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-auto">
                     <div class="service-style1">
                         <div class="service-img2"><img src="assets/img/service/service-1-5.jpg" alt="service thumbnail"></div>
                         <div class="service-img"><img src="assets/img/service/service-1-5.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-1.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html">Modern Technique</a></h3>
-                            <p class="service-text">Veritatis eligendi, dignissimo fermentum mus aute pulvinar platea massa rutrum.</p>
+                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s3 ?></a></h3>
+                            <p class="service-text"><?= $discription_s1 ?></p>
                         </div>
                         <div class="link-btn">
                             <a href="#">Read More <i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
-                </div>
+                </div> */?>
+
             </div>
         </div>
     </div>

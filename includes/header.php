@@ -128,12 +128,12 @@
                 <div class="row justify-content-between">
                     <div class="col-auto">
                         <div class="header-links">
-                           
                             <ul>
-                                <li><i class="far fa-map-marker-alt"></i><?=  $localisation ?></li>
-                                <li><i class="far fa-envelope"></i><a href="mailto:<?= $email ?>"><?= $email ?></a></li>
-                                <li><i class="far fa-phone-alt"></i><a href="tel:<?= $telephone ?>"><?= $telephone ?></a></li>
-                                <li><i class="far fa-clock"></i><?=  $heure ?></li>
+
+                                <li><i class="far fa-map-marker-alt"></i><?=  $region .','.$ville .','. $quartier ?></li>
+                                <li><i class="far fa-envelope"></i><a href="mailto:<?= $emal_entreprise ?>"><?= $emal_entreprise ?></a></li>
+                                <li><i class="far fa-phone-alt"></i><a href="tel:<?= $telephone  ?>"><?= $telephone ?></a></li>
+                                <li><i class="far fa-clock"></i><?=  date('Y') ?></li>
                             </ul>
                         </div>
                     </div>
@@ -154,8 +154,11 @@
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto">
                                 <div class="header-logo">
-                                    <a href="home">
-                                        <img src="assets/img/logo.png" alt="logo">
+                                    <a href="home"> 
+                                        <img src="<?= $lien_logo . $logo ?>" alt="logo" style="    position: absolute;
+    top: 0px;
+    max-width: 80px;">
+                                        <!-- <img src="assets/img/logo.png" alt="logo"> -->
                                     </a>
                                 </div>
                             </div>

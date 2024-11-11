@@ -7,7 +7,7 @@
                             <div class="media-icon"><img src="assets/img/icon/icon-1-1.png" alt="icon"></div>
                             <div class="media-body">
                                 <h3 class="media-title">Phone No:</h3>
-                                <p class="media-info"><a href="tel:<?= $telephone ?>"><?= $telephone ?></a> <br> <?=  $heure ?></p>
+                                <p class="media-info"><a href="tel:<?= $telephone ?>"><?= $telephone ?></a> <br> <?=  date('y') ?></p>
                             </div>
                         </div>
                     </div>
@@ -16,7 +16,7 @@
                             <div class="media-icon"><img src="assets/img/icon/icon-1-2.png" alt="icon"></div>
                             <div class="media-body">
                                 <h3 class="media-title">Email Address:</h3>
-                                <p class="media-info"><a href="mailto:<?= $email ?>"><?= $email ?></a> <br> <a href="mailto:officename@example.com">officename@example.com</a></p>
+                                <p class="media-info"><a href="mailto:<?= $emal_entreprise ?>"><?= $emal_entreprise ?></a> <br> <a href="mailto:officename@example.com">officename@example.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                             <div class="media-icon"><img src="assets/img/icon/icon-1-3.png" alt="icon"></div>
                             <div class="media-body">
                                 <h3 class="media-title">Locatoin:</h3>
-                                <p class="media-info"><?=  $localisation ?></p>
+                                <p class="media-info"><?= $region.'-'.$quartier ?></p>
                             </div>
                         </div>
                     </div>

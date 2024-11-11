@@ -3,7 +3,7 @@
 //--------------------- lien pour les images 88732230809  image_baniere
 // $lien_logo ="https://akila.blog/logo_site/";        // lien du logo de l'entreprise
 // $image_banniere="https://akila.blog/@ressouce/couverture_banniere/";
-$image_banniere="https://akila.blog/image_baniere/";
+// $image_banniere="https://akila.blog/image_baniere/";
 // $matricule_entreprise="1011121121";
 // $matricule_entreprise="654b7262c7d05";
 

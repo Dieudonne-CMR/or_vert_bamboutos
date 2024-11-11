@@ -1,5 +1,5 @@
 <?php 
-include "includes/main_header/main_header.php" ;  
+// include "includes/main_header/main_header.php" ;  
 include "api/cle_api.php";
 
 $url="";
@@ -11,12 +11,15 @@ endif;
 //====== fin
 
 //--------Route page d'accuil
-if(@$url[0]=='home' || @$url==''):
+if(@$url[0]=='home' || @$url[0]==''):
+    $services = recup_services();
+    $equipe = info_equipe();
+    $article = recup_article();
     include_once("template/home.php");
 endif;
 
 //--------Route page Apropos
-if(@$url[0]=='about' || @$url==''):
+if(@$url[0]=='about' ):
     include_once("template/$url[0].php");
 endif;
 
@@ -27,6 +30,7 @@ endif;
 
 //------- Route page blog
 if(@$url[0]=='blog'):
+    $article1 = recup_article();
     include_once("template/$url[0].php");
 endif;
 
@@ -37,11 +41,17 @@ endif;
 
 //------- Route page blog-details
 if(@$url[0]=='blog-details'):
-    include_once("template/$url[0].php");
+    $mat_article= @$url[1]; //==Matricule de l'article
+    if($mat_article==''){
+    include_once("template/blog.php");
+    }else{
+        include_once("template/blog-details/$url[1].php");
+    }
 endif;
 
 //------- Route page service
 if(@$url[0]=='service'):
+    $services = recup_services();
     include_once("template/$url[0].php");
 endif;
 
