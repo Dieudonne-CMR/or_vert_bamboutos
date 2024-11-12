@@ -31,6 +31,7 @@ endif;
 //------- Route page blog
 if(@$url[0]=='blog'):
     $article1 = recup_article();
+    $categories = recup_category();
     include_once("template/$url[0].php");
 endif;
 
@@ -41,11 +42,13 @@ endif;
 
 //------- Route page blog-details
 if(@$url[0]=='blog-details'):
+    $article2 = recup_article();
+    $categories1 = recup_category();
     $mat_article= @$url[1]; //==Matricule de l'article
     if($mat_article==''){
     include_once("template/blog.php");
     }else{
-        include_once("template/blog-details/$url[1].php");
+        include_once("template/blog-details.php");
     }
 endif;
 
