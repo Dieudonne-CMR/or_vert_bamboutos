@@ -84,15 +84,15 @@
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
+                                <a href="#"><i class="fal fa-tag"></i><?= info_cat_post($v->id_categorie)->nom ?></a>
                             </div>
                             <h2 class="blog-title"><a href="blog-details/<?= $v->matricule?>"><?= $v->titre ?></a></h2>
                             <?php if(strlen($v->content)>300){ $v->content = substr($v->content,0,300)."...";} ?>
-                            <p class="blog-text"><?= $v->content ?></p>
+                            <p class="blog-text"><?= strip_tags($v->content) ?></p>
                             <div class="blog-inner-author">
-                                <img src="<?= info_admin($v->matricule_admin)->profil ?>" alt="blog author">
-                                Par <a href="blog.html"><?= info_admin($v->matricule_admin)->nom?></a>
-                                <a href="blog.html" class="blog-date"><?= $v->date ?></a>
+                                <img src="<?= !empty(info_admin($v->matricule_admin)->profil) ? $lien_profil. info_admin($v->matricule_admin)->profil : 'https://cdn-icons-png.flaticon.com/128/3135/3135715.png'?>" alt="<?= info_admin($v->matricule_admin)->nom?>">
+                                Par <a href="javascript:void(0)"><?= info_admin($v->matricule_admin)->nom?></a>
+                                <a href="blog-details/<?= $v->matricule?>" class="blog-date"><?= $v->date ?></a>
                             </div>
                         </div>
                     </div> 
@@ -247,7 +247,7 @@
                                 ?>
                                 <li>
                                     <a href="blog.html"><?=$categories[$k]->nom ?></a>
-                                    <span>23</span>
+                                    <span><?= count_produit_cat($categories[$k]->matricule_cat) ?></span>
                                 </li>
                                 <?php $k++; }?>
                                  <?php /*<li>
