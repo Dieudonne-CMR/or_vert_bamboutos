@@ -60,12 +60,12 @@
     <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">NOS BLOGS</h1>
+                <h1 class="breadcumb-title">NOS ARTICLES</h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
                     <li><a href="index.html">Acceuil</a></li>
-                    <li>Nos Blogs</li>
+                    <li>Nos articles</li>
                 </ul>
             </div>
         </div>
@@ -87,6 +87,7 @@
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
                             <h2 class="blog-title"><a href="blog-details/<?= $v->matricule?>"><?= $v->titre ?></a></h2>
+                            <?php if(strlen($v->content)>300){ $v->content = substr($v->content,0,300)."...";} ?>
                             <p class="blog-text"><?= $v->content ?></p>
                             <div class="blog-inner-author">
                                 <img src="<?= info_admin($v->matricule_admin)->profil ?>" alt="blog author">
@@ -193,7 +194,7 @@
                 <div class="col-lg-4">
                     <aside class="sidebar-area">
                         <div class="widget  ">
-                            <h3 class="widget_title">Recent Posts</h3>
+                            <h3 class="widget_title">Articles Recents</h3>
                             <div class="recent-post-wrap">
                                 <?php $c=count($article1); if($c>3){$k=$c-3;}else{$k=0;};
                                 while($c>$k){                                
@@ -275,11 +276,19 @@
                             <h3 class="widget_title">Services Utiles</h3>
                             <div class="menu-all-pages-container footer-menu">
                                 <ul class="menu">
-                                    <li><a href="about.html">À propos de nous</a></li>
-                                    <li><a href="team.html">Rencontrez notre équipe</a></li>
+                                    <?php foreach($service11 as $key=>$vs1) :
+                                    if(strlen($vs1->nom)>25){ $vs1->nom = substr($vs1->nom,0,25)."...";}
+                                        if($key<5){
+                                        ?>
+                                    <li><a href="service-details/<?= $vs1->matricule_service ?>"><?= $vs1->nom ?></a></li>
+                                    <?php }else{
+                                        break;
+                                    }
+                                    endforeach ?>
+                                    <!--<li><a href="team.html">Rencontrez notre équipe</a></li>
                                     <li><a href="services.html">Services</a></li>
                                     <li><a href="blog.html">Infos & Media</a></li>
-                                    <li><a href="contact.html">Contactez-nous</a></li>
+                                    <li><a href="contact.html">Contactez-nous</a></li> -->
                                 </ul>
                             </div>
                         </div>

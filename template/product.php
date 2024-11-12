@@ -56,14 +56,14 @@
     <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Our Products</h1>
+                <h1 class="breadcumb-title">Nos produits</h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Our Products</li>
+                    <li><a href="home.php">Acceuil</a></li>
+                    <li>Nos produits</li>
                 </ul>
-            </div>
+            </div> 
         </div>
     </div>
     <!--==============================
@@ -111,7 +111,7 @@
                         <div class="product-meta">30% Off</div>
                         <div class="product-about">
                             <p class="text">800 ML</p>
-                            <h2 class="product-title"><a href="product-details.html">Coconut Oil Jar</a></h2>
+                            <h2 class="product-title"><a href="product-details.php">Coconut Oil Jar</a></h2>
                             <span class="price"> <del>$18.00</del>$14.00</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -142,7 +142,7 @@
                         <div class="product-meta">30% Off</div>
                         <div class="product-about">
                             <p class="text">800 ML</p>
-                            <h2 class="product-title"><a href="product-details.html">PureFroots Jar</a></h2>
+                            <h2 class="product-title"><a href="product-details.php">PureFroots Jar</a></h2>
                             <span class="price"> <del>$18.00</del>$14.00</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -173,7 +173,7 @@
                         <div class="product-meta">30% Off</div>
                         <div class="product-about">
                             <p class="text">600 ML</p>
-                            <h2 class="product-title"><a href="product-details.html">Nature's Bounty</a></h2>
+                            <h2 class="product-title"><a href="product-details.php">Nature's Bounty</a></h2>
                             <span class="price"> <del>$12.00</del>$14.00</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -204,7 +204,7 @@
                         <div class="product-meta">32% Off</div>
                         <div class="product-about">
                             <p class="text">900 ML</p>
-                            <h2 class="product-title"><a href="product-details.html">Organic Harvest</a></h2>
+                            <h2 class="product-title"><a href="product-details.php">Organic Harvest</a></h2>
                             <span class="price"> <del>$16.00</del>$15.00</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -235,7 +235,7 @@
                         <div class="product-meta">40% Off</div>
                         <div class="product-about">
                             <p class="text">700 ML</p>
-                            <h2 class="product-title"><a href="product-details.html">Fresh & Rooted</a></h2>
+                            <h2 class="product-title"><a href="product-details.php">Fresh & Rooted</a></h2>
                             <span class="price"> <del>$28.00</del>$19.00</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -266,7 +266,7 @@
                         <div class="product-meta">30% Off</div>
                         <div class="product-about">
                             <p class="text">800 ML</p>
-                            <h2 class="product-title"><a href="product-details.html">Froots & Greens</a></h2>
+                            <h2 class="product-title"><a href="product-details.php">Froots & Greens</a></h2>
                             <span class="price"> <del>$18.00</del>$14.00</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -297,7 +297,7 @@
                         <div class="product-meta">30% Off</div>
                         <div class="product-about">
                             <p class="text">800 ML</p>
-                            <h2 class="product-title"><a href="product-details.html">Earthy Delights</a></h2>
+                            <h2 class="product-title"><a href="product-details.php">Earthy Delights</a></h2>
                             <span class="price"> <del>$18.00</del>$14.00</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
@@ -328,7 +328,7 @@
                         <div class="product-meta">30% Off</div>
                         <div class="product-about">
                             <p class="text">800 ML</p>
-                            <h2 class="product-title"><a href="product-details.html">Purely Picked</a></h2>
+                            <h2 class="product-title"><a href="product-details.php">Purely Picked</a></h2>
                             <span class="price"> <del>$18.00</del>$14.00</span>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
