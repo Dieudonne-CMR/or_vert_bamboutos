@@ -4,7 +4,7 @@
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from html.vecurosoft.com/farmix/demo/service.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:28 GMT -->
+<!-- Mirrored from html.vecurosoft.com/farmix/demo/service.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:28 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -62,11 +62,11 @@
     <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Our Service</h1>
+                <h1 class="breadcumb-title">Nos Services</h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="home">Accueil</a></li>
+                    <li><a href="home.php">Accueil</a></li>
                     <li>Nos Services</li>
                 </ul>
             </div>
@@ -93,17 +93,17 @@
                         </div>
                         <div class="row g-3 vs-carousel" data-arrows="false" data-dots="true" data-autoplay="true" data-slide-show="2">
                             <div class="col-auto">
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-1.png" alt="Blog Image"></a>
+                                <a href="blog-details.php"><img src="assets/img/blog/blog-s-1-1.png" alt="Blog Image"></a>
                             </div>
                             <div class="col-auto">
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
+                                <a href="blog-details.php"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
                             </div>
                             <div class="col-auto">
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
+                                <a href="blog-details.php"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <div class="col-lg-6">
                     <div class="selling-img">
                         <img src="assets/img/service/selling-img-1-1.png" alt="selling-img">
@@ -122,19 +122,19 @@
     <div class="service-layout1 space-bottom mt-0">
         <div class="container">
             <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="false">
-             <?php  foreach($services as $values ) : ?>
+             <?php                                                                                                        foreach($services as $values ) : ?>
                 <div class="col-auto">
                     <div class="service-style1">
                         <div class="service-img2"><img src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
                         <div class="service-img"><img src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-1.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html"><?= $values->nom ?></a></h3>
+                            <h3 class="service-title h5"><a href="service-details/<?= $values->matricule_service ?>"><?= $values->nom ?></a></h3>
                             <?php include "reduire-texte.php" ?>
                             <p class="service-text"><?= $values->description ?></p>
                         </div>
                         <div class="link-btn">
-                            <a href="#">Read More <i class="far fa-arrow-right"></i></a>
+                            <a href="service-details/<?= $values->matricule_service ?>">Lire plus<i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -222,7 +222,7 @@
                                         <img src="assets/img/icon/counter-icon1.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.html">Quality Foods</a></h2>
+                                        <h2 class="title h6"><a href="service.php">Quality Foods</a></h2>
                                         <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
                                     </div>
                                 </div>
@@ -231,7 +231,7 @@
                                         <img src="assets/img/icon/counter-icon2.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.html">All organic</a></h2>
+                                        <h2 class="title h6"><a href="service.php">All organic</a></h2>
                                         <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
                                     </div>
                                 </div>
@@ -240,7 +240,7 @@
                                         <img src="assets/img/icon/counter-icon3.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.html">Friendly team</a></h2>
+                                        <h2 class="title h6"><a href="service.php">Friendly team</a></h2>
                                         <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
                                     </div>
                                 </div>
@@ -251,7 +251,7 @@
                                         <img src="assets/img/icon/counter-icon4.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.html">Eco friendly</a></h2>
+                                        <h2 class="title h6"><a href="service.php">Eco friendly</a></h2>
                                         <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
                                     </div>
                                 </div>
@@ -260,16 +260,16 @@
                                         <img src="assets/img/icon/counter-icon5.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.html">Fresh Vegetables</a></h2>
+                                        <h2 class="title h6"><a href="service.php">Fresh Vegetables</a></h2>
                                         <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
                                     </div>
                                 </div>
                                 <div class="provide-item">
-                                    <div class="provide-icon">
+                                    <div class="provide-icon"> 
                                         <img src="assets/img/icon/counter-icon6.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.html">Use Green Products</a></h2>
+                                        <h2 class="title h6"><a href="service.php">Use Green Products</a></h2>
                                         <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
                                     </div>
                                 </div>
@@ -455,5 +455,5 @@
 </body>
 
 
-<!-- Mirrored from html.vecurosoft.com/farmix/demo/service.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:28 GMT -->
+<!-- Mirrored from html.vecurosoft.com/farmix/demo/service.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:28 GMT -->
 </html>

@@ -100,7 +100,7 @@
                     <div class="hero-content text-center">
                       <h1 class="hero-title"><?= $titre_banniere3 ?></h1>
                       <p class="hero-text"><?= $description_baniere3 ?></p>
-                      <a href="about.html" class="vs-btn">Read More</a>
+                      <a href="about.html" class="vs-btn">Lire plus</a>
                     </div>
                   </div>
                 </div>
@@ -146,11 +146,11 @@
                         <div class="service-img"><img src="assets/img/service/service-1-2.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-2.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s2 ?></a></h3>
+                            <h3 class="service-title h5"><a href="service-details.php"><?= $titre_s2 ?></a></h3>
                             <p class="service-text"><?= $discription_s2 ?></p>
                         </div>
                         <div class="link-btn">
-                            <a href="#">Read More <i class="far fa-arrow-right"></i></a>
+                            <a href="#">Lire plus <i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -160,11 +160,11 @@
                         <div class="service-img"><img src="assets/img/service/service-1-3.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-3.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s3 ?></a></h3>
+                            <h3 class="service-title h5"><a href="service-details.php"><?= $titre_s3 ?></a></h3>
                             <p class="service-text"><?= $discription_s3 ?></p>
                         </div>
                         <div class="link-btn">
-                            <a href="#">Read More <i class="far fa-arrow-right"></i></a>
+                            <a href="#">Lire plus <i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -174,11 +174,11 @@
                         <div class="service-img"><img src="assets/img/service/service-1-4.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-4.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s3 ?></a></h3>
+                            <h3 class="service-title h5"><a href="service-details.php"><?= $titre_s3 ?></a></h3>
                             <p class="service-text"><?= $discription_s3 ?></p>
                         </div>
                         <div class="link-btn">
-                            <a href="#">Read More <i class="far fa-arrow-right"></i></a>
+                            <a href="#">Lire plus <i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -188,11 +188,11 @@
                         <div class="service-img"><img src="assets/img/service/service-1-5.jpg" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-5.png" alt="icon"></div>
-                            <h3 class="service-title h5"><a href="service-details.html"><?= $titre_s3 ?></a></h3>
+                            <h3 class="service-title h5"><a href="service-details.php"><?= $titre_s3 ?></a></h3>
                             <p class="service-text"><?= $discription_s3 ?></p>
                         </div>
                         <div class="link-btn">
-                            <a href="#">Read More <i class="far fa-arrow-right"></i></a>
+                            <a href="#">Lire plus <i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div> */ ?>
@@ -280,10 +280,10 @@
                             <span class="price">$50.00</span>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title"><a href="service-details.html">Agriculture</a></h3>
+                            <h3 class="project-title"><a href="service-details.php">Agriculture</a></h3>
                             <p class="project-text"><i class="far fa-map-marker-alt"></i>California, TX 70240</p>
                             <div class="link-btn">
-                                <a href="#">Read More<i class="fas fa-angle-double-right"></i></a>
+                                <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -295,10 +295,10 @@
                             <span class="price">$50.00</span>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title"><a href="service-details.html">Old Hall Farm</a></h3>
+                            <h3 class="project-title"><a href="service-details.php">Old Hall Farm</a></h3>
                             <p class="project-text"><i class="far fa-map-marker-alt"></i>California, TX 70240</p>
                             <div class="link-btn">
-                                <a href="#">Read More<i class="fas fa-angle-double-right"></i></a>
+                                <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -310,10 +310,10 @@
                             <span class="price">$50.00</span>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title"><a href="service-details.html">Gosberton Bank Nursery</a></h3>
+                            <h3 class="project-title"><a href="service-details.php">Gosberton Bank Nursery</a></h3>
                             <p class="project-text"><i class="far fa-map-marker-alt"></i>California, TX 70240</p>
                             <div class="link-btn">
-                                <a href="#">Read More<i class="fas fa-angle-double-right"></i></a>
+                                <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -325,10 +325,10 @@
                             <span class="price">$50.00</span>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title"><a href="service-details.html">Starcross Farm</a></h3>
+                            <h3 class="project-title"><a href="service-details.php">Starcross Farm</a></h3>
                             <p class="project-text"><i class="far fa-map-marker-alt"></i>California, TX 70240</p>
                             <div class="link-btn">
-                                <a href="#">Read More<i class="fas fa-angle-double-right"></i></a>
+                                <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -339,11 +339,11 @@
                             <img src="assets/img/project/project-img-1-4.jpg" alt="project-img">
                             <span class="price">$50.00</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title"><a href="service-details.html">Agriculture</a></h3>
+                        <div class="project-content"> 
+                            <h3 class="project-title"><a href="service-details.php">Agriculture</a></h3>
                             <p class="project-text"><i class="far fa-map-marker-alt"></i>California, TX 70240</p>
                             <div class="link-btn">
-                                <a href="#">Read More<i class="fas fa-angle-double-right"></i></a>
+                                <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
                             </div>
                         </div>
                         
@@ -370,8 +370,8 @@
                 <div class="title-img">
                     <img src="assets/img/icon/title-logo.png" alt="title logo">
                 </div>
-                <span class="sec-subtitle">Blog & News</span>
-                <h2 class="sec-title">Recent Articles</h2>
+                <span class="sec-subtitle">Articles & Infos</span>
+                <h2 class="sec-title">Articles Recent</h2>
             </div>
             <?php ?>
             <div class="row vs-carousel" data-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="true">
@@ -501,7 +501,7 @@
                 */ ?>
             </div>
             <div class="blog-btn">
-                <a href="blog" class="vs-btn">View All News</a>
+                <a href="blog" class="vs-btn">Voir plus</a>
             </div>
         </div>
     </section>

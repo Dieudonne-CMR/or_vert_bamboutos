@@ -65,10 +65,10 @@
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home.php">Acceuil</a></li>
                     <li>Contact</li>
                 </ul>
-            </div>
+            </div> 
         </div>
     </div>
     <!--==============================
@@ -79,7 +79,7 @@
             <div class="row">
                 <div class="col-xl-8 col-lg-7">
                     <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
-                        <span class="sec-subtitle">CONTACT US</span>
+                        <span class="sec-subtitle">CONTACTEZ NOUS</span>
                         <h2 class="sec-title">We're Here to Help You. Get in Touch with Our Team!</h2>
                     </div>
                     <div class="vs-comment-form">
@@ -101,12 +101,12 @@
                                   <div class="col-12 ">
                                     <div class="custom-checkbox notice">
                                         <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes">
-                                        <label for="wp-comment-cookies-consent"> Save my name, email, and website in this browser for the next time I comment.</label>
+                                        <label for="wp-comment-cookies-consent"> Enregistrer mon nom, email, et le site dans ce navigateur pour la prochaine fois que je me connect.</label>
                                     </div>
                                 </div>
                                   <div class="col-12 form-group">
                                     <button class="vs-btn" type="submit">
-                                      Send Message
+                                      Envoyez un message
                                     </button>
                                   </div>
                                 </div>
@@ -123,7 +123,7 @@
                             </div>
                             <div class="auther-content">
                                 <h6 class="name">Thomas Walkar</h6>
-                                <span class="designation">founde - CEO</span>
+                                <span class="designation">foundateur - CEO</span>
                                 <img src="assets/img/about/contact-signature.png" alt="contact">
                             </div>
                         </div>

@@ -61,11 +61,11 @@
     <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">À propos de nous</h1>
+                <h1 class="breadcumb-title">À PROPOS DE NOUS</h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="home">Accuil</a></li>
+                    <li><a href="home.php">Accueil</a></li>
                     <li>À propos de nous</li>
                 </ul>
             </div>

@@ -62,14 +62,14 @@
     <div class="breadcumb-wrapper Cover all esports & gamers needs" data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">DÉTAILS DU BLOG</h1>
+                <h1 class="breadcumb-title">DÉTAILS DE L'ARTICLE</h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li>DÉTAILS DU BLOG</li>
+                    <li><a href="home.php">Accueil</a></li>
+                    <li>Details de l'article</li>
                 </ul>
-            </div>
+            </div> 
         </div>
     </div>
     <!--==============================
@@ -80,30 +80,25 @@
             <div class="row gx-60">
                 <div class="col-lg-8">
                     <div class="vs-blog">
-                        <div class="blog-content">
-                            
-                            <div class="mb-30">
-                             <?php foreach($article2 as $valeur1 ) : 
-                                if($valeur1->matricule == $mat_article){ ?>
-                                <img src="<?= $url_image.$valeur1->photo ?>" alt="blog image">
+                        <div class="blog-content">                            
+                            <div class="mb-30">                             
+                                <img src="<?= $url_image.$ $detai_post->photo ?>" alt="blog image">
                             </div>
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details/<?= $valeur1->matricule?>"><?= $valeur1->titre ?></a></h2>
-                            <p class="blog-text"><?= $valeur1->content ?>
-                            </p>
-                            <?php break; } endforeach ?> 
-                                                       
+                            <h2 class="blog-title"><a href="blog-details/<?=  $detai_post->matricule?>"><?=  $detai_post->titre ?></a></h2>
+                            <p class="blog-text"><?=  $detai_post->content ?>
+                            </p>                                                                                   
                         </div>
                         <div class="share-links clearfix  ">
                             <div class="row justify-content-between">
                                 <div class="col-xl-auto">
                                     <span class="share-links-title">Tags:</span>
                                     <div class="tagcloud">
-                                        <a href="blog.html">Microgreen</a>
-                                        <a href="blog.html">farming</a>
-                                        <a href="blog.html">Uncategorized</a>
+                                        <a href="blog.php">Microgreen</a>
+                                        <a href="blog.php">farming</a>
+                                        <a href="blog.php">Uncategorized</a>
                                     </div>
                                 </div>
                                 <div class="col-xl-auto text-xl-end">
@@ -207,18 +202,18 @@
                 <div class="col-lg-4">
                     <aside class="sidebar-area">
                         <div class="widget  ">
-                            <h3 class="widget_title">Recent Posts</h3>
+                            <h3 class="widget_title">Articles recent</h3>
                             <div class="recent-post-wrap">
                                <?php $c=count($article2); if($c>3){$k=$c-3;}else{$k=0;};
                                 while($c>$k){                                
-                                ?>
+                                ?> 
                                 <div class="recent-post">
                                     <div class="media-img">
                                     <a href="blog-details/<?= $article2[$c-1]->matricule?>"><img src="<?= $url_image.$article2[$c-1]->photo ?>" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
                                         <div class="recent-post-meta">
-                                            <a href="blog.html"><?= $article2[$c-1]->date?></a>
+                                            <a href="blog.php"><?= $article2[$c-1]->date?></a>
                                         </div>
                                         <?php if(strlen($article2[$c-1]->titre) > 42){ $article2[$c-1]->titre = substr($article2[$c-1]->titre,0,42)."...";} ?>
                                         <h4 class="post-title"><a class="text-inherit" href="blog-details<?= $article2[$c-1]->matricule?>"><?= $article2[$c-1]->titre ?></a></h4>
@@ -234,7 +229,7 @@
                                     </div>
                                     <div class="media-body">
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">Dec 13, 2024</a>
+                                            <a href="blog.php">Dec 13, 2024</a>
                                         </div>
                                         <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Learn React JS Tutorial For Beginners</a></h4>
                                     </div>
@@ -245,7 +240,7 @@
                                     </div>
                                     <div class="media-body">
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">Jan 08, 2024</a>
+                                            <a href="blog.php">Jan 08, 2024</a>
                                         </div>
                                         <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Learn React JS Tutorial For Beginners</a></h4>
                                     </div>
@@ -256,7 +251,7 @@
                                     </div>
                                     <div class="media-body">
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">Nov 07, 2024</a>
+                                            <a href="blog.php">Nov 07, 2024</a>
                                         </div>
                                         <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Learn React JS Tutorial For Beginners</a></h4>
                                     </div>
@@ -270,28 +265,28 @@
                                 while($k<$i){
                                 ?>
                                 <li>
-                                    <a href="blog.html"><?=$categories1[$k]->nom ?></a>
+                                    <a href="blog.php"><?=$categories1[$k]->nom ?></a>
                                     <span>23</span>
                                 </li>
                                 <?php $k++; }?>
                                  <?php /*<li>
-                                    <a href="blog.html">Grain</a>
+                                    <a href="blog.php">Grain</a>
                                     <span>10</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Agriculture</a>
+                                    <a href="blog.php">Agriculture</a>
                                     <span>09</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Fruit farming</a>
+                                    <a href="blog.php">Fruit farming</a>
                                     <span>14</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Livestock farms</a>
+                                    <a href="blog.php">Livestock farms</a>
                                     <span>12</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Mixed farming</a>
+                                    <a href="blog.php">Mixed farming</a>
                                     <span>12</span>
                                 </li> */ ?>
                             </ul>
@@ -300,11 +295,19 @@
                         <h3 class="widget_title">Services Utiles</h3>
                             <div class="menu-all-pages-container footer-menu">
                                 <ul class="menu">
-                                    <li><a href="about.html">À propos de nous</a></li>
-                                    <li><a href="team.html">Rencontrez notre équipe</a></li>
+                                    <?php foreach($service1 as $key=>$vs) :
+                                    if(strlen($vs->nom)>25){ $vs->nom = substr($vs->nom,0,25)."...";}
+                                        if($key<5){
+                                        ?>
+                                    <li><a href="service-details/<?= $vs->matricule_service ?>"><?= $vs->nom ?></a></li>
+                                    <?php }else{
+                                        break;
+                                    }
+                                    endforeach ?>
+                                    <!--<li><a href="team.html">Rencontrez notre équipe</a></li>
                                     <li><a href="services.html">Services</a></li>
-                                    <li><a href="blog.html">Infos & Media</a></li>
-                                    <li><a href="contact.html">Contactez-nous</a></li>
+                                    <li><a href="blog.php">Infos & Media</a></li>
+                                    <li><a href="contact.html">Contactez-nous</a></li> -->                                    
                                 </ul>
                             </div>
                         </div>

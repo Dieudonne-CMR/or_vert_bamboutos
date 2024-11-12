@@ -30,31 +30,28 @@ endif;
 
 //------- Route page blog
 if(@$url[0]=='blog'):
+    $service11 = recup_services();
     $article1 = recup_article();
     $categories = recup_category();
     include_once("template/$url[0].php");
 endif;
 
 //------- Route page blog
-if(@$url[0]=='contact'):
+if(@$url[0]=='contact'):    
     include_once("template/$url[0].php");
 endif;
 
 //------- Route page blog-details
 if(@$url[0]=='blog-details'):
+    $service1 = recup_services();
     $article2 = recup_article();
     $categories1 = recup_category();
-
     $mat_article= strip_tags(@$url[1]); //==Matricule de l'article
-
     $detai_post=recup_detail_post($mat_article) ;  
-    var_dump($detai_post->titre);
-
     if(empty($detai_post)){
-    // include_once("template/blog.php");
-    header('location:../blog');
+        header("location:../blog");
     }else{
-        include_once("template/blog-details.php");
+        include_once("template/$url[0].php");
     }
 endif;
 
@@ -66,13 +63,13 @@ endif;
 
 //------- Route page service-details
 if(@$url[0]=='service-details'):
-    $mat_service= @$url[1];
+    $mat_service= strip_tags(@$url[1]); 
     $det_service= Recuper_service_detail($mat_service);
-    // var_dump($det_service);
-    if(empty($det_service)):
-        // header("location: ../home");
-    endif;
+    if(empty($det_service)){
+         header("location: ../home");
+    }else{
     include_once("template/$url[0].php");
+    }
 endif;
 
 

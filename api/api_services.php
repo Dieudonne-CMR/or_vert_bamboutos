@@ -39,8 +39,8 @@ function recup_services(){
     $service=[];
     $data= recup_services();
     foreach($data as $value){
-        if($value->matricule_entreprise == $mat_Services){
-            $services[]=$value;
+        if($value->matricule_service == $mat_Services){
+            $service []=$value;
         }
     }
     return $service;
