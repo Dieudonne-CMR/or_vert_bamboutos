@@ -380,8 +380,8 @@
               if($key<6){ ?>
                 <div class="col-lg-4">
                     <div class="vs-blog blog-single">
-                        <div class="blog-img">
-                            <a href="blog-details.html"><img src="<?= $url_image . $value1->photo ?>" alt="Blog Image"></a>
+                        <div class="blog-img" style="height: 15rem;">
+                            <a href="blog-details.html"><img src="<?= $url_image . $value1->photo ?>" style="height: 100%; width: 100%" alt="Blog Image"></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">

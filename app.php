@@ -44,9 +44,15 @@ endif;
 if(@$url[0]=='blog-details'):
     $article2 = recup_article();
     $categories1 = recup_category();
-    $mat_article= @$url[1]; //==Matricule de l'article
-    if($mat_article==''){
-    include_once("template/blog.php");
+
+    $mat_article= strip_tags(@$url[1]); //==Matricule de l'article
+
+    $detai_post=recup_detail_post($mat_article) ;  
+    var_dump($detai_post->titre);
+
+    if(empty($detai_post)){
+    // include_once("template/blog.php");
+    header('location:../blog');
     }else{
         include_once("template/blog-details.php");
     }
