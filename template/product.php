@@ -60,7 +60,7 @@
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="home.php">Acceuil</a></li>
+                    <li><a href="home">Acceuil</a></li>
                     <li>Nos produits</li>
                 </ul>
             </div> 
@@ -75,7 +75,7 @@
                 <div class="row justify-content-between align-items-center">
                     <div class="col-md-auto">
                         <div class="col-auto">
-                            <p class="woocommerce-result-count">Showing 1–12 of 13 results</p>
+                            <p class="woocommerce-result-count">Affichage de 1 à 12 sur 13 résultats</p>
                         </div>
                     </div>
                     <div class="col-md-auto">
@@ -83,12 +83,11 @@
                             <div class="col-sm-auto">
                                 <form class="woocommerce-ordering" method="get">
                                     <select name="orderby" class="orderby" aria-label="Shop order">
-                                        <option value="menu_order" selected="selected">Default Sorting</option>
-                                        <option value="popularity">Sort by popularity</option>
-                                        <option value="rating">Sort by average rating</option>
-                                        <option value="date">Sort by latest</option>
-                                        <option value="price">Sort by price: low to high</option>
-                                        <option value="price-desc">Sort by price: high to low</option>
+                                        <?php foreach(recup_categories() as $value): ?>
+                                            <option value="<?= $value ->id_website  ?>"><?= $value -> libelle ?></option>
+                                        <?php endforeach; ?>
+                                            <!-- <option value="menu_order" selected="selected">Default Sorting</option> -->
+                                        
                                     </select>
                                 </form>
                             </div>
@@ -103,254 +102,40 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="product-style1">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-1-1.png" alt="product img">
-                        </div>
-                        <div class="product-meta">30% Off</div>
-                        <div class="product-about">
-                            <p class="text">800 ML</p>
-                            <h2 class="product-title"><a href="product-details.php">Coconut Oil Jar</a></h2>
-                            <span class="price"> <del>$18.00</del>$14.00</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                <?php foreach( $produits as $value):?>
+   
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="product-style1">
+                            <div class="product-img">
+                                <img src="<?= $image_produit . $value->lien_img_vedette ?>" alt="product img">
+                            </div>
+                            <div class="product-meta">30% Off</div>
+                            <div class="product-about">
+                                <p class="text"><?=  recup_detail_cat($value ->mat_categorie_art)[0]  -> libelle; ?></p>
+                                <h2 class="product-title"><a href="product-details/<?=  $value -> mat_article ?>"><?= $value ->nom_art ?></a></h2>
+                                <span class="price"> <del><?=  $value ->prix_fictif ?></del><?=  $value ->prix_reel ?></span>
+                                <div class="rating"> 
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="social-style">
+                                <ul>
+                                    <li>
+                                        <a class="main-icon" href="#"><i class="far fa-shopping-basket"></i></a>
+                                        <ul class="sub-list">
+                                            <li><a href="#"><i class="fas fa-exchange"></i></a></li>
+                                            <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="social-style">
-                            <ul>
-                                <li>
-                                    <a class="main-icon" href="#"><i class="far fa-shopping-basket"></i></a>
-                                    <ul class="sub-list">
-                                        <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="product-style1">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-1-2.png" alt="product img">
-                        </div>
-                        <div class="product-meta">30% Off</div>
-                        <div class="product-about">
-                            <p class="text">800 ML</p>
-                            <h2 class="product-title"><a href="product-details.php">PureFroots Jar</a></h2>
-                            <span class="price"> <del>$18.00</del>$14.00</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="social-style">
-                            <ul>
-                                <li>
-                                    <a class="main-icon" href="#"><i class="far fa-shopping-basket"></i></a>
-                                    <ul class="sub-list">
-                                        <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="product-style1">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-1-3.png" alt="product img">
-                        </div>
-                        <div class="product-meta">30% Off</div>
-                        <div class="product-about">
-                            <p class="text">600 ML</p>
-                            <h2 class="product-title"><a href="product-details.php">Nature's Bounty</a></h2>
-                            <span class="price"> <del>$12.00</del>$14.00</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="social-style">
-                            <ul>
-                                <li>
-                                    <a class="main-icon" href="#"><i class="far fa-shopping-basket"></i></a>
-                                    <ul class="sub-list">
-                                        <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="product-style1">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-1-4.png" alt="product img">
-                        </div>
-                        <div class="product-meta">32% Off</div>
-                        <div class="product-about">
-                            <p class="text">900 ML</p>
-                            <h2 class="product-title"><a href="product-details.php">Organic Harvest</a></h2>
-                            <span class="price"> <del>$16.00</del>$15.00</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="social-style">
-                            <ul>
-                                <li>
-                                    <a class="main-icon" href="#"><i class="far fa-shopping-basket"></i></a>
-                                    <ul class="sub-list">
-                                        <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="product-style1">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-1-5.png" alt="product img">
-                        </div>
-                        <div class="product-meta">40% Off</div>
-                        <div class="product-about">
-                            <p class="text">700 ML</p>
-                            <h2 class="product-title"><a href="product-details.php">Fresh & Rooted</a></h2>
-                            <span class="price"> <del>$28.00</del>$19.00</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="social-style">
-                            <ul>
-                                <li>
-                                    <a class="main-icon" href="#"><i class="far fa-shopping-basket"></i></a>
-                                    <ul class="sub-list">
-                                        <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="product-style1">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-1-6.png" alt="product img">
-                        </div>
-                        <div class="product-meta">30% Off</div>
-                        <div class="product-about">
-                            <p class="text">800 ML</p>
-                            <h2 class="product-title"><a href="product-details.php">Froots & Greens</a></h2>
-                            <span class="price"> <del>$18.00</del>$14.00</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="social-style">
-                            <ul>
-                                <li>
-                                    <a class="main-icon" href="#"><i class="far fa-shopping-basket"></i></a>
-                                    <ul class="sub-list">
-                                        <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="product-style1">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-1-7.png" alt="product img">
-                        </div>
-                        <div class="product-meta">30% Off</div>
-                        <div class="product-about">
-                            <p class="text">800 ML</p>
-                            <h2 class="product-title"><a href="product-details.php">Earthy Delights</a></h2>
-                            <span class="price"> <del>$18.00</del>$14.00</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="social-style">
-                            <ul>
-                                <li>
-                                    <a class="main-icon" href="#"><i class="far fa-shopping-basket"></i></a>
-                                    <ul class="sub-list">
-                                        <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="product-style1">
-                        <div class="product-img">
-                            <img src="assets/img/product/product-1-8.png" alt="product img">
-                        </div>
-                        <div class="product-meta">30% Off</div>
-                        <div class="product-about">
-                            <p class="text">800 ML</p>
-                            <h2 class="product-title"><a href="product-details.php">Purely Picked</a></h2>
-                            <span class="price"> <del>$18.00</del>$14.00</span>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="social-style">
-                            <ul>
-                                <li>
-                                    <a class="main-icon" href="#"><i class="far fa-shopping-basket"></i></a>
-                                    <ul class="sub-list">
-                                        <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach ?>
             </div>
             <div class="vs-pagination text-center mb-0 mt-4">
                 <ul>
@@ -372,42 +157,44 @@
             <div class="row">
                 <div class="offer-deal">
                     <div class="row gy-5 gx-5 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="row align-items-center" data-bg-src="assets/img/about/about-bg-1-2.jpg">
-                                <div class="col-lg-6 col-md-6 px-0">
-                                    <div class="deal-offer white-style">
-                                        <span class="offer-subtitle">Enjoy Healthy Food</span>
-                                        <h2 class="offer-title h3">Eat Organic</h2>
-                                        <p class="offer-text">100% Natural and pure organic products</p>
-                                        <span class="price"> <del>$18.00</del>$14.00</span>
-                                        <a href="blog.html" class="vs-btn">Shop Now</a>
+                        
+                            <div class="col-lg-6">
+                                <div class="row align-items-center" data-bg-src="assets/img/about/about-bg-1-2.jpg">
+                                    <div class="col-lg-6 col-md-6 px-0">
+                                        <div class="deal-offer white-style">
+                                            <span class="offer-subtitle"><?= $produits[0]->nom_art ?></span>
+                                            <h2 class="offer-title h3"><?=  recup_detail_cat($produits[0] ->mat_categorie_art)[0]  -> libelle; ?></h2>
+                                            <p class="offer-text"><?= court_text($produits[0]->courte_description, 50 ) ?></p>
+                                            <span class="price"> <del><?= $produits[0]->prix_fictif ?></del><?= $produits[0]->prix_reel ?></span>
+                                            <a href="product-details/<?=  $produits[0] -> mat_article ?>" class="vs-btn">Acheter</a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 px-0">
-                                    <div class="offer-img">
-                                        <img src="assets/img/about/deal-offer1.png" alt="offer">
+                                    <div class="col-lg-6 col-md-6 px-0">
+                                        <div class="offer-img">
+                                            <img src="<?= $image_produit . $produits[0]->lien_img_vedette ?>" alt="offer">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
+
+                       <div class="col-lg-6">
                             <div class="row align-items-center" data-bg-src="assets/img/about/about-bg-1-1.jpg">
                                 <div class="col-lg-6 col-md-6 px-0">
                                     <div class="deal-offer">
-                                        <span class="offer-subtitle">Organic Deal</span>
-                                        <h2 class="offer-title h3">Pack of 2</h2>
-                                        <p class="offer-text">100% Natural and pure organic products</p>
-                                        <span class="price"> <del>$18.00</del>$14.00</span>
-                                        <a href="blog.html" class="vs-btn">Shop Now</a>
+                                        <span class="offer-subtitle"><?= $produits[1]->nom_art ?></span>
+                                        <h2 class="offer-title h3"><?=  recup_detail_cat($produits[0] ->mat_categorie_art)[0]  -> libelle; ?></h2>
+                                        <p class="offer-text"><?= court_text($produits[1]->courte_description, 50 ) ?></p>
+                                        <span class="price"> <del><?= $produits[1]->prix_fictif ?></del><?= $produits[1]->prix_reel ?></span>
+                                        <a href="product-details/<?=  $produits[0] -> mat_article ?>" class="vs-btn">Acheter</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 px-0">
                                     <div class="offer-img">
-                                        <img src="assets/img/about/deal-offer1.png" alt="offer">
+                                        <img src="<?= $image_produit . $produits[1]->lien_img_vedette ?>" alt="offer">
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                  </div>
             </div>

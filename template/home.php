@@ -263,8 +263,8 @@
             <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="title-left">
-                        <span class="sec-subtitle">Our WOrking PROJECT</span>
-                        <h2 class="sec-title">Latest From Our Work</h2>
+                        <span class="sec-subtitle">Nos produits</span>
+                        <h2 class="sec-title">Nos produits </h2>
                     </div>
                     <div class="title-arraw d-lg-block d-none">
                         <button class="icon-btn slick-prev" data-slick-prev=".project-slider"><i class="fas fa-angle-double-left"></i></button>
@@ -273,22 +273,27 @@
                 </div>
             </div>
             <div class="row vs-carousel project-slider" data-slide-show="3" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="false" data-center-mode="true">
-                <div class="col-lg-4">
-                    <div class="project-style1">
-                        <div class="project-img">
-                            <img src="assets/img/project/project-img-1-1.jpg" alt="project-img">
-                            <span class="price">$50.00</span>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title"><a href="service-details.php">Agriculture</a></h3>
-                            <p class="project-text"><i class="far fa-map-marker-alt"></i>California, TX 70240</p>
-                            <div class="link-btn">
-                                <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
+                <?php foreach( $produits as $key=> $value): ?>
+                    <?php if($key <5): ?>
+                        <div class="col-lg-4">
+                            <div class="project-style1">
+                                <div class="project-img">
+                                    <img src="<?= $image_produit . $value->lien_img_vedette ?>" alt="project-img">
+                                    <span class="price"><?= $value ->prix_reel ?> Fcfa</span>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title"><a href="service-details.php"><?= $value ->nom_art ?></a></h3>
+                                    <p class="project-text"><i class="far fa-map-marker-alt"></i><?= court_text($value ->courte_description, 22)?></p>
+                                    <div class="link-btn">
+                                        <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
+                    <?php else: break ; endif ?>
+                <?php endforeach ?>
+
+                <?php /*<div class="col-lg-4">
                     <div class="project-style1">
                         <div class="project-img">
                             <img src="assets/img/project/project-img-1-2.jpg" alt="project-img">
@@ -348,7 +353,7 @@
                         </div>
                         
                     </div>
-                </div>
+                </div> */?>
             </div>
             <span class="notice">Besoin d'aide pour passer à l'agriculture biologique ou pratiquer une agriculture plus durable ? <a href="tel:+<?= $telephone  ?>">Téléphone:<?= $telephone  ?> </a> </span>
         </div>

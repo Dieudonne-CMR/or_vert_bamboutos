@@ -5,6 +5,7 @@
 <!-- Mirrored from html.vecurosoft.com/farmix/demo/product-details.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:53 GMT -->
 <head>
     <meta charset="utf-8">
+    <base href="../">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <?php $titre='Produits detail'; include "includes/meta.php" ?>
 

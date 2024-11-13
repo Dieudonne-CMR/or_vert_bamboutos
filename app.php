@@ -1,6 +1,8 @@
 <?php 
 // include "includes/main_header/main_header.php" ;  
 include "api/cle_api.php";
+include "api_shops/cle_api_shop.php";
+include "includes/fonctions/fonctions.php";
 
 $url="";
 
@@ -11,10 +13,12 @@ endif;
 //====== fin
 
 //--------Route page d'accuil
-if(@$url[0]=='home' || @$url[0]==''):
+if(@$url[0] == 'home' || @$url[0]==''):
     $services = recup_services();
     $equipe = info_equipe();
     $article = recup_article();
+    $produits =  recup_produict();
+    
     include_once("template/home.php");
 endif;
 
@@ -25,8 +29,17 @@ endif;
 
 //------- Route page boutique
 if(@$url[0]=='product'):
+    $produits =  recup_produict();
     include_once("template/$url[0].php");
 endif;
+
+//------- Route page blog
+if(@$url[0]=='product-details'): 
+    $mat_produit=  strip_tags($url[0]);
+    $detail_produit= recup_produict_detail($mat_produit);
+    include_once("template/$url[0].php");
+endif;
+
 
 //------- Route page blog
 if(@$url[0]=='blog'):
