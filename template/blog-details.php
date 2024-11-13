@@ -62,7 +62,7 @@
     <div class="breadcumb-wrapper Cover all esports & gamers needs" data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">DÉTAILS DE L'ARTICLE</h1>
+                <h1 class="breadcumb-title"><?=  $detai_post->titre ?></h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
@@ -82,10 +82,11 @@
                     <div class="vs-blog">
                         <div class="blog-content">                            
                             <div class="mb-30">                             
-                                <img src="<?= $url_image.$ $detai_post->photo ?>" alt="blog image">
+                                <img src="<?= $url_image
+                                . $detai_post->photo ?>" alt="blog image">
                             </div>
                             <div class="blog-meta">
-                                <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
+                                <a href="#"><i class="fal fa-tag"></i><?= info_cat_post($detai_post->id_categorie)->nom ?></a>
                             </div>
                             <h2 class="blog-title"><a href="blog-details/<?=  $detai_post->matricule?>"><?=  $detai_post->titre ?></a></h2>
                             <p class="blog-text"><?=  $detai_post->content ?>

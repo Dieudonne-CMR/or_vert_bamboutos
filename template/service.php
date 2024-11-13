@@ -75,7 +75,7 @@
     <!--==============================
     Selling Area
     ============================== -->
-    <section class="selling-layout1 bg-white space-bottom">
+    <?php /*<section class="selling-layout1 bg-white space-bottom">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-6">
@@ -115,11 +115,57 @@
             </div>
         </div>
         <div class="shape-mockup moving z-index d-none d-lg-block" style="right: 0%; bottom: 22%;"><img src="assets/img/shep/selling-shep-1.png" alt="shapes"></div>
+    </section> */?>
+
+    <section class="selling-layout1 bg-smoke space-bottom">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6">
+                    <div class="selling-style1 space-top">
+                        <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                            <span class="sec-subtitle">Bienvenue chez <?= $nom_entreprise ?></span>
+                            <h2 class="sec-title"><?= !empty($motivation_titre) ? $motivation_titre: 'Agriculture et agriculture biologique' ?> </h2>
+                        </div>
+                        <div class="list-style1"> 
+                            <?php if(!empty($motivation_desription)):?>
+                            <?= $motivation_desription ?>
+                            <?php else: ?>
+                            <ul class="list-unstyled">
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Before you can dive-in to creating an effective user experience</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>intuitive user experience for your users online.</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Videos within it, each element influences</li>
+                            </ul>
+                            <?php endif ?>
+                        </div>
+                        <div class="row g-3 vs-carousel" data-arrows="false" data-dots="true" data-autoplay="true" data-slide-show="2">
+                            <div class="col-auto">
+                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-1.png" alt="Blog Image"></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="selling-img">
+                        <img src="<?= !empty($motivation_img)? $motivation_img :'assets/img/service/selling-img-1-1.png' ?> " style="border-radius: 0 0 40% 40%;" alt="selling-img">
+                        <div class="img1">
+                            <img src="assets/img/service/selling-img-1-2.png" alt="selling-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape-mockup moving z-index d-none d-xxl-block" style="right: 0%; bottom: 22%;"><img src="assets/img/shep/selling-shep-1.png" alt="shapes"></div>
     </section>
     <!--==============================
     Service Area
     ============================== -->
-    <div class="service-layout1 space-bottom mt-0">
+    <div class="service-layout1 space-bottom mt-4">
         <div class="container">
             <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="false">
              <?php                                                                                                        foreach($services as $values ) : ?>
@@ -206,14 +252,14 @@
     <!--==============================
     Provide Area
     ============================== -->
-    <section class="provide-layout1 space" data-bg-src="assets/img/bg/provide-bg-1.jpg">
+    <section class="provide-layout1 space" data-bg-src="https://th.bing.com/th/id/OIP.wmc5871_N_LWkySo8fJZ6gHaEK?rs=1&pid=ImgDetMain">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 col-lg-12">
                     <div class="provide-style1">
                         <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
-                            <span class="sec-subtitle">Welcome to Farmix</span>
-                            <h2 class="sec-title">What We Provide</h2>
+                            <span class="sec-subtitle">Bienvenue <?= $nom_entreprise ?></span>
+                            <h2 class="sec-title">Ce que nous proposons</h2>
                         </div>
                         <div class="row g-5">
                             <div class="col-lg-6">
@@ -372,53 +418,7 @@
     <!--==============================
     Brand Area
     ============================== -->
-    <div class="brand-layout1 space-bottom">
-        <div class="container">
-            <div class="row vs-carousel z-index-common" data-arrows="false" data-wow-delay="0.4s" data-slide-show="6"
-                data-lg-slide-show="4" data-md-slide-show="4" data-xs-slide-show="2" data-center-mode="true" data-autoplay="true">
-                    <div class="col-auto">
-                        <div class="bran-img">
-                            <img src="assets/img/brand/brand-1.png" alt="brand">
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="bran-img">
-                            <img src="assets/img/brand/brand-2.png" alt="brand">
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="bran-img">
-                            <img src="assets/img/brand/brand-3.png" alt="brand">
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="bran-img">
-                            <img src="assets/img/brand/brand-4.png" alt="brand">
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="bran-img">
-                            <img src="assets/img/brand/brand-5.png" alt="brand">
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="bran-img">
-                            <img src="assets/img/brand/brand-6.png" alt="brand">
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="bran-img">
-                            <img src="assets/img/brand/brand-1.png" alt="brand">
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="bran-img">
-                            <img src="assets/img/brand/brand-2.png" alt="brand">
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </div>
+    <?php include "includes/section_partenaire.php" ?>
 
 
 

@@ -31,7 +31,7 @@ endif;
 //------- Route page blog
 if(@$url[0]=='blog'):
     $service11 = recup_services();
-    $article1 = recup_article();
+    $article1 = $obj_tous_post;
     $categories = recup_category();
     include_once("template/$url[0].php");
 endif;
@@ -48,6 +48,7 @@ if(@$url[0]=='blog-details'):
     $categories1 = recup_category();
     $mat_article= strip_tags(@$url[1]); //==Matricule de l'article
     $detai_post=recup_detail_post($mat_article) ;  
+    // var_dump($detai_post);
     if(empty($detai_post)){
         header("location:../blog");
     }else{

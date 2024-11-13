@@ -4,7 +4,8 @@
 
 <!-- Mirrored from html.vecurosoft.com/farmix/demo/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:36 GMT -->
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> 
+    <?= isset($url[1]) ? "<base href=''> ":'' ?>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <?php $titre='blog'; include "includes/meta.php" ?>
 
@@ -246,7 +247,7 @@
                                 while($k<$i){
                                 ?>
                                 <li>
-                                    <a href="blog.html"><?=$categories[$k]->nom ?></a>
+                                    <a href="blog/<?= $categories[$k]->matricule_cat ?>"><?=$categories[$k]->nom ?></a>
                                     <span><?= count_produit_cat($categories[$k]->matricule_cat) ?></span>
                                 </li>
                                 <?php $k++; }?>
