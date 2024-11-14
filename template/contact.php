@@ -65,7 +65,7 @@
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="home.php">Acceuil</a></li>
+                    <li><a href="home">Acceuil</a></li>
                     <li>Contact</li>
                 </ul>
             </div> 
@@ -132,7 +132,7 @@
                             <div class="media-style1">
                                 <div class="media-icon"><img src="assets/img/icon/icon-1-1.png" alt="icon"></div>
                                 <div class="media-body">
-                                    <h3 class="media-title">Phone No:</h3>
+                                    <h3 class="media-title">Numero:</h3>
                                     <p class="media-info"><a href="tel:+88013004451">+88 013 00 44 51</a> <br> Mon - Sat: 09.00 to 06.00</p>
                                 </div>
                             </div>
@@ -167,64 +167,73 @@
             <div class="row gx-5">
                 <div class="col-lg-12">
                     <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
-                        <span class="sec-subtitle">Any Question Please?</span>
-                        <h2 class="sec-title">Common Questions & Answers</h2>
+                        <span class="sec-subtitle">Une question s'il vous plaît ?</span>
+                        <h2 class="sec-title">Questions et réponses courantes</h2>
                     </div>
                     <div class="accordion-style1">
                         <div class="accordion" id="accordionExample">
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                100% natural and 100% organic food?
+                              Une alimentation 100% naturelle et 100% biologique ?
                               </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                Suspendisse potenti. Maecenas dapibus ac tellus.
+                              L'avocat est un fruit extrêmement nutritif et populaire, apprécié dans une multitude de plats, des salades aux guacamoles, en passant par les smoothies. 
+                              Mais lorsqu'on parle d'un avocat 100% naturel et 100% biologique, il s'agit de deux aspects essentiels : 
+                              la naturelle fait référence à l'absence de traitements chimiques ou de modifications génétiques, 
+                              tandis que la biologique renvoie à des méthodes de culture respectueuses de l'environnement, 
+                              sans l'utilisation de produits chimiques de synthèse (engrais chimiques, pesticides, herbicides) et
+                              dans le respect des normes biologiques certifiées.
                               </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                What agricultural products are produced?
+                              Quels produits agricoles sont produits ?
                               </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                    ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                    Suspendisse potenti. Maecenas dapibus ac tellus.
+                              Nous produisons des produits végétaux tels que <br/> Les Céréales : blé, maïs, riz, orge, avoine, seigle <br/>
+                              Légumineuses : pois, lentilles, haricots, pois chiches <br/>
+                              Fruits : pommes, bananes, oranges
                                 </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                What are the top 5 agriculture products?
+                              Quels sont les 5 principaux produits agricoles ?
                               </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                    ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                    Suspendisse potenti. Maecenas dapibus ac tellus.
+                                Les principaux produits agricoles sont les suivants : Maïs, Blé, Riz, Pommes de terre, Soja
                                 </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Which agricultural product is most important and why?
+                              Quel produit agricole est le plus important et pourquoi ?
                               </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                    ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                    Suspendisse potenti. Maecenas dapibus ac tellus.
+                                Le maïs est souvent considéré comme le produit agricole le plus important au monde. Voici pourquoi : <br\>
+
+                                1.Aliment de base mondial : Le maïs est une source majeure de calories et de nutriments pour l'alimentation humaine dans de nombreuses régions, notamment en Amérique latine, en Afrique et en Asie. <br\>
+
+                                2.Utilisation diversifiée : En plus de son utilisation directe pour l'alimentation humaine (en grains, farine, huile, etc.), il est aussi largement utilisé pour l'alimentation animale, ce qui en fait une composante clé de l'agriculture animale. <br\>
+
+                                3.Industrie et biocarburants : Le maïs est un ingrédient clé dans la production d’éthanol (biocarburant), ce qui en fait un produit stratégique dans les domaines de l’énergie et de l’industrie chimique. <br\>
+
+                                4.Production à grande échelle : Il est cultivé dans presque tous les continents, avec de vastes surfaces agricoles dédiées à sa culture, particulièrement aux États-Unis, qui sont le premier producteur mondial. <br\>
+
+                                5.Adaptabilité : Le maïs peut être cultivé dans une large gamme de climats et de sols, ce qui en fait une culture adaptable et résistante.
                                 </div>
                             </div>
                           </div>

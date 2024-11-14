@@ -97,13 +97,13 @@
                                 <div class="col-xl-auto">
                                     <span class="share-links-title">Tags:</span>
                                     <div class="tagcloud">
-                                        <a href="blog.php">Microgreen</a>
-                                        <a href="blog.php">farming</a>
-                                        <a href="blog.php">Uncategorized</a>
+                                        <a href="blog">Microvert</a>
+                                        <a href="blog">Agriculture</a>
+                                        <a href="blog">Non classé</a>
                                     </div>
                                 </div>
                                 <div class="col-xl-auto text-xl-end">
-                                    <span class="share-links-title">Share:</span>
+                                    <span class="share-links-title">Partager:</span>
                                     <ul class="social-links">
                                         <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -214,7 +214,7 @@
                                     </div>
                                     <div class="media-body">
                                         <div class="recent-post-meta">
-                                            <a href="blog.php"><?= $article2[$c-1]->date?></a>
+                                            <a href="blog"><?= $article2[$c-1]->date?></a>
                                         </div>
                                         <?php if(strlen($article2[$c-1]->titre) > 42){ $article2[$c-1]->titre = substr($article2[$c-1]->titre,0,42)."...";} ?>
                                         <h4 class="post-title"><a class="text-inherit" href="blog-details<?= $article2[$c-1]->matricule?>"><?= $article2[$c-1]->titre ?></a></h4>
