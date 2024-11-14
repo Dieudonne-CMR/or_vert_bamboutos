@@ -15,6 +15,7 @@ if(@$url[0]=='home' || @$url[0]==''):
     $services = recup_services();
     $equipe = info_equipe();
     $article = recup_article();
+    $category = recup_category();
     include_once("template/home.php");
 endif;
 
@@ -59,6 +60,7 @@ endif;
 //------- Route page service
 if(@$url[0]=='service'):
     $services = recup_services();
+    $article2 = recup_article();
     include_once("template/$url[0].php");
 endif;
 

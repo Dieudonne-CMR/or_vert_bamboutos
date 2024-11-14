@@ -2,7 +2,7 @@
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from html.vecurosoft.com/farmix/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:28:42 GMT -->
+<!-- Mirrored from html.vecurosoft.com/farmix/demo/index by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:28:42 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -74,7 +74,7 @@
                     <div class="hero-content text-center">
                       <h1 class="hero-title"><?= $titre_banniere1 ?></h1>
                       <p class="hero-text"><?= $description_baniere1 ?></p>
-                      <a href="about.html" class="vs-btn">Discovre More</a>
+                      <a href="about" class="vs-btn">En savoir plus</a>
                     </div>
                   </div>
                 </div>
@@ -87,9 +87,9 @@
                     <div class="hero-content text-center">
                       <h1 class="hero-title"><?= $titre_banniere2 ?></h1>
                       <p class="hero-text"><?= $description_baniere2 ?></p>
-                      <a href="about.html" class="vs-btn">Discovre More</a>
+                      <a href="about" class="vs-btn">En savoir plus</a>
                     </div>
-                  </div>
+                  </div> 
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@
                     <div class="hero-content text-center">
                       <h1 class="hero-title"><?= $titre_banniere3 ?></h1>
                       <p class="hero-text"><?= $description_baniere3 ?></p>
-                      <a href="about.html" class="vs-btn">Lire plus</a>
+                      <a href="about" class="vs-btn">Lire plus</a>
                     </div>
                   </div>
                 </div>
@@ -220,22 +220,30 @@
                             <?= $motivation_desription ?>
                             <?php else: ?>
                             <ul class="list-unstyled">
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Before you can dive-in to creating an effective user experience</li>
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>intuitive user experience for your users online.</li>
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Videos within it, each element influences</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Avant de pouvoir vous lancer dans la création d'une expérience utilisateur efficace</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Expérience utilisateur intuitive pour vos utilisateurs en ligne.</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Vidéos à l'intérieur, chaque élément influence.</li>
                             </ul>
                             <?php endif ?>
                         </div>
                         <div class="row g-3 vs-carousel" data-arrows="false" data-dots="true" data-autoplay="true" data-slide-show="2">
+                        <?php foreach($article as $key=>$val1) :
+                               if($key<3) { ?>                            
                             <div class="col-auto">
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-1.png" alt="Blog Image"></a>
+                                <a href="blog-details/<?= $val1->matricule?>"><img src="<?= $url_image.$val1->photo ?>" alt="Blog Image"></a>
+                            </div>
+                              <?php }else{
+                                break;
+                              }
+                              endforeach  ?>
+                         <?php /*   
+                            <div class="col-auto">
+                                <a href="blog-details"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
                             </div>
                             <div class="col-auto">
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
+                                <a href="blog-details"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
                             </div>
-                            <div class="col-auto">
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
-                            </div>
+                            */ ?>
                         </div>
                     </div>
                 </div>
@@ -263,8 +271,8 @@
             <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="title-left">
-                        <span class="sec-subtitle">Our WOrking PROJECT</span>
-                        <h2 class="sec-title">Latest From Our Work</h2>
+                        <span class="sec-subtitle">NOTRE PROJET DE TRAVAIL</span>
+                        <h2 class="sec-title">Dernières nouveautés de notre travail</h2>
                     </div>
                     <div class="title-arraw d-lg-block d-none">
                         <button class="icon-btn slick-prev" data-slick-prev=".project-slider"><i class="fas fa-angle-double-left"></i></button>
@@ -280,7 +288,7 @@
                             <span class="price">$50.00</span>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title"><a href="service-details.php">Agriculture</a></h3>
+                            <h3 class="project-title"><a href="#">Agriculture</a></h3>
                             <p class="project-text"><i class="far fa-map-marker-alt"></i>California, TX 70240</p>
                             <div class="link-btn">
                                 <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
@@ -295,7 +303,7 @@
                             <span class="price">$50.00</span>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title"><a href="service-details.php">Old Hall Farm</a></h3>
+                            <h3 class="project-title"><a href="#">Ferme du vieux hall</a></h3>
                             <p class="project-text"><i class="far fa-map-marker-alt"></i>California, TX 70240</p>
                             <div class="link-btn">
                                 <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
@@ -310,7 +318,7 @@
                             <span class="price">$50.00</span>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title"><a href="service-details.php">Gosberton Bank Nursery</a></h3>
+                            <h3 class="project-title"><a href="service-details.php">Pépinière de la banque Gosberton</a></h3>
                             <p class="project-text"><i class="far fa-map-marker-alt"></i>California, TX 70240</p>
                             <div class="link-btn">
                                 <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
@@ -325,7 +333,7 @@
                             <span class="price">$50.00</span>
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title"><a href="service-details.php">Starcross Farm</a></h3>
+                            <h3 class="project-title"><a href="#">Ferme Starcross</a></h3>
                             <p class="project-text"><i class="far fa-map-marker-alt"></i>California, TX 70240</p>
                             <div class="link-btn">
                                 <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
@@ -340,7 +348,7 @@
                             <span class="price">$50.00</span>
                         </div>
                         <div class="project-content"> 
-                            <h3 class="project-title"><a href="service-details.php">Agriculture</a></h3>
+                            <h3 class="project-title"><a href="#">Agriculture</a></h3>
                             <p class="project-text"><i class="far fa-map-marker-alt"></i>California, TX 70240</p>
                             <div class="link-btn">
                                 <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
@@ -381,19 +389,18 @@
                 <div class="col-lg-4">
                     <div class="vs-blog blog-single">
                         <div class="blog-img" style="height: 15rem;">
-                            <a href="blog-details.html"><img src="<?= $url_image . $value1->photo ?>" style="height: 100%; width: 100%" alt="Blog Image"></a>
+                            <a href="blog-details/<?= $value1->matricule?>"><img src="<?= $url_image . $value1->photo ?>" style="height: 100%; width: 100%" alt="Blog Image"></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
-                                <a href="#"><i class="fal fa-tag"></i><?= $value1->id_categorie ?></a>
+                                <a href="#"><i class="fal fa-tag"></i><?= info_cat_post($value1->id_categorie)->nom ?></a>
                             </div>
                             <h2 class="blog-title"><a href="blog-details/<?=  $value1->matricule ?>"><?= $value1->titre ?></a></h2>
                             <div class="blog-inner-author">
-                                <img src="<?= info_admin($value1->matricule_admin)->profil ?>" alt="blog author">
+                                <img src="<?=!empty(info_admin($value1->matricule_admin)->profil) ? $lien_profil.info_admin($value1->matricule_admin)->profil : 'https://cdn-icons-png.flaticon.com/128/3135/3135715.png'?>" alt="<?= info_admin($value1->matricule_admin)->nom?>" alt="blog author">
                                 <div class="text">
-                                    Par <a href="blog.html"><?= info_admin($value1->matricule_admin)->nom                     
-                                    ?></a>
-                                    <a href="blog.html" class="blog-date"><?= $value1->date ?></a>
+                                    Par <a href="javascript:void(0)"><?= info_admin($value1->matricule_admin)->nom?></a>
+                                    <a href="blog-details/<?= $value1->matricule?>" class="blog-date"><?= $value1->date ?></a>
                                 </div>
                             </div>
                         </div>
@@ -418,18 +425,18 @@
                 <div class="col-lg-4">
                     <div class="vs-blog blog-single">
                         <div class="blog-img">
-                            <a href="blog-details.html"><img src="<?= $url_image . $value1->photo ?>" alt="Blog Image"></a>
+                            <a href="blog-details"><img src="<?= $url_image . $value1->photo ?>" alt="Blog Image"></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details.html"><?= $value1->titre ?></a></h2>
+                            <h2 class="blog-title"><a href="blog-details"><?= $value1->titre ?></a></h2>
                             <div class="blog-inner-author">
                                 <img src="<?= $url_image . $value1->photo ?>" alt="blog author">
                                 <div class="text">
-                                    by <a href="blog.html"><?= $value1->user_admin ?></a>
-                                    <a href="blog.html" class="blog-date"><?= $value1->date ?></a>
+                                    by <a href="blog"><?= $value1->user_admin ?></a>
+                                    <a href="blog" class="blog-date"><?= $value1->date ?></a>
                                 </div>
                             </div>
                         </div>
@@ -441,18 +448,18 @@
                 <div class="col-lg-4">
                     <div class="vs-blog blog-single">
                         <div class="blog-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-img-1-2.jpg" alt="Blog Image"></a>
+                            <a href="blog-details"><img src="assets/img/blog/blog-img-1-2.jpg" alt="Blog Image"></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details.html">Harvest London Releases Their Initial Annual</a></h2>
+                            <h2 class="blog-title"><a href="blog-details">Harvest London Releases Their Initial Annual</a></h2>
                             <div class="blog-inner-author">
                                 <img src="assets/img/blog/blog-auth-1-1.png" alt="blog author">
                                 <div class="text">
-                                    by <a href="blog.html">Jakki James</a>
-                                    <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                    by <a href="blog">Jakki James</a>
+                                    <a href="blog" class="blog-date">Dec 13, 2024</a>
                                 </div>
                             </div>
                         </div>
@@ -461,18 +468,18 @@
                 <div class="col-lg-4">
                     <div class="vs-blog blog-single">
                         <div class="blog-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-img-1-3.jpg" alt="Blog Image"></a>
+                            <a href="blog-details"><img src="assets/img/blog/blog-img-1-3.jpg" alt="Blog Image"></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details.html">First Annual Report by Harvest is Published</a></h2>
+                            <h2 class="blog-title"><a href="blog-details">First Annual Report by Harvest is Published</a></h2>
                             <div class="blog-inner-author">
                                 <img src="assets/img/blog/blog-auth-1-1.png" alt="blog author">
                                 <div class="text">
-                                    by <a href="blog.html">Jakki James</a>
-                                    <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                    by <a href="blog">Jakki James</a>
+                                    <a href="blog" class="blog-date">Dec 13, 2024</a>
                                 </div>
                             </div>
                         </div>
@@ -481,18 +488,18 @@
                 <div class="col-lg-4">
                     <div class="vs-blog blog-single">
                         <div class="blog-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-img-1-4.jpg" alt="Blog Image"></a>
+                            <a href="blog-details"><img src="assets/img/blog/blog-img-1-4.jpg" alt="Blog Image"></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details.html">Harvest Issues London Its  Annual Report</a></h2>
+                            <h2 class="blog-title"><a href="blog-details">Harvest Issues London Its  Annual Report</a></h2>
                             <div class="blog-inner-author">
                                 <img src="assets/img/blog/blog-auth-1-1.png" alt="blog author">
                                 <div class="text">
-                                    by <a href="blog.html">Jakki James</a>
-                                    <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                    by <a href="blog">Jakki James</a>
+                                    <a href="blog" class="blog-date">Dec 13, 2024</a>
                                 </div>
                             </div>
                         </div>
@@ -544,5 +551,5 @@
 </body>
 
 
-<!-- Mirrored from html.vecurosoft.com/farmix/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:31:07 GMT -->
+<!-- Mirrored from html.vecurosoft.com/farmix/demo/index by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:31:07 GMT -->
 </html>

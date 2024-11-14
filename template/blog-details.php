@@ -97,13 +97,13 @@
                                 <div class="col-xl-auto">
                                     <span class="share-links-title">Tags:</span>
                                     <div class="tagcloud">
-                                        <a href="blog.php">Microgreen</a>
-                                        <a href="blog.php">farming</a>
-                                        <a href="blog.php">Uncategorized</a>
+                                        <a href="blog.php">Microvert</a>
+                                        <a href="blog.php">agriculture</a>
+                                        <a href="blog.php">Non classé</a>
                                     </div>
                                 </div>
                                 <div class="col-xl-auto text-xl-end">
-                                    <span class="share-links-title">Share:</span>
+                                    <span class="share-links-title">Partager:</span>
                                     <ul class="social-links">
                                         <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
