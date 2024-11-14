@@ -230,6 +230,7 @@
                             <?php foreach($article as $key=>$val1) :
                                if($key<3) { ?>                            
                             <div class="col-auto">
+
                                 <a href="blog-details/<?= $val1->matricule?>"><img src="<?= $url_image.$val1->photo ?>" alt="Blog Image"></a>
                             </div>
                               <?php }else{
@@ -241,6 +242,14 @@
                                 <a href="blog-details"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
                             </div>
                             <div class="col-auto">
+
+                                <a href="blog-details"><img src="assets/img/blog/blog-s-1-1.png" alt="Blog Image"></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="blog-details"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
+                            </div>
+                            <div class="col-auto">
+
                                 <a href="blog-details"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
                             </div>
                             */ ?>
