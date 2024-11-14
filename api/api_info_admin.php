@@ -1,4 +1,5 @@
 <?php
+$lien_profil= 'https://akila.blog/@ressouce/profile/' ;
 function info_admin($matricule_admin){ 
 
     $url= "https://akila.blog/api/categorie_vues";

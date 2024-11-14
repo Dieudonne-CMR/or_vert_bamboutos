@@ -6,19 +6,13 @@
 <!-- Mirrored from html.vecurosoft.com/farmix/demo/service-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:28 GMT -->
 <head>
     <meta charset="utf-8">
+    <base href="../">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Farmix - Agriculture & Farming Food Template - Service Details</title>
-    <meta name="author" content="Vecuro">
-    <meta name="description" content="Farmix - Agriculture & Farming Food Template">
-    <meta name="keywords" content="Farmix - Agriculture & Farming Food Template">
-    <meta name="robots" content="INDEX,FOLLOW">
+    <?php $titre='service detail'; include "includes/meta.php" ?>
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <!--==============================
 	  Google Fonts
@@ -51,7 +45,7 @@
     	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-
+    
 
     <!--********************************
    		Code Start From Here 
@@ -70,12 +64,12 @@
     <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Service Details</h1>
+                <h1 class="breadcumb-title"><?= $det_service[0] -> nom ?></h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Service Details</li>
+                    <li><a href="home.php">Accueil</a></li>
+                    <li>Details du service</li>
                 </ul>
             </div>
         </div>
@@ -88,19 +82,15 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="service-content">
-                        <h2 class="service-title h1">Gosberton Bank Nursery</h2>
-                        <p class="service-text">Lorem ipsum dolor sit amet, porro quisquam est, qui dolorem ipsuquia dolor sit amet, consectetur, adipisci velit. Lorem ipsum dolor sit amet, porro quisqua
-                            m est, qui dolorem ipsuquia dolor sit amet, consectetur, adipisci velit. Lorem ipsum dolor sit amet, porro quisquam est, qui dolorem ipsuquia dolor sit amet,
-                            consectetur, adipisci velit. Lorem ipsum dolor sit amet, porro quisquam est, qui dolorem ipsuquia dolor sit amet, consectetur, adipisci velit. Lorem ipsum dol
-                            or sit amet, porro quisquam est, qui dolorem ipsuquia dolor sit amet, consectetur, adipisci velit.
-                        </p>
+                        <h2 class="service-title h1"><?= $det_service[0]->nom ?></h2>
+                        <?php /*<p class="service-text"><?= $det_service[0]->description ?>
+                        </p> */ ?>
                         <div class="service-img1">
-                            <img src="assets/img/service/service-setails-1-1.jpg" alt="service img">
+                            <img src="<?=$img_service.$det_service[0]->image ?>" alt="service img">
                         </div>
-                        <p class="service-text">dolorem ipsuquia dolor sit amet, consectetur, adipisci velit. Lorem ipsum dolor sit amet, porro quisquam est, qui dolorem ipsuquia dolor sit amet, nsectetu
-                            consectetur, adipisci velit. Lorem ipsum dolor sit amet, porro quisquam est, qui dolorem ipsuquia dolor sit amet, consectetur, adipisci velit. Lorem ipsum dol
-                            or sit amet, porro quisquam est, qui dolorem ipsuquia dolor sit amet, consectetur, adipisci velit.
+                        <p class="service-text"><?= $det_service[0]->description ?>
                         </p>
+                        <?php /*
                         <h4 class="service-title">Causes of Water Losses</h4>
                         <p class="service-text">dolorem ipsuquia dolor sit amet, consectetur, adipisci velit. Lorem ipsum dolor sit amet, porro quisquam est, qui dolorem.</p>
                         <div class="list-style1">
@@ -133,8 +123,8 @@
                         <p class="service-text">orem ipsum dolor sit amet, porro quisquam est, qui dolorem ipsuquia dolor sit amet, consectetur, adipisci velit. Lorem ipsum dolor sit amet, porro quisqua
                             m est, qui dolorem ipsuquia dolor sit amet, consectetur, adipisci velit. Lorem ipsum dolor sit amet, porro quisquam est, qui dolorem ipsuquia dolor sit amet,
                             consectetur, adipisci velit. Lorem ipsum dolor sit amet, porro quisquam
-                        </p>
-                        <div class="share-links clearfix mb-0">
+                        </p> */ ?>
+                       <!-- <div class="share-links clearfix mb-0">
                             <div class="row justify-content-between">
                                 <div class="col-xl-auto">
                                     <span class="share-links-title">Tags:</span>
@@ -154,6 +144,8 @@
                                 </div>
                             </div>
                         </div>
+-->
+                
                     </div>
                 </div>
             </div>
