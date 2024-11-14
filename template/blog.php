@@ -2,7 +2,7 @@
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from html.vecurosoft.com/farmix/demo/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:36 GMT -->
+<!-- Mirrored from html.vecurosoft.com/farmix/demo/blog by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:36 GMT -->
 <head>
     <meta charset="utf-8"> 
     <?= isset($url[1]) ? "<base href=''> ":'' ?>
@@ -65,7 +65,7 @@
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="home">Acceuil</a></li>
                     <li>Nos articles</li>
                 </ul>
             </div>
@@ -81,7 +81,7 @@
                     <?php foreach($article1 as $v) : ?>
                     <div class="vs-blog blog-single">
                         <div class="blog-img">
-                            <a href="blog-details.html"><img src="<?= $url_image.$v->photo ?>" alt="Blog Image"></a>
+                            <a href="blog-details/<?= $v->matricule?>"><img src="<?= $url_image.$v->photo ?>" alt="Blog Image"></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
@@ -100,19 +100,19 @@
                     <?php endforeach ?>
                     <?php /* <div class="vs-blog blog-single">
                         <div class="blog-img vs-carousel" data-arrows="true" data-autoplay="true" data-slide-show="1" data-fade="true">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
+                            <a href="blog-details"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
+                            <a href="blog-details"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details.html">Harvest London Publishes Its First Annua</a></h2>
+                            <h2 class="blog-title"><a href="blog-details">Harvest London Publishes Its First Annua</a></h2>
                             <p class="blog-text">Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar ulum bib volutpat. Sociis, a eget mollis, exercitationem famesSu dapibus ac tellus.</p>
                             <div class="blog-inner-author">
                                 <img src="assets/img/blog/blog-auth-1-1.png" alt="blog author">
-                                by <a href="blog.html">Jakki James</a>
-                                <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                by <a href="blog">Jakki James</a>
+                                <a href="blog" class="blog-date">Dec 13, 2024</a>
                             </div>
                         </div>
                     </div> 
@@ -121,63 +121,63 @@
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details.html">Harvest London Publishes Its First Annua</a></h2>
+                            <h2 class="blog-title"><a href="blog-details">Harvest London Publishes Its First Annua</a></h2>
                             <p class="blog-text">Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar ulum bib volutpat. Sociis, a eget mollis, exercitationem famesSu dapibus ac tellus.</p>
                             <div class="blog-inner-author">
                                 <img src="assets/img/blog/blog-auth-1-1.png" alt="blog author">
-                                by <a href="blog.html">Jakki James</a>
-                                <a href="blog.html" class="blog-date">Dec 13, 2024</a>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="vs-blog blog-single">
-                        <div class="blog-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
-                            </div>
-                            <h2 class="blog-title"><a href="blog-details.html">Harvest London Publishes Its First Annua</a></h2>
-                            <p class="blog-text">Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar ulum bib volutpat. Sociis, a eget mollis, exercitationem famesSu dapibus ac tellus.</p>
-                            <div class="blog-inner-author">
-                                <img src="assets/img/blog/blog-auth-1-1.png" alt="blog author">
-                                by <a href="blog.html">Jakki James</a>
-                                <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                by <a href="blog">Jakki James</a>
+                                <a href="blog" class="blog-date">Dec 13, 2024</a>
                             </div>
                         </div>
                     </div> 
                     <div class="vs-blog blog-single">
                         <div class="blog-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-4.png" alt="Blog Image"></a>
+                            <a href="blog-details"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details.html">Harvest London Publishes Its First Annua</a></h2>
+                            <h2 class="blog-title"><a href="blog-details">Harvest London Publishes Its First Annua</a></h2>
                             <p class="blog-text">Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar ulum bib volutpat. Sociis, a eget mollis, exercitationem famesSu dapibus ac tellus.</p>
                             <div class="blog-inner-author">
                                 <img src="assets/img/blog/blog-auth-1-1.png" alt="blog author">
-                                by <a href="blog.html">Jakki James</a>
-                                <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                by <a href="blog">Jakki James</a>
+                                <a href="blog" class="blog-date">Dec 13, 2024</a>
                             </div>
                         </div>
                     </div> 
                     <div class="vs-blog blog-single">
                         <div class="blog-img">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-5.png" alt="Blog Image"></a>
+                            <a href="blog-details"><img src="assets/img/blog/blog-s-1-4.png" alt="Blog Image"></a>
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
                                 <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
                             </div>
-                            <h2 class="blog-title"><a href="blog-details.html">Harvest London Publishes Its First Annua</a></h2>
+                            <h2 class="blog-title"><a href="blog-details">Harvest London Publishes Its First Annua</a></h2>
                             <p class="blog-text">Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar ulum bib volutpat. Sociis, a eget mollis, exercitationem famesSu dapibus ac tellus.</p>
                             <div class="blog-inner-author">
                                 <img src="assets/img/blog/blog-auth-1-1.png" alt="blog author">
-                                by <a href="blog.html">Jakki James</a>
-                                <a href="blog.html" class="blog-date">Dec 13, 2024</a>
+                                by <a href="blog">Jakki James</a>
+                                <a href="blog" class="blog-date">Dec 13, 2024</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="vs-blog blog-single">
+                        <div class="blog-img">
+                            <a href="blog-details"><img src="assets/img/blog/blog-s-1-5.png" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="#"><i class="fal fa-tag"></i>Fresh Vegetables</a>
+                            </div>
+                            <h2 class="blog-title"><a href="blog-details">Harvest London Publishes Its First Annua</a></h2>
+                            <p class="blog-text">Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar ulum bib volutpat. Sociis, a eget mollis, exercitationem famesSu dapibus ac tellus.</p>
+                            <div class="blog-inner-author">
+                                <img src="assets/img/blog/blog-auth-1-1.png" alt="blog author">
+                                by <a href="blog">Jakki James</a>
+                                <a href="blog" class="blog-date">Dec 13, 2024</a>
                             </div>
                         </div>
                     </div> */ ?>
@@ -206,7 +206,7 @@
                                     </div>
                                     <div class="media-body">
                                         <div class="recent-post-meta">
-                                            <a href="blog.html"><?= $article1[$c-1]->date?></a>
+                                            <a href="blog"><?= $article1[$c-1]->date?></a>
                                         </div>
                                         <?php if(strlen($article1[$c-1]->titre) > 42){ $article1[$c-1]->titre = substr($article1[$c-1]->titre,0,42)."...";} ?>
                                         <h4 class="post-title"><a class="text-inherit" href="blog-details<?= $article1[$c-1]->matricule?>"><?= $article1[$c-1]->titre ?></a></h4>
@@ -218,24 +218,24 @@
                              <?php /*   
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
+                                        <a href="blog-details"><img src="assets/img/blog/recent-post-1-2.jpg" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">Jan 08, 2024</a>
+                                            <a href="blog">Jan 08, 2024</a>
                                         </div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Learn React JS Tutorial For Beginners</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details">Learn React JS Tutorial For Beginners</a></h4>
                                     </div>
                                 </div>
                                 <div class="recent-post">
                                     <div class="media-img">
-                                        <a href="blog-details.html"><img src="assets/img/blog/recent-post-1-3.jpg" alt="Blog Image"></a>
+                                        <a href="blog-details"><img src="assets/img/blog/recent-post-1-3.jpg" alt="Blog Image"></a>
                                     </div>
                                     <div class="media-body">
                                         <div class="recent-post-meta">
-                                            <a href="blog.html">Nov 07, 2024</a>
+                                            <a href="blog">Nov 07, 2024</a>
                                         </div>
-                                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Learn React JS Tutorial For Beginners</a></h4>
+                                        <h4 class="post-title"><a class="text-inherit" href="blog-details">Learn React JS Tutorial For Beginners</a></h4>
                                     </div> 
                                 </div> */ ?>
                             </div>
@@ -252,23 +252,23 @@
                                 </li>
                                 <?php $k++; }?>
                                  <?php /*<li>
-                                    <a href="blog.html">Grain</a>
+                                    <a href="blog">Grain</a>
                                     <span>10</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Agriculture</a>
+                                    <a href="blog">Agriculture</a>
                                     <span>09</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Fruit farming</a>
+                                    <a href="blog">Fruit farming</a>
                                     <span>14</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Livestock farms</a>
+                                    <a href="blog">Livestock farms</a>
                                     <span>12</span>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Mixed farming</a>
+                                    <a href="blog">Mixed farming</a>
                                     <span>12</span>
                                 </li> */ ?>
                             </ul>
@@ -286,10 +286,10 @@
                                         break;
                                     }
                                     endforeach ?>
-                                    <!--<li><a href="team.html">Rencontrez notre équipe</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="blog.html">Infos & Media</a></li>
-                                    <li><a href="contact.html">Contactez-nous</a></li> -->
+                                    <!--<li><a href="team">Rencontrez notre équipe</a></li>
+                                    <li><a href="services">Services</a></li>
+                                    <li><a href="blog">Infos & Media</a></li>
+                                    <li><a href="contact">Contactez-nous</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -347,5 +347,5 @@
 </body>
 
 
-<!-- Mirrored from html.vecurosoft.com/farmix/demo/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:42 GMT -->
+<!-- Mirrored from html.vecurosoft.com/farmix/demo/blog by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:42 GMT -->
 </html>
