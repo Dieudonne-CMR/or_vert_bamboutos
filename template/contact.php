@@ -65,7 +65,7 @@
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="home.php">Acceuil</a></li>
+                    <li><a href="home">Acceuil</a></li>
                     <li>Contact</li>
                 </ul>
             </div> 
@@ -80,12 +80,12 @@
                 <div class="col-xl-8 col-lg-7">
                     <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
                         <span class="sec-subtitle">CONTACTEZ NOUS</span>
-                        <h2 class="sec-title">We're Here to Help You. Get in Touch with Our Team!</h2>
+                        <h2 class="sec-title">Nous sommes là pour vous aider. Entrez en contact avec notre équipe !</h2>
                     </div>
                     <div class="vs-comment-form">
                         <div id="respond" class="comment-respond">
                             <div class="form-title">
-                                <p class="form-text">Please fill out the form below and one of our recruitment specialists will back in touch shortly.</p>
+                                <p class="form-text">Veuillez remplir le formulaire ci-dessous et l'un de nos spécialistes du recrutement vous contactera sous peu.</p>
                             </div>
                             <form action="https://html.vecurosoft.com/farmix/demo/mail.php" method="post" class="form-style3 ajax-contact">
                                 <div class="row">
@@ -93,15 +93,15 @@
                                         <textarea name="message" class="form-control" placeholder="Message" required=""></textarea>
                                       </div>
                                     <div class="col-md-6 form-group">
-                                    <input name="fname" type="text" class="form-control" placeholder="Name" required="">
+                                    <input name="fname" type="text" class="form-control" placeholder="Nom" required="">
                                   </div>
                                   <div class="col-6 form-group">
-                                    <input name="email" type="email" class="form-control" placeholder="Email Address" required="">
+                                    <input name="email" type="email" class="form-control" placeholder="Addresse Email" required="">
                                   </div>
                                   <div class="col-12 ">
                                     <div class="custom-checkbox notice">
                                         <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes">
-                                        <label for="wp-comment-cookies-consent"> Enregistrer mon nom, email, et le site dans ce navigateur pour la prochaine fois que je me connect.</label>
+                                        <label for="wp-comment-cookies-consent"> Enregistrer mon nom, email, et le site dans ce navigateur pour la prochaine fois que je me connecte.</label>
                                     </div>
                                 </div>
                                   <div class="col-12 form-group">
@@ -128,18 +128,18 @@
                             </div>
                         </div>
                         <div class="team-media">
-                            <h2 class="contact-title">Professional Skills</h2>
+                            <h2 class="contact-title">Compétences professionnelles</h2>
                             <div class="media-style1">
                                 <div class="media-icon"><img src="assets/img/icon/icon-1-1.png" alt="icon"></div>
                                 <div class="media-body">
-                                    <h3 class="media-title">Phone No:</h3>
+                                    <h3 class="media-title">Numéro de téléphone:</h3>
                                     <p class="media-info"><a href="tel:+88013004451">+88 013 00 44 51</a> <br> Mon - Sat: 09.00 to 06.00</p>
                                 </div>
                             </div>
                             <div class="media-style1">
                                 <div class="media-icon"><img src="assets/img/icon/icon-1-2.png" alt="icon"></div>
                                 <div class="media-body">
-                                    <h3 class="media-title">Email Address:</h3>
+                                    <h3 class="media-title">Addresse Email:</h3>
                                     <p class="media-info"><a href="mailto:example@domain.com">example@domain.com</a> <br> <a href="mailto:officename@example.com">officename@example.com</a></p>
                                 </div>
                             </div>
@@ -167,65 +167,64 @@
             <div class="row gx-5">
                 <div class="col-lg-12">
                     <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
-                        <span class="sec-subtitle">Any Question Please?</span>
-                        <h2 class="sec-title">Common Questions & Answers</h2>
+                        <span class="sec-subtitle">Une question s'il vous plaît ?</span>
+                        <h2 class="sec-title">Questions et réponses courantes</h2>
                     </div>
                     <div class="accordion-style1">
                         <div class="accordion" id="accordionExample">
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                100% natural and 100% organic food?
+                              Une alimentation 100% naturelle et 100% biologique ?
                               </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                Suspendisse potenti. Maecenas dapibus ac tellus.
+                              L'avocat est un fruit extrêmement nutritif et populaire, apprécié dans une multitude de plats,  
+                              Mais lorsqu'on parle d'un avocat 100% naturel et 100% biologique, il s'agit de deux aspects essentiels : 
+                              l naturel fait référence à l'absence de traitements chimiques et 
+                              le biologique qui renvoie à des méthodes de culture respectueuses de l'environnement.
                               </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                What agricultural products are produced?
+                              Quels produits agricoles sont produits ?
                               </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                    ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                    Suspendisse potenti. Maecenas dapibus ac tellus.
-                                </div>
+                             <div class="accordion-body">
+                              Nous produisons des produits végétaux tels que <br/>
+                              Les fruits : l'avocat, bananes, oranges, mangue, plantains <br />
+                              Les légumineuses : pois, lentilles, haricots, pois chiches 
+                             </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                What are the top 5 agriculture products?
+                              Quels sont les 5 principaux produits agricoles ?
                               </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                    ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                    Suspendisse potenti. Maecenas dapibus ac tellus.
+                                Les principaux produits agricoles sont les suivants : L'avocat, La banane, le blé, Les Pommes de terre, Le Soja
                                 </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Which agricultural product is most important and why?
+                              Quel produit agricole est le plus important et pourquoi ?
                               </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                    ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                    Suspendisse potenti. Maecenas dapibus ac tellus.
-                                </div>
+                                L'avocat est souvent considéré comme le produit agricole le plus important au monde. Voici pourquoi : <br\>                    
+                                Utilisation diversifiée : En plus de son utilisation directe pour l'alimentation humaine, 
+                                il est aussi largement utilisé pour la fabrication de produits cosmétique.
+                            </div>
                             </div>
                           </div>
                         </div>

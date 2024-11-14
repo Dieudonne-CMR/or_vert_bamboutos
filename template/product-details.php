@@ -60,33 +60,33 @@
         <div class="vs-menu-area text-center">
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="home.php"><img src="assets/img/logo.png" alt="Farmix"></a>
+                <a href="home"><img src="assets/img/logo.png" alt="Farmix"></a>
             </div>
             <div class="vs-mobile-menu">
                 <ul>
                     <li class="menu-item-has-children">
-                        <a href="home.php">Acceuil</a>
+                        <a href="home">Acceuil</a>                        
                         <ul class="sub-menu"> 
-                            <li><a href="home.php">Home Style 1</a></li>
+                            <li><a href="home">Home Style 1</a></li>
                             <li><a href="index-2.html">Home Style 2</a></li>
                             <li><a href="index-3.html">Home Style 3</a></li>
-                        </ul>
+                        </ul>                       
                     </li>
                     <li>
                         <a href="about.php">À propos de nous</a>
                     </li> 
                     <li class="menu-item-has-children">
-                        <a href="service.php">Service</a>
-                        <ul class="sub-menu"> 
-                            <li><a href="service.php">Service</a></li>
-                            <li><a href="service-details.php">Détails du servcie</a></li>
+                        <a href="service">Service</a>
+                        <ul class="sub-menu">  
+                            <li><a href="service">Service</a></li>
+                            <li><a href="service-details">Détails du servcie</a></li>
                         </ul>
                     </li> 
                     <li class="menu-item-has-children">
-                        <a href="blog.php">Article</a>
+                        <a href="blog">Article</a>
                         <ul class="sub-menu"> 
-                            <li><a href="blog.php">Article</a></li>
-                            <li><a href="blog-details.php">Détails de l'article</a></li>
+                            <li><a href="blog">Article</a></li>
+                            <li><a href="blog-details">Détails de l'article</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children mega-menu-wrap">
@@ -94,7 +94,7 @@
                         <ul class="mega-menu">
                             <li><a href="shop.html">Pagelist 1</a>
                                 <ul>
-                                    <li><a href="home.php">Home Style 1</a></li>
+                                    <li><a href="home">Home Style 1</a></li>
                                     <li><a href="index-2.html">Home Style 2</a></li>
                                     <li><a href="index-3.html">Home Style 3</a></li>
                                     <li><a href="about.php">À propos de nous</a></li>
@@ -102,10 +102,10 @@
                             </li>
                             <li><a href="#">Pagelist 2</a>
                                 <ul>
-                                    <li><a href="blog.php">Article</a></li>
-                                    <li><a href="blog-details.php">Détails de l'article</a></li>
-                                    <li><a href="service.php">service</a></li>
-                                    <li><a href="service-details.php">Détails du servcie</a></li>
+                                    <li><a href="blog">Article</a></li>
+                                    <li><a href="blog-details">Détails de l'article</a></li>
+                                    <li><a href="service">service</a></li>
+                                    <li><a href="service-details">Détails du servcie</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Pagelist 3</a>
@@ -210,7 +210,7 @@
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto">
                                 <div class="header-logo">
-                                    <a href="home.php">
+                                    <a href="home">
                                         <img src="assets/img/logo.png" alt="logo">
                                     </a>
                                 </div>
@@ -219,9 +219,9 @@
                                 <nav class="main-menu menu-style1 d-none d-lg-block">
                                     <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="home.php">Acceuil</a>
+                                            <a href="home">Acceuil</a>
                                             <ul class="sub-menu">
-                                                <li><a href="home.php">Home Style 1</a></li>
+                                                <li><a href="home">Home Style 1</a></li>
                                                 <li><a href="index-2.html">Home Style 2</a></li>
                                                 <li><a href="index-3.html">Home Style 3</a></li>
                                             </ul>
@@ -230,17 +230,17 @@
                                             <a href="about.php">À propos de nous</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="service.php">Service</a>
+                                            <a href="service">Service</a>
                                             <ul class="sub-menu">
-                                                <li><a href="service.php">Service</a></li>
-                                                <li><a href="service-details.php">Détails du servcie</a></li>
+                                                <li><a href="service">Service</a></li>
+                                                <li><a href="service-details">Détails du servcie</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="blog.php">Article</a>
+                                            <a href="blog">Article</a>
                                             <ul class="sub-menu">
-                                                <li><a href="blog.php">Blog</a></li>
-                                                <li><a href="blog-details.php">Détails de l'article</a></li>
+                                                <li><a href="blog">Blog</a></li>
+                                                <li><a href="blog-details">Détails de l'article</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children mega-menu-wrap">
@@ -248,7 +248,7 @@
                                             <ul class="mega-menu">
                                                 <li><a href="shop.html">Pagelist 1</a>
                                                     <ul>
-                                                        <li><a href="home.php">Home Style 1</a></li>
+                                                        <li><a href="home">Home Style 1</a></li>
                                                         <li><a href="index-2.html">Home Style 2</a></li>
                                                         <li><a href="index-3.html">Home Style 3</a></li>
                                                         <li><a href="about.php">À propos de nous</a></li>
@@ -256,10 +256,10 @@
                                                 </li>
                                                 <li><a href="#">Pagelist 2</a>
                                                     <ul>
-                                                        <li><a href="blog.php">Article</a></li>
-                                                        <li><a href="blog-details.php">Détails de l'article</a></li>
-                                                        <li><a href="service.php">service</a></li>
-                                                        <li><a href="service-details.php">Détails du servcie</a></li>
+                                                        <li><a href="blog">Article</a></li>
+                                                        <li><a href="blog-details">Détails de l'article</a></li>
+                                                        <li><a href="service">service</a></li>
+                                                        <li><a href="service-details">Détails du servcie</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Pagelist 3</a>
@@ -317,7 +317,7 @@
             </div> 
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="home.php">Acceuil</a></li>
+                    <li><a href="home">Acceuil</a></li>
                     <li>Nos produits</li>
                 </ul>
             </div>
@@ -667,7 +667,7 @@
                         <div class="widget footer-widget">
                             <div class="vs-widget-about">
                                 <div class="footer-logo">
-                                    <a href="home.php"><img src="assets/img/logo-2.png" alt="logo"></a>
+                                    <a href="home"><img src="assets/img/logo-2.png" alt="logo"></a>
                                 </div>
                                 <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in cididunt ut labore et dolo aliqua.</p>
                                 <div class="footer-social">
@@ -684,8 +684,8 @@
                             <ul>
                                 <li><a href="about.php">À propos</a></li>
                                 <li><a href="team.html">Nos produits</a></li>
-                                <li><a href="service.php">Our cases</a></li>
-                                <li><a href="blog.php">News & events</a></li>
+                                <li><a href="service">Our cases</a></li>
+                                <li><a href="blog">News & events</a></li>
                             </ul>
                         </div>
                     </div>
@@ -694,9 +694,9 @@
                             <h3 class="widget_title">Categories</h3>
                             <ul>
                                 <li><a href="about.php">Microgreen</a></li>
-                                <li><a href="service.php">Agricultural products</a></li>
-                                <li><a href="blog.php">Crops farming</a></li>
-                                <li><a href="blog.php">Uncategorized</a></li>
+                                <li><a href="service">Agricultural products</a></li>
+                                <li><a href="blog">Crops farming</a></li>
+                                <li><a href="blog">Uncategorized</a></li>
                             </ul>
                         </div>
                     </div> 
@@ -719,7 +719,7 @@
             <div class="container">
                 <div class="row justify-content-xl-between justify-content-center align-items-center">
                     <div class="col-auto">
-                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a href="home.php">Farmix</a>. All Rights Reserved By <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a href="home">Farmix</a>. All Rights Reserved By <a href="https://themeforest.net/user/vecuro_themes">Vecuro</a></p>
                     </div>
                     <div class="col-auto">
                         <div class="copyright-menu">

@@ -66,7 +66,7 @@
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="home.php">Accueil</a></li>
+                    <li><a href="home">Accueil</a></li>
                     <li>Nos Services</li>
                 </ul>
             </div>
@@ -131,22 +131,30 @@
                             <?= $motivation_desription ?>
                             <?php else: ?>
                             <ul class="list-unstyled">
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Before you can dive-in to creating an effective user experience</li>
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>intuitive user experience for your users online.</li>
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Videos within it, each element influences</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Avant de pouvoir vous lancer dans la création d'une expérience utilisateur efficace.</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Expérience utilisateur intuitive pour vos utilisateurs en ligne.</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Vidéos à l'intérieur, chaque élément influence.</li>
                             </ul>
                             <?php endif ?>
-                        </div>
-                        <div class="row g-3 vs-carousel" data-arrows="false" data-dots="true" data-autoplay="true" data-slide-show="2">
+                        </div>                          
+                        <div class="row g-3 vs-carousel" data-arrows="false" data-dots="true" data-autoplay="true" data-slide-show="2" max-hight="200px">
+                         <?php foreach($article3 as $key=>$val2) :
+                               if($key<3) { ?>                                                         
+                            <div class="col-auto" style="min-hight:100px">   
+                                <a href="blog-details/<?= $val2->matricule?>"><img style="hight:100%" src="<?= $url_image.$val2->photo ?>" alt="Blog Image"></a>
+                            </div>
+                              <?php }else{
+                                break; 
+                              }
+                              endforeach  ?>
+                         <?php /*   
                             <div class="col-auto">
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-1.png" alt="Blog Image"></a>
+                                <a href="blog-details"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
                             </div>
                             <div class="col-auto">
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
+                                <a href="blog-details"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
                             </div>
-                            <div class="col-auto">
-                                <a href="blog-details.html"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
-                            </div>
+                            */ ?>
                         </div>
                     </div>
                 </div>
@@ -171,8 +179,9 @@
              <?php                                                                                                        foreach($services as $values ) : ?>
                 <div class="col-auto">
                     <div class="service-style1">
-                        <div class="service-img2"><img src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
-                        <div class="service-img"><img src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
+                    <style> #im1{width:100%; max-hight:150px;}</style>   
+                        <div class="service-img2"><img id="im1" src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
+                        <div class="service-img"><img id="im1" src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-1.png" alt="icon"></div>
                             <h3 class="service-title h5"><a href="service-details/<?= $values->matricule_service ?>"><?= $values->nom ?></a></h3>
@@ -268,8 +277,8 @@
                                         <img src="assets/img/icon/counter-icon1.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.php">Quality Foods</a></h2>
-                                        <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
+                                        <h2 class="title h6"><a href="service">Aliments de qualité</a></h2>
+                                        <p class="text">Les aliments de qualité sont ceux qui offrent un maximum de bienfaits ...</p>
                                     </div>
                                 </div>
                                 <div class="provide-item">
@@ -277,8 +286,8 @@
                                         <img src="assets/img/icon/counter-icon2.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.php">All organic</a></h2>
-                                        <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
+                                        <h2 class="title h6"><a href="service">Tout bio</a></h2>
+                                        <p class="text">Nos aliments sont cultivés selon des méthodes respectueuses de l'environnement.</p>
                                     </div>
                                 </div>
                                 <div class="provide-item">
@@ -286,8 +295,8 @@
                                         <img src="assets/img/icon/counter-icon3.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.php">Friendly team</a></h2>
-                                        <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
+                                        <h2 class="title h6"><a href="service">Équipe sympathique</a></h2>
+                                        <p class="text">Nous mettons à votre disposition une équipe sympathique et ...</p>
                                     </div>
                                 </div>
                             </div>
@@ -297,8 +306,8 @@
                                         <img src="assets/img/icon/counter-icon4.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.php">Eco friendly</a></h2>
-                                        <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
+                                        <h2 class="title h6"><a href="service">Respectueux de l'environnement</a></h2>
+                                        <p class="text">Nous Adoptons des pratiques respectueuses de l'environnement ...</p>
                                     </div>
                                 </div>
                                 <div class="provide-item">
@@ -306,8 +315,8 @@
                                         <img src="assets/img/icon/counter-icon5.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.php">Fresh Vegetables</a></h2>
-                                        <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
+                                        <h2 class="title h6"><a href="service">Légumes frais</a></h2>
+                                        <p class="text">Les légumes frais sont une excellente source de vitamines, Ils sont bénéfiques pour la santé</p>
                                     </div>
                                 </div>
                                 <div class="provide-item">
@@ -315,8 +324,8 @@
                                         <img src="assets/img/icon/counter-icon6.png" alt="provide icon">
                                     </div>
                                     <div class="provide-content">
-                                        <h2 class="title h6"><a href="service.php">Use Green Products</a></h2>
-                                        <p class="text">In hac habitasse platea ived ict tibulum rhonc us est.</p>
+                                        <h2 class="title h6"><a href="service">Utilisation des produits verts</a></h2>
+                                        <p class="text">Ceci fait référence à l’adoption de produits respectueux de l’environnement.</p>
                                     </div>
                                 </div>
                             </div>
@@ -333,66 +342,66 @@
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-6">
-                    <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
-                        <span class="sec-subtitle">Any Question Please?</span>
-                        <h2 class="sec-title">Common Questions & Answers</h2>
+                <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                        <span class="sec-subtitle">Une question s'il vous plaît ?</span>
+                        <h2 class="sec-title">Questions et réponses courantes</h2>
                     </div>
                     <div class="accordion-style1">
                         <div class="accordion" id="accordionExample">
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                100% natural and 100% organic food?
+                              Une alimentation 100% naturelle et 100% biologique ?
                               </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                Suspendisse potenti. Maecenas dapibus ac tellus.
+                              L'avocat est un fruit extrêmement nutritif et populaire, apprécié dans une multitude de plats,  
+                              Mais lorsqu'on parle d'un avocat 100% naturel et 100% biologique, il s'agit de deux aspects essentiels : 
+                              l naturel fait référence à l'absence de traitements chimiques et 
+                              le biologique qui renvoie à des méthodes de culture respectueuses de l'environnement.                               
                               </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                What agricultural products are produced?
+                              Quels produits agricoles sont produits ?
                               </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                    ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                    Suspendisse potenti. Maecenas dapibus ac tellus.
+                              Nous produisons des produits végétaux tels que <br/>
+                              Les fruits : l'avocat, bananes, oranges, mangue, plantains <br />
+                              Les légumineuses : pois, lentilles, haricots, pois chiches                               
                                 </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                What are the top 5 agriculture products?
+                              Quels sont les 5 principaux produits agricoles ?
                               </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                    ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                    Suspendisse potenti. Maecenas dapibus ac tellus.
+                                    Les principaux produits agricoles sont les suivants : L'avocat, La banane, le blé, Les Pommes de terre, Le Soja
                                 </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Which agricultural product is most important and why?
+                              Quel produit agricole est le plus important et pourquoi ?
                               </button>
                             </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Suspendisse potenti. Maecenas dapibus ac tellus sed pulvinar
-                                    ulum bib volutpat. Sociis, eget mollis, exercitationem famesSu
-                                    Suspendisse potenti. Maecenas dapibus ac tellus.
-                                </div>
+                                L'avocat est souvent considéré comme le produit agricole le plus important au monde. Voici pourquoi : <br\>                    
+                                Utilisation diversifiée : En plus de son utilisation directe pour l'alimentation humaine, 
+                                il est aussi largement utilisé pour la fabrication de produits cosmétique. 
+                             </div>
+                             </div>
                             </div>
                           </div>
                         </div>
@@ -401,14 +410,14 @@
                 <div class="col-lg-6">
                     <div class="faq-img">
                       <div class="faq-img1">
-                        <img src="assets/img/faq/faq-1-1.jpg" alt="faq 1">
+                        <img src="https://th.bing.com/th/id/R.21b7f66240529332a988f702a0ca85f6?rik=n9n6cK1DPPa%2brw&pid=ImgRaw&r=0" alt="faq 1">
                       </div>
                       <div class="faq-img2">
-                        <img src="assets/img/faq/faq-1-2.jpg" alt="faq 1">
+                        <img src="https://th.bing.com/th/id/R.60f7bdca69381852a5243a6b8077b859?rik=ejZwaap%2f7GXWoA&pid=ImgRaw&r=0" alt="faq 1">
                       </div>
                       <div class="media-box1">
                         <span class="media-info">100%</span>
-                        <p class="media-text">clients satisfaction</p>
+                        <p class="media-text">satisfaction des clients</p>
                       </div>
                     </div>
                   </div>

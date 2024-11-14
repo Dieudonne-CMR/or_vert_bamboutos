@@ -68,7 +68,7 @@
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
-                    <li><a href="home.php">Accueil</a></li>
+                    <li><a href="home">Accueil</a></li>
                     <li>Details du service</li>
                 </ul>
             </div>
