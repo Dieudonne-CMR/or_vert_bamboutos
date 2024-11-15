@@ -20,6 +20,7 @@ if(@$url[0]=='home' || @$url[0]==''):
     $equipe = info_equipe();
     $article = recup_article();
     $category = recup_category();
+    $produits = recup_produict();
     include_once("template/home.php");
 endif;
 
