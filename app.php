@@ -90,5 +90,3 @@ if(@$url[0]=='service-details'):
     }
 endif;
 
-
-
