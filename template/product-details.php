@@ -95,9 +95,9 @@
                             <li><a href="shop">Pagelist 1</a>
                                 <ul>
                                     <li><a href="home">Home Style 1</a></li>
-                                    <li><a href="index-2">Home Style 2</a></li>
-                                    <li><a href="index-3">Home Style 3</a></li>
-                                    <li><a href="about">À propos de nous</a></li>
+                                    <li><a href="index-2.html">Home Style 2</a></li>
+                                    <li><a href="index-3.html">Home Style 3</a></li>
+                                    <li><a href="about.php">À propos de nous</a></li>
                                 </ul>
                             </li> 
                             <li><a href="#">Pagelist 2</a>
@@ -118,10 +118,10 @@
                             </li> 
                             <li><a href="#">Pagelist 4</a>
                                 <ul> 
-                                    <li><a href="product">Produits</a></li>
-                                    <li><a href="product-details">Détails du produit</a></li>
-                                    <li><a href="cart">Panier</a></li>
-                                    <li><a href="checkout">Vérifier</a></li>
+                                    <li><a href="product.php">Produits</a></li>
+                                    <li><a href="product-details.php">Détails du produit</a></li>
+                                    <li><a href="cart.php">Panier</a></li>
+                                    <li><a href="checkout.php">Vérifier</a></li>
                                 </ul>
                             </li> 
                         </ul>
@@ -249,9 +249,9 @@
                                                 <li><a href="shop">Pagelist 1</a>
                                                     <ul>
                                                         <li><a href="home">Home Style 1</a></li>
-                                                        <li><a href="index-2">Home Style 2</a></li>
-                                                        <li><a href="index-3">Home Style 3</a></li>
-                                                        <li><a href="about">À propos de nous</a></li>
+                                                        <li><a href="index-2.html">Home Style 2</a></li>
+                                                        <li><a href="index-3.html">Home Style 3</a></li>
+                                                        <li><a href="about.php">À propos de nous</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Pagelist 2</a>
@@ -272,10 +272,10 @@
                                                 </li>
                                                 <li><a href="#">Pagelist 4</a>
                                                     <ul>
-                                                        <li><a href="product">Produits</a></li>
-                                                        <li><a href="product-details">Détails du produit</a></li>
-                                                        <li><a href="cart">Panier</a></li>
-                                                        <li><a href="checkout">Vérifier </a></li>
+                                                        <li><a href="product.php">Produits</a></li>
+                                                        <li><a href="product-details.php">Détails du produit</a></li>
+                                                        <li><a href="cart.php">Panier</a></li>
+                                                        <li><a href="checkout.php">Vérifier </a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -695,10 +695,10 @@
                         <div class="widget widget_categories  footer-widget">
                             <h3 class="widget_title">Categories</h3>
                             <ul>
-                                <li><a href="about">Microvert</a></li>
-                                <li><a href="service">Produits agricoles</a></li>
-                                <li><a href="blog">Cultures agricoles</a></li>
-                                <li><a href="blog">Non classé</a></li>
+                                <li><a href="about.php">Microgreen</a></li>
+                                <li><a href="service">Agricultural products</a></li>
+                                <li><a href="blog">Crops farming</a></li>
+                                <li><a href="blog">Uncategorized</a></li>
                             </ul>
                         </div>
                     </div> 
