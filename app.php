@@ -5,6 +5,7 @@ include "api_shops/cle_api_shop.php";
 include "includes/fonctions/fonctions.php";
 //======
 
+
 $url="";
 
 //====== Traitement de url
@@ -14,12 +15,11 @@ endif;
 //====== fin
 
 //--------Route page d'accuil
-if(@$url[0] == 'home' || @$url[0]==''):
+if(@$url[0]=='home' || @$url[0]==''):
     $services = recup_services();
     $equipe = info_equipe();
     $article = recup_article();
-    $produits =  recup_produict();
-    
+    $category = recup_category();
     include_once("template/home.php");
 endif;
 
@@ -30,17 +30,8 @@ endif;
 
 //------- Route page boutique
 if(@$url[0]=='product'):
-    $produits =  recup_produict();
     include_once("template/$url[0].php");
 endif;
-
-//------- Route page blog
-if(@$url[0]=='product-details'): 
-    $mat_produit=  strip_tags($url[0]);
-    $detail_produit= recup_produict_detail($mat_produit);
-    include_once("template/$url[0].php");
-endif;
-
 
 //------- Route page blog
 if(@$url[0]=='blog'):
@@ -76,7 +67,9 @@ endif;
 if(@$url[0]=='service'):
     $article3 = recup_article();
     $services = recup_services();
+    $article2 = recup_article();
     include_once("template/$url[0].php");
+
 endif;
 
 //------- Route page service-details
@@ -89,4 +82,6 @@ if(@$url[0]=='service-details'):
     include_once("template/$url[0].php");
     }
 endif;
+
+
 

@@ -229,6 +229,7 @@
                         <div class="row g-3 vs-carousel" data-arrows="false" data-dots="true" data-autoplay="true" data-slide-show="2">
                             <?php foreach($article as $key=>$val1) :
                                if($key<3) { ?>                            
+
                             <div class="col-auto" max-hight="100px" max-width="100px">
                                 <a href="blog-details/<?= $val1->matricule?>"><img width="100%" hight="100%" background-size="100%" src="<?= $url_image.$val1->photo ?>" alt="Blog Image"></a>
                             </div>
@@ -243,6 +244,7 @@
                             <div class="col-auto">
                                 <a href="blog-details"><img src="assets/img/blog/blog-s-1-3.png" alt="Blog Image"></a>
                             </div>
+
                             */ ?>
                         </div>
                     </div>
@@ -395,6 +397,7 @@
                     <div class="vs-blog blog-single">
                         <div class="blog-img" style="height: 15rem;">
                             <a href="blog-details/<?= $value1->matricule?>"><img src="<?= $url_image . $value1->photo ?>" style="height: 100%; width: 100%" alt="Blog Image"></a>
+
                         </div>
                         <div class="blog-content">
                             <div class="blog-meta">
@@ -406,6 +409,7 @@
                                 <div class="text">
                                     Par <a href="javascript:void(0)"><?= info_admin($value1->matricule_admin)->nom?></a>
                                     <a href="blog-details/<?= $value1->matricule?>" class="blog-date"><?= $value1->date ?></a>
+
                                 </div>
                             </div>
                         </div>

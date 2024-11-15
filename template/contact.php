@@ -132,7 +132,9 @@
                             <div class="media-style1">
                                 <div class="media-icon"><img src="assets/img/icon/icon-1-1.png" alt="icon"></div>
                                 <div class="media-body">
+
                                     <h3 class="media-title">Numéro de téléphone:</h3>
+
                                     <p class="media-info"><a href="tel:+88013004451">+88 013 00 44 51</a> <br> Mon - Sat: 09.00 to 06.00</p>
                                 </div>
                             </div>
@@ -184,6 +186,7 @@
                               Mais lorsqu'on parle d'un avocat 100% naturel et 100% biologique, il s'agit de deux aspects essentiels : 
                               l naturel fait référence à l'absence de traitements chimiques et 
                               le biologique qui renvoie à des méthodes de culture respectueuses de l'environnement.
+
                               </div>
                             </div>
                           </div>
@@ -199,6 +202,7 @@
                               Les fruits : l'avocat, bananes, oranges, mangue, plantains <br />
                               Les légumineuses : pois, lentilles, haricots, pois chiches 
                              </div>
+
                             </div>
                           </div>
                           <div class="accordion-item">
@@ -210,6 +214,7 @@
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                 Les principaux produits agricoles sont les suivants : L'avocat, La banane, le blé, Les Pommes de terre, Le Soja
+
                                 </div>
                             </div>
                           </div>
@@ -225,6 +230,7 @@
                                 Utilisation diversifiée : En plus de son utilisation directe pour l'alimentation humaine, 
                                 il est aussi largement utilisé pour la fabrication de produits cosmétique.
                             </div>
+
                             </div>
                           </div>
                         </div>

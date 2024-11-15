@@ -136,6 +136,7 @@
                                 <li><span class="icon"><i class="far fa-check-circle"></i></span>Vidéos à l'intérieur, chaque élément influence.</li>
                             </ul>
                             <?php endif ?>
+
                         </div>                          
                         <div class="row g-3 vs-carousel" data-arrows="false" data-dots="true" data-autoplay="true" data-slide-show="2" max-hight="200px">
                          <?php foreach($article3 as $key=>$val2) :
@@ -149,6 +150,7 @@
                               endforeach  ?>
                          <?php /*   
                             <div class="col-auto">
+
                                 <a href="blog-details"><img src="assets/img/blog/blog-s-1-2.png" alt="Blog Image"></a>
                             </div>
                             <div class="col-auto">
@@ -179,7 +181,7 @@
              <?php                                                                                                        foreach($services as $values ) : ?>
                 <div class="col-auto">
                     <div class="service-style1">
-                    <style> #im1{width:100%; max-hight:150px;}</style>   
+                     
                         <div class="service-img2"><img id="im1" src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
                         <div class="service-img"><img id="im1" src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
                         <div class="service-inner">
@@ -356,10 +358,12 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
+
                               L'avocat est un fruit extrêmement nutritif et populaire, apprécié dans une multitude de plats,  
                               Mais lorsqu'on parle d'un avocat 100% naturel et 100% biologique, il s'agit de deux aspects essentiels : 
                               l naturel fait référence à l'absence de traitements chimiques et 
                               le biologique qui renvoie à des méthodes de culture respectueuses de l'environnement.                               
+
                               </div>
                             </div>
                           </div>
@@ -371,21 +375,24 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
+
                               Nous produisons des produits végétaux tels que <br/>
                               Les fruits : l'avocat, bananes, oranges, mangue, plantains <br />
                               Les légumineuses : pois, lentilles, haricots, pois chiches                               
+
                                 </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Quels sont les 5 principaux produits agricoles ?
+                              Quels sont les 5 principaux produits fabriqués à partir de l’avocat ?
                               </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Les principaux produits agricoles sont les suivants : L'avocat, La banane, le blé, Les Pommes de terre, Le Soja
+                                    Les pprincipaux produits fabriqués à partir de l’avocat sont les suivants : Huile d’avocat, Thé d’avocat, Jus d’avocat, Compost à base de déchets d’avocat , Baume de massage à l’avocat
+
                                 </div>
                             </div>
                           </div>
@@ -402,6 +409,7 @@
                                 il est aussi largement utilisé pour la fabrication de produits cosmétique. 
                              </div>
                              </div>
+
                             </div>
                           </div>
                         </div>
@@ -411,13 +419,14 @@
                     <div class="faq-img">
                       <div class="faq-img1">
                         <img src="https://th.bing.com/th/id/R.21b7f66240529332a988f702a0ca85f6?rik=n9n6cK1DPPa%2brw&pid=ImgRaw&r=0" alt="faq 1">
+
                       </div>
                       <div class="faq-img2">
                         <img src="https://th.bing.com/th/id/R.60f7bdca69381852a5243a6b8077b859?rik=ejZwaap%2f7GXWoA&pid=ImgRaw&r=0" alt="faq 1">
                       </div>
                       <div class="media-box1">
                         <span class="media-info">100%</span>
-                        <p class="media-text">satisfaction des clients</p>
+                        <p class="media-text">Satisfaction des clients</p>
                       </div>
                     </div>
                   </div>
