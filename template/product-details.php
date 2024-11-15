@@ -73,7 +73,7 @@
                         </ul>                       
                     </li>
                     <li>
-                        <a href="about.php">À propos de nous</a>
+                        <a href="about">À propos de nous</a>
                     </li> 
                     <li class="menu-item-has-children">
                         <a href="service">Service</a>
@@ -97,9 +97,9 @@
                                     <li><a href="home">Home Style 1</a></li>
                                     <li><a href="index-2.html">Home Style 2</a></li>
                                     <li><a href="index-3.html">Home Style 3</a></li>
-                                    <li><a href="about.php">À propos de nous</a></li>
+                                    <li><a href="about">À propos de nous</a></li>
                                 </ul>
-                            </li>
+                            </li> 
                             <li><a href="#">Pagelist 2</a>
                                 <ul>
                                     <li><a href="blog">Article</a></li>
@@ -118,7 +118,7 @@
                             </li> 
                             <li><a href="#">Pagelist 4</a>
                                 <ul> 
-                                    <li><a href="product.php">Produits</a></li>
+                                    <li><a href="product">Produits</a></li>
                                     <li><a href="product-details.php">Détails du produit</a></li>
                                     <li><a href="cart.php">Panier</a></li>
                                     <li><a href="checkout.php">Vérifier</a></li>
@@ -227,7 +227,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="about.php">À propos de nous</a>
+                                            <a href="about">À propos de nous</a>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a href="service">Service</a>
@@ -251,7 +251,7 @@
                                                         <li><a href="home">Home Style 1</a></li>
                                                         <li><a href="index-2.html">Home Style 2</a></li>
                                                         <li><a href="index-3.html">Home Style 3</a></li>
-                                                        <li><a href="about.php">À propos de nous</a></li>
+                                                        <li><a href="about">À propos de nous</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Pagelist 2</a>
@@ -272,7 +272,7 @@
                                                 </li>
                                                 <li><a href="#">Pagelist 4</a>
                                                     <ul>
-                                                        <li><a href="product.php">Produits</a></li>
+                                                        <li><a href="product">Produits</a></li>
                                                         <li><a href="product-details.php">Détails du produit</a></li>
                                                         <li><a href="cart.php">Panier</a></li>
                                                         <li><a href="checkout.php">Vérifier </a></li>
@@ -682,7 +682,7 @@
                         <div class="widget widget_categories  footer-widget">
                             <h3 class="widget_title">Company</h3>
                             <ul>
-                                <li><a href="about.php">À propos</a></li>
+                                <li><a href="about">À propos</a></li>
                                 <li><a href="team.html">Nos produits</a></li>
                                 <li><a href="service">Our cases</a></li>
                                 <li><a href="blog">News & events</a></li>
@@ -693,7 +693,7 @@
                         <div class="widget widget_categories  footer-widget">
                             <h3 class="widget_title">Categories</h3>
                             <ul>
-                                <li><a href="about.php">Microgreen</a></li>
+                                <li><a href="about">Microgreen</a></li>
                                 <li><a href="service">Agricultural products</a></li>
                                 <li><a href="blog">Crops farming</a></li>
                                 <li><a href="blog">Uncategorized</a></li>
