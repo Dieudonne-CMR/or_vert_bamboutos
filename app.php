@@ -71,6 +71,8 @@ if(@$url[0]=='blog-details'):
 endif;
 
 //------- Route page service
+//je viens
+
 if(@$url[0]=='service'):
     $services = recup_services();
     include_once("template/$url[0].php");
