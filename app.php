@@ -34,6 +34,18 @@ if(@$url[0]=='product'):
     include_once("template/$url[0].php");
 endif;
 
+//------- Route page detail produit
+if(@$url[0]=='product-details'):
+    $mat_produit= strip_tags($url[1]);
+
+    $detail_pro= recup_produict_detail($mat_produit);
+    if(!empty($detail_pro)):
+        include_once("template/$url[0].php");
+    else:
+        header('location')
+    endif;
+endif;
+
 //------- Route page blog
 if(@$url[0]=='blog'):
     $service11 = recup_services();
