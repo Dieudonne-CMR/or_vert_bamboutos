@@ -137,12 +137,12 @@
                             </ul>
                             <?php endif ?>
                         </div>                          
-                        <div class="row g-3 vs-carousel" data-arrows="false" data-dots="true" data-autoplay="true" data-slide-show="2" max-hight="200px">
+                        <div class="row g-3 vs-carousel" data-arrows="false" data-dots="true" data-autoplay="true" data-slide-show="2">
                          <?php foreach($article3 as $key=>$val2) :
                                if($key<3) { ?>                                                         
-                            <div class="col-auto" style="min-hight:100px">   
-                                <a href="blog-details/<?= $val2->matricule?>"><img style="hight:100%" src="<?= $url_image.$val2->photo ?>" alt="Blog Image"></a>
-                            </div>
+                            <div class="col-auto">  
+                                <a href="blog-details/<?= $val2->matricule?>"><img   src="<?= $url_image.$val2->photo ?>" alt="Blog Image" style="width: 100%; height: 250px; object-fit: cover;"></a>
+                            </div> 
                               <?php }else{
                                 break; 
                               }
@@ -176,12 +176,11 @@
     <div class="service-layout1 space-bottom mt-4">
         <div class="container">
             <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="false">
-             <?php                                                                                                        foreach($services as $values ) : ?>
+             <?php foreach($services as $values ) : ?>
                 <div class="col-auto">
-                    <div class="service-style1">
-                    <style> #im1{width:100%; max-hight:150px;}</style>   
-                        <div class="service-img2"><img id="im1" src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
-                        <div class="service-img"><img id="im1" src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
+                    <div class="service-style1">                      
+                        <div class="service-img2"><img id="im1" src="<?= $img_service . $values->image ?>" alt="service thumbnail" style="width: 100%; height: 350px; object-fit: cover;"></div>
+                        <div class="service-img"><img id="im1" src="<?= $img_service . $values->image ?>" alt="service thumbnail" style="width: 100%; height: 350px; object-fit: cover;"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-1.png" alt="icon"></div>
                             <h3 class="service-title h5"><a href="service-details/<?= $values->matricule_service ?>"><?= $values->nom ?></a></h3>

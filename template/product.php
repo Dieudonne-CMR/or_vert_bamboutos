@@ -35,9 +35,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
-
 <body>
-
 
     <!--[if lte IE 9]>
     	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -102,7 +100,8 @@
                 </div>
             </div>
             <div class="row">
-                <?php foreach( $produits as $value):?>
+           <?php var_dump($produit)?>
+                <?php foreach( $produit as $value):?>
    
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="product-style1">
@@ -162,16 +161,16 @@
                                 <div class="row align-items-center" data-bg-src="assets/img/about/about-bg-1-2.jpg">
                                     <div class="col-lg-6 col-md-6 px-0">
                                         <div class="deal-offer white-style">
-                                            <span class="offer-subtitle"><?= $produits[0]->nom_art ?></span>
-                                            <h2 class="offer-title h3"><?=  recup_detail_cat($produits[0] ->mat_categorie_art)[0]  -> libelle; ?></h2>
-                                            <p class="offer-text"><?= court_text($produits[0]->courte_description, 50 ) ?></p>
-                                            <span class="price"> <del><?= $produits[0]->prix_fictif ?></del><?= $produits[0]->prix_reel ?></span>
-                                            <a href="product-details/<?=  $produits[0] -> mat_article ?>" class="vs-btn">Acheter</a>
+                                            <span class="offer-subtitle"><?= $produit[0]->nom_art ?></span>
+                                            <h2 class="offer-title h3"><?=  recup_detail_cat($produit [0] ->mat_categorie_art)[0]  -> libelle; ?></h2>
+                                            <p class="offer-text"><?= court_text($produit [0]->courte_description, 50 ) ?></p>
+                                            <span class="price"> <del><?= $produit [0]->prix_fictif ?></del><?= $produit [0]->prix_reel ?></span>
+                                            <a href="product-details/<?=  $produit [0] -> mat_article ?>" class="vs-btn">Acheter</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 px-0">
                                         <div class="offer-img">
-                                            <img src="<?= $image_produit . $produits[0]->lien_img_vedette ?>" alt="offer">
+                                            <img src="<?= $image_produit . $produit [0]->lien_img_vedette ?>" alt="offer">
                                         </div>
                                     </div>
                                 </div>
@@ -181,16 +180,16 @@
                             <div class="row align-items-center" data-bg-src="assets/img/about/about-bg-1-1.jpg">
                                 <div class="col-lg-6 col-md-6 px-0">
                                     <div class="deal-offer">
-                                        <span class="offer-subtitle"><?= $produits[1]->nom_art ?></span>
-                                        <h2 class="offer-title h3"><?=  recup_detail_cat($produits[0] ->mat_categorie_art)[0]  -> libelle; ?></h2>
-                                        <p class="offer-text"><?= court_text($produits[1]->courte_description, 50 ) ?></p>
-                                        <span class="price"> <del><?= $produits[1]->prix_fictif ?></del><?= $produits[1]->prix_reel ?></span>
-                                        <a href="product-details/<?=  $produits[0] -> mat_article ?>" class="vs-btn">Acheter</a>
+                                        <span class="offer-subtitle"><?= $produit [1]->nom_art ?></span>
+                                        <h2 class="offer-title h3"><?=  recup_detail_cat($produit [0] ->mat_categorie_art)[0]  -> libelle; ?></h2>
+                                        <p class="offer-text"><?= court_text($produit [1]->courte_description, 50 ) ?></p>
+                                        <span class="price"> <del><?= $produit [1]->prix_fictif ?></del><?= $produit [1]->prix_reel ?></span>
+                                        <a href="product-details/<?=  $produit [0] -> mat_article ?>" class="vs-btn">Acheter</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 px-0">
                                     <div class="offer-img">
-                                        <img src="<?= $image_produit . $produits[1]->lien_img_vedette ?>" alt="offer">
+                                        <img src="<?= $image_produit . $produit [1]->lien_img_vedette ?>" alt="offer">
                                     </div>
                                 </div>
                             </div>

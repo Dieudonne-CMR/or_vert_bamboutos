@@ -28,7 +28,13 @@ include "api/api_categorie.php";
 include "api/api_partner.php";
 
 // include "api/api_services.php";
+$image_produit = "https://akila.store/_ressources/images_articles/";
+//-----
+$id_website= '7220708820';
 
+include "api/api_produit.php";
+include "api/api_cat_produit.php";
+include "api/api_boutique.php";
 // [ville] => Douala
 //     [region] => Littoral
 //     [email] => lamaisondesbillets@gmail.com

@@ -58,7 +58,7 @@
     <!--==============================
     Mobile Menu
     ============================== -->
-    <div class="vs-menu-wrapper">
+    <?php /*<div class="vs-menu-wrapper">
         <div class="vs-menu-area text-center">
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
@@ -134,11 +134,11 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> */ ?>
     <!--==============================
     Cart Side bar
     ============================== -->
-    <div class="sideCart-wrapper offcanvas-wrapper d-none d-lg-block">
+    <?php /*<div class="sideCart-wrapper offcanvas-wrapper d-none d-lg-block">
         <div class="sidemenu-content">
         <button class="closeButton border-theme bg-theme-hover sideMenuCls2"><i class="far fa-times"></i></button>
         <div class="widget widget_shopping_cart">
@@ -177,11 +177,11 @@
             </div>
         </div>
         </div>
-    </div>
+    </div> */ ?>
     <!--==============================
     Header Area
     ==============================-->
-    <header class="vs-header header-layout1">
+    <?php /*<header class="vs-header header-layout1">
         <div class="header-top">
             <div class="container">
                 <div class="row justify-content-between">
@@ -308,9 +308,10 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> */ ?>
     <!--==============================
     Breadcumb
+    <?php include "includes/header.php" ?>
     ============================== -->
     <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
         <div class="container z-index-common">
@@ -497,7 +498,7 @@
     <!--==============================
 			Footer Area
 	==============================-->
-    <footer class="footer-wrapper  footer-layout1" data-bg-src="assets/img/bg/footer-bg-1-1.jpg">
+    <?php /* <footer class="footer-wrapper  footer-layout1" data-bg-src="assets/img/bg/footer-bg-1-1.jpg">
         <div class="footer-top">
             <div class="container">
                 <div class="row g-5">
@@ -604,7 +605,7 @@
                 </div>
             </div>
         </div>
-    </footer>  
+    </footer>  */ ?>
     <!-- Scroll To Top -->
     <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
 

@@ -1,7 +1,7 @@
 <?php 
 // include "includes/main_header/main_header.php" ;  
 include "api/cle_api.php";
-include "api_shops/cle_api_shop.php";
+//include "api_shops/cle_api_shop.php";
 include "includes/fonctions/fonctions.php";
 
 $url="";
@@ -29,15 +29,20 @@ endif;
 
 //------- Route page boutique
 if(@$url[0]=='product'):
-    $produits =  recup_produict();
+    $produit =  recup_produict();
+    var_dump($produit);
     include_once("template/$url[0].php");
 endif;
 
-//------- Route page blog
+//------- Route page details boutique
 if(@$url[0]=='product-details'): 
-    $mat_produit=  strip_tags($url[0]);
+    $mat_produit=  strip_tags($url[1]);
     $detail_produit= recup_produict_detail($mat_produit);
+    if(!empty($mat_produit)){
     include_once("template/$url[0].php");
+    } else{
+        header("location:../product");
+    }
 endif;
 
 

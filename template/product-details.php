@@ -2,7 +2,7 @@
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from html.vecurosoft.com/farmix/demo/product-details.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:53 GMT -->
+<!-- Mirrored from html.vecurosoft.com/farmix/demo/product-details by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:53 GMT -->
 <head>
     <meta charset="utf-8">
     <base href="../">
@@ -56,7 +56,7 @@
     <!--==============================
     Mobile Menu
     ============================== -->
-    <div class="vs-menu-wrapper">
+    <?php /*<div class="vs-menu-wrapper">
         <div class="vs-menu-area text-center">
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
@@ -68,12 +68,12 @@
                         <a href="home">Acceuil</a>                        
                         <ul class="sub-menu"> 
                             <li><a href="home">Home Style 1</a></li>
-                            <li><a href="index-2.html">Home Style 2</a></li>
-                            <li><a href="index-3.html">Home Style 3</a></li>
+                            <li><a href="index-2">Home Style 2</a></li>
+                            <li><a href="index-3">Home Style 3</a></li>
                         </ul>                       
                     </li>
                     <li>
-                        <a href="about.php">À propos de nous</a>
+                        <a href="about">À propos de nous</a>
                     </li> 
                     <li class="menu-item-has-children">
                         <a href="service">Service</a>
@@ -92,14 +92,14 @@
                     <li class="menu-item-has-children mega-menu-wrap">
                         <a href="#">Pages</a>
                         <ul class="mega-menu">
-                            <li><a href="shop.html">Pagelist 1</a>
+                            <li><a href="shop">Pagelist 1</a>
                                 <ul>
                                     <li><a href="home">Home Style 1</a></li>
-                                    <li><a href="index-2.html">Home Style 2</a></li>
-                                    <li><a href="index-3.html">Home Style 3</a></li>
-                                    <li><a href="about.php">À propos de nous</a></li>
+                                    <li><a href="index-2">Home Style 2</a></li>
+                                    <li><a href="index-3">Home Style 3</a></li>
+                                    <li><a href="about">À propos de nous</a></li>
                                 </ul>
-                            </li>
+                            </li> 
                             <li><a href="#">Pagelist 2</a>
                                 <ul>
                                     <li><a href="blog">Article</a></li>
@@ -110,24 +110,24 @@
                             </li>
                             <li><a href="#">Pagelist 3</a>
                                 <ul>
-                                    <li><a href="project.html">Projects</a></li>
-                                    <li><a href="project-details.html">project details</a></li>
-                                    <li><a href="team-details.html">Team Details</a></li>
-                                    <li><a href="contact.php">Contactez nous</a></li>
+                                    <li><a href="project">Projects</a></li>
+                                    <li><a href="project-details">Détails du projet</a></li>
+                                    <li><a href="team-details">Détails de l'équipe</a></li>
+                                    <li><a href="contact">Contactez nous</a></li>
                                 </ul>
                             </li> 
                             <li><a href="#">Pagelist 4</a>
                                 <ul> 
-                                    <li><a href="product.php">Produits</a></li>
-                                    <li><a href="product-details.php">Détails du produit</a></li>
-                                    <li><a href="cart.php">Panier</a></li>
-                                    <li><a href="checkout.php">Vérifier</a></li>
+                                    <li><a href="product">Produits</a></li>
+                                    <li><a href="product-details">Détails du produit</a></li>
+                                    <li><a href="cart">Panier</a></li>
+                                    <li><a href="checkout">Vérifier</a></li>
                                 </ul>
                             </li> 
                         </ul>
                     </li>
                     <li>
-                        <a href="contact.php">Contact</a>
+                        <a href="contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -144,22 +144,22 @@
             <div class="widget_shopping_cart_content">
             <ul class="cart_list">
                 <li class="mini_cart_item">
-                <a href="shop.html" class="remove"><i class="fal fa-trash-alt"></i></a> <a href="shop.html">
-                    <img src="assets/img/product/product-1-1.png" alt="Cart-Image">Fishing Reels Spin</a>
+                <a href="shop" class="remove"><i class="fal fa-trash-alt"></i></a> <a href="shop">
+                    <img src="assets/img/product/product-1-1.png" alt="Cart-Image">Moulinets de pêche Spin</a>
                 <span class="quantity">
                     1 × <span class="amount"><span>$</span>100.00</span>
                 </span>
                 </li>
                 <li class="mini_cart_item">
-                <a href="shop.html" class="remove"><i class="fal fa-trash-alt"></i></a> <a href="shop.html">
-                    <img src="assets/img/cart/cart-img-2.png" alt="Cart-Image">Spoon lure tackle Baits</a>
+                <a href="shop" class="remove"><i class="fal fa-trash-alt"></i></a> <a href="shop">
+                    <img src="assets/img/cart/cart-img-2.png" alt="Cart-Image">Leurre cuillère Appâts</a>
                 <span class="quantity">
                     1 × <span class="amount"><span>$</span>19.00</span>
                 </span>
                 </li>
                 <li class="mini_cart_item">
-                <a href="shop.html" class="remove"><i class="fal fa-trash-alt"></i></a> <a href="shop.html">
-                    <img src="assets/img/cart/cart-img-3.png" alt="Cart-Image">Fishing Reels Globeride</a>
+                <a href="shop" class="remove"><i class="fal fa-trash-alt"></i></a> <a href="shop">
+                    <img src="assets/img/cart/cart-img-3.png" alt="Cart-Image">Moulinets de pêche Globeride</a>
                 <span class="quantity">
                     1 × <span class="amount"><span>$</span>10.00</span>
                 </span>
@@ -169,8 +169,8 @@
                 <strong>Subtotal:</strong> <span class="amount"><span>$</span>129.00</span>
             </div>
             <div class="buttons">
-                <a href="cart.php" class="vs-btn">View cart</a>
-                <a href="checkout.php" class="vs-btn">Vérifier </a>
+                <a href="cart" class="vs-btn">Voir le panier</a>
+                <a href="checkout" class="vs-btn">Vérifier </a>
             </div>
             </div>
         </div>
@@ -222,12 +222,12 @@
                                             <a href="home">Acceuil</a>
                                             <ul class="sub-menu">
                                                 <li><a href="home">Home Style 1</a></li>
-                                                <li><a href="index-2.html">Home Style 2</a></li>
-                                                <li><a href="index-3.html">Home Style 3</a></li>
+                                                <li><a href="index-2">Home Style 2</a></li>
+                                                <li><a href="index-3">Home Style 3</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="about.php">À propos de nous</a>
+                                            <a href="about">À propos de nous</a>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a href="service">Service</a>
@@ -246,12 +246,12 @@
                                         <li class="menu-item-has-children mega-menu-wrap">
                                             <a href="#">Pages</a>
                                             <ul class="mega-menu">
-                                                <li><a href="shop.html">Pagelist 1</a>
+                                                <li><a href="shop">Pagelist 1</a>
                                                     <ul>
                                                         <li><a href="home">Home Style 1</a></li>
-                                                        <li><a href="index-2.html">Home Style 2</a></li>
-                                                        <li><a href="index-3.html">Home Style 3</a></li>
-                                                        <li><a href="about.php">À propos de nous</a></li>
+                                                        <li><a href="index-2">Home Style 2</a></li>
+                                                        <li><a href="index-3">Home Style 3</a></li>
+                                                        <li><a href="about">À propos de nous</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Pagelist 2</a>
@@ -264,24 +264,24 @@
                                                 </li>
                                                 <li><a href="#">Pagelist 3</a>
                                                     <ul>
-                                                        <li><a href="project.html">Projects</a></li>
-                                                        <li><a href="project-details.html">project details</a></li>
-                                                        <li><a href="team-details.html">Team Details</a></li>
-                                                        <li><a href="contact.php">Contactez nous</a></li>
+                                                        <li><a href="project">Projects</a></li>
+                                                        <li><a href="project-details">Détails du projet</a></li>
+                                                        <li><a href="team-details">Détails de l'équipe</a></li>
+                                                        <li><a href="contact">Contactez nous</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="#">Pagelist 4</a>
                                                     <ul>
-                                                        <li><a href="product.php">Produits</a></li>
-                                                        <li><a href="product-details.php">Détails du produit</a></li>
-                                                        <li><a href="cart.php">Panier</a></li>
-                                                        <li><a href="checkout.php">Vérifier </a></li>
+                                                        <li><a href="product">Produits</a></li>
+                                                        <li><a href="product-details">Détails du produit</a></li>
+                                                        <li><a href="cart">Panier</a></li>
+                                                        <li><a href="checkout">Vérifier </a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="contact.php">Contact</a>
+                                            <a href="contact">Contact</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -306,8 +306,9 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> */ ?>
     <!--==============================
+    <?php include "includes/header.php" ?>
     Breadcumb
     ============================== -->
     <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
@@ -371,10 +372,10 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                  <span class="product-rating__total">Review (03)</span>
+                  <span class="product-rating__total">Revoir (03)</span>
                   <span class="available"><i class="far fa-check"></i>Disponible</span>
                 </div>
-                <h2 class="product-title">Coconut Oil Jar</h2>
+                <h2 class="product-title">Pot d'huile de noix de coco</h2>
                 <div class="actions">
                     <div class="quantity">
                       <div class="quantity__field quantity-container">
@@ -386,8 +387,8 @@
                       </div>
                     </div>
                     <p class="product-price">$155.00 <del>$23.85</del></p>
-                    <p>Free Shipping On This Item</p>
-                    <a href="cart.php" class="vs-btn"><i class="far fa-shopping-basket"></i>Add to Cart</a>
+                    <p>Livraison gratuite sur cet article</p>
+                    <a href="cart" class="vs-btn"><i class="far fa-shopping-basket"></i>Ajouter au panier</a>
                     <a href="#" class="icon-btn"><i class="far fa-heart"></i></a>
                 </div>
                 <div class="product_meta">
@@ -395,7 +396,7 @@
                   <p>SKU:</p> <span class="sku">#WE443</span>
                   </span>
                   <span class="posted_in">
-                  <p>Category:</p> <a href="#" rel="tag">organic , </a><a href="#" rel="tag"> food , </a> <a href="#" rel="tag"> natural</a>
+                  <p>Catégorie:</p> <a href="#" rel="tag">organique , </a><a href="#" rel="tag"> nourriture , </a> <a href="#" rel="tag"> naturel</a>
                 </span>
                 </div>
                 <div class="shep-img">
@@ -411,10 +412,10 @@
                   <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-information-tab" data-bs-toggle="pill" data-bs-target="#pills-information" type="button" role="tab" aria-controls="pills-information" aria-selected="false">Additional Information</button>
+                  <button class="nav-link" id="pills-information-tab" data-bs-toggle="pill" data-bs-target="#pills-information" type="button" role="tab" aria-controls="pills-information" aria-selected="false">Informations Complémentaires</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews (03)</button>
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Revue (03)</button>
                 </li>
               </ul>
             </div>
@@ -440,17 +441,17 @@
                         <div class="list-style1 me-5">
                             <h3 class="description-title h5">Love veg, not waste</h3>
                             <ul class="list-unstyled">
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Before you can dive-in to creating an effective user experience</li>
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>intuitive user experience for your users online.</li>
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Videos within it, each element influences</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Avant de pouvoir vous lancer dans la création d'une expérience utilisateur efficace</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>expérience utilisateur intuitive pour vos utilisateurs en ligne.</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Vidéos à l'intérieur, chaque élément influence</li>
                             </ul>
                         </div>
                         <div class="list-style1">
                             <h3 class="description-title h5">Love veg, not waste</h3>
                             <ul class="list-unstyled">
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Before you can dive-in to creating an effective user experience</li>
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>intuitive user experience for your users online.</li>
-                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Videos within it, each element influences</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Avant de pouvoir vous lancer dans la création d'une expérience utilisateur efficace</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>expérience utilisateur intuitive pour vos utilisateurs en ligne.</li>
+                                <li><span class="icon"><i class="far fa-check-circle"></i></span>Vidéos à l'intérieur, chaque élément influence</li>
                             </ul>
                         </div>
                     </div>
@@ -462,23 +463,23 @@
               </div>
               <div class="tab-pane fade" id="pills-information" role="tabpanel" aria-labelledby="pills-information-tab">
                 <div class="product-information">
-                    <h3 class="description-title h5">Additional Information</h3>
+                    <h3 class="description-title h5">Informations Complémentaires</h3>
                     <table class="product-information__item table">
                         <tbody>
                           <tr>
                             <th class="product-information__name" scope="row">Type</th>
-                            <td>Veg Box, Organic</td>
+                            <td>Veg Box, Organique</td>
                           </tr>
                           <tr>
-                            <th class="product-information__name" scope="row">Size</th>
+                            <th class="product-information__name" scope="row">Taille</th>
                             <td>400ml</td>
                           </tr>
                           <tr>
-                            <th class="product-information__name" scope="row">Brand</th>
+                            <th class="product-information__name" scope="row">Marque</th>
                             <td colspan="2">Fosroc</td>
                           </tr>
                           <tr>
-                            <th class="product-information__name" scope="row">Organic</th>
+                            <th class="product-information__name" scope="row">Organique</th>
                             <td colspan="2">100%</td>
                           </tr>
                         </tbody>
@@ -486,9 +487,9 @@
                   </div>
               </div>
               <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <h3 class="description-title h5">Reviews</h3>
+                <h3 class="description-title h5">Avis</h3>
                 <div class="row woocommerce-reviews">
-                    <h2 class="h5 mt-4">0.5 Reviews</h2>
+                    <h2 class="h5 mt-4">0.5 Avis</h2>
                     <div class="product-rating">
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -497,7 +498,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                      <span class="product-rating__total">Review (03)</span>
+                      <span class="product-rating__total">Avis (03)</span>
                     </div>
                     <div class="col-lg-6">
                         <div class="vs-comments-wrap">
@@ -521,8 +522,8 @@
                                       <h4 class="name h4">Thomas Walkar</h4>
                                       <span class="commented-on"><i class="fal fa-calendar-alt"></i> 22 April, 2022</span>
                                     </div>
-                                    <p class="text">Delivered ye sportsmen zealously arranging frankness estimabl
-                                        any article enabled musical shyness yet sixteen. </p>
+                                    <p class="text">Livrés, sportifs, en organisant avec zèle la franchise estimabl
+                                    n'importe quel article permettait à la timidité musicale d'avoir encore seize ans. </p>
                                   </div>
                                 </div>
                               </li>
@@ -545,8 +546,8 @@
                                       <h4 class="name h4">Crish Thomas</h4>
                                       <span class="commented-on"><i class="fal fa-calendar-alt"></i> 22 April, 2022</span>
                                     </div>
-                                    <p class="text">Delivered ye sportsmen zealously arranging frankness estimabl
-                                        any article enabled musical shyness yet sixteen. </p>
+                                    <p class="text">Livrés, sportifs, en organisant avec zèle la franchise estimabl
+                                    n'importe quel article permettait à la timidité musicale d'avoir encore seize ans. </p>
                                   </div>
                                 </div>
                               </li>
@@ -567,10 +568,10 @@
                                         </div>
                                       </div>
                                       <h4 class="name h4">Millem Jakson</h4>
-                                      <span class="commented-on"><i class="fal fa-calendar-alt"></i> 23 April, 2022</span>
+                                      <span class="commented-on"><i class="fal fa-calendar-alt"></i> 23 Avril, 2022</span>
                                     </div>
-                                    <p class="text">Delivered ye sportsmen zealously arranging frankness estimabl
-                                        any article enabled musical shyness yet sixteen. </p>
+                                    <p class="text">Livrés, sportifs, en organisant avec zèle la franchise estimabl
+                                    n'importe quel article permettait à la timidité musicale d'avoir encore seize ans. </p>
                                   </div>
                                 </div>
                               </li>
@@ -581,9 +582,9 @@
                         <div class="vs-comment-form review-form">
                             <div id="respond" class="comment-respond">
                               <div class="form-title mb-4">
-                                <h3 class="description-title h5">Post Review</h3>
+                                <h3 class="description-title h5">Publier un avis</h3>
                                 <div class="rating-select">
-                                  <label>Your Rating</label>
+                                  <label>Votre note</label>
                                   <p class="stars">
                                     <span>
                                     <a class="star-1" href="#">1</a>
@@ -603,15 +604,15 @@
                                     <input type="email" class="form-control" placeholder="Email Address">
                                     </div>
                                     <div class="col-12 form-group">
-                                    <textarea class="form-control" placeholder="Review"></textarea>
+                                    <textarea class="form-control" placeholder="Avis"></textarea>
                                     </div>
                                     <div class="col-12 form-group mb-0">
                                     <div class="custom-checkbox notice">
                                         <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes">
-                                        <label for="wp-comment-cookies-consent"> Save my name, email, and website in this browser for
-                                        the next time I comment.</label>
+                                        <label for="wp-comment-cookies-consent"> Enregistrez mon nom, mon adresse e-mail et mon site Web dans ce navigateur pour
+                                        la prochaine fois que je commenterai.</label>
                                     </div>
-                                    <button class="vs-btn"> <span class="vs-btn__bar"></span>Submit</button>
+                                    <button class="vs-btn"> <span class="vs-btn__bar"></span>Soumettre</button>
                                     </div>
                                 </div>
                             </div>
@@ -626,7 +627,8 @@
     <!--==============================
 			Footer Area
 	==============================-->
-    <footer class="footer-wrapper  footer-layout1" data-bg-src="assets/img/bg/footer-bg-1-1.jpg">
+    <?php include "includes/footer.php" ?>
+   <?php /* <footer class="footer-wrapper  footer-layout1" data-bg-src="assets/img/bg/footer-bg-1-1.jpg">
         <div class="footer-top">
             <div class="container">
                 <div class="row g-5">
@@ -634,7 +636,7 @@
                         <div class="media-style1">
                             <div class="media-icon"><img src="assets/img/icon/icon-1-1.png" alt="icon"></div>
                             <div class="media-body">
-                                <h3 class="media-title">Phone No:</h3>
+                                <h3 class="media-title">Numéro de téléphone:</h3>
                                 <p class="media-info"><a href="tel:+88013004451">+88 013 00 44 51</a> <br> Mon - Sat: 09.00 to 06.00</p>
                             </div>
                         </div>
@@ -643,7 +645,7 @@
                         <div class="media-style1">
                             <div class="media-icon"><img src="assets/img/icon/icon-1-2.png" alt="icon"></div>
                             <div class="media-body">
-                                <h3 class="media-title">Email Address:</h3>
+                                <h3 class="media-title">Adresse email:</h3>
                                 <p class="media-info"><a href="mailto:example@domain.com">example@domain.com</a> <br> <a href="mailto:officename@example.com">officename@example.com</a></p>
                             </div>
                         </div>
@@ -680,12 +682,12 @@
                     </div>
                     <div class="col-xl-2 col-md-3">
                         <div class="widget widget_categories  footer-widget">
-                            <h3 class="widget_title">Company</h3>
+                            <h3 class="widget_title">Entreprise</h3>
                             <ul>
-                                <li><a href="about.php">À propos</a></li>
+                                <li><a href="about">À propos</a></li>
                                 <li><a href="team.html">Nos produits</a></li>
-                                <li><a href="service">Our cases</a></li>
-                                <li><a href="blog">News & events</a></li>
+                                <li><a href="service">Nos cas</a></li>
+                                <li><a href="blog">Actualités et événements</a></li>
                             </ul>
                         </div>
                     </div>
@@ -693,20 +695,20 @@
                         <div class="widget widget_categories  footer-widget">
                             <h3 class="widget_title">Categories</h3>
                             <ul>
-                                <li><a href="about.php">Microgreen</a></li>
-                                <li><a href="service">Agricultural products</a></li>
-                                <li><a href="blog">Crops farming</a></li>
-                                <li><a href="blog">Uncategorized</a></li>
+                                <li><a href="about">Microvert</a></li>
+                                <li><a href="service">Produits agricoles</a></li>
+                                <li><a href="blog">Cultures agricoles</a></li>
+                                <li><a href="blog">Non classé</a></li>
                             </ul>
                         </div>
                     </div> 
                     <div class="col-xl-4">
                         <div class="widget widget_newsletter footer-widget">
-                            <h4 class="widget_title">Subscribe Newsletter</h4>
+                            <h4 class="widget_title">Abonnez-vous à la newsletter</h4>
                             <form class="newsletter-form">
-                                <p class="form_text">Enter your email and get recent news & recent offers update.</p>
+                                <p class="form_text">Entrez votre e-mail et recevez les nouvelles récentes et les mises à jour des offres récentes.</p>
                                 <div class="search-btn">
-                                    <input class="form-control" type="email" placeholder="Enter your email....">
+                                    <input class="form-control" type="email" placeholder="Entrez votre email....">
                                     <button type="submit" class="icon-btn"><i class="fas fa-paper-plane"></i></button>
                                 </div>
                             </form>
@@ -724,18 +726,18 @@
                     <div class="col-auto">
                         <div class="copyright-menu">
                             <ul class="list-unstyled">
-                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Plan du site</a></li>
                                 <li><a href="#">Contact</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">politique de confidentialité</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>  
+    </footer> */ ?> 
     <!-- Scroll To Top -->
-    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+  <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
 
     <!--********************************
 			Code End  Here 
@@ -762,5 +764,5 @@
 </body>
 
 
-<!-- Mirrored from html.vecurosoft.com/farmix/demo/product-details.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:55 GMT -->
+<!-- Mirrored from html.vecurosoft.com/farmix/demo/product-details by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 23:33:55 GMT -->
 </html>
