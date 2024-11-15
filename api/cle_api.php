@@ -14,7 +14,7 @@ $image_banniere="https://akila.blog/image_baniere/";
 $logo_partenaire="https://akila.blog/@ressouce/logo_site/";   // lien des logos des partenaire
 
 
-include "bd/query.php" ;
+// include "bd/query.php" ;
 $matricule_entreprise = "6730f0f35735b";
 include "api/api_info_entreprise.php";
 include "api/api_header.php";
