@@ -74,6 +74,7 @@ endif;
 //je viens
 
 if(@$url[0]=='service'):
+    $article3 = recup_article();
     $services = recup_services();
     include_once("template/$url[0].php");
 endif;

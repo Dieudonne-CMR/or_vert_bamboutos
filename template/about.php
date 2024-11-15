@@ -66,7 +66,7 @@
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
                     <li><a href="home.php">Accueil</a></li>
-                    <li>À propos de nous</li>
+                    <li href="about">À propos de nous</li>
                 </ul>
             </div>
         </div>
