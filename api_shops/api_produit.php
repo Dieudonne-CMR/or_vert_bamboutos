@@ -33,11 +33,11 @@ function recup_produict(){
 
 
   //------------recupe detail d'un produits
-  function recup_produict_detail($mat_Services){
+  function recup_produict_detail($mat_article){
     $detail_produit=[];
     $data= recup_produict();
     foreach($data as $value){
-        if($value->matricule_service == $mat_Services){
+        if($value->mat_article == $mat_article){
             $detail_produit []=$value;
         }
     }

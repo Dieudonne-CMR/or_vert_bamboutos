@@ -45,9 +45,12 @@ $region        =       @$info_header->region;
 $quartier     =       @$info_header->quartier;
 $ville     =       @$info_header->ville;
 
-$telephone    =       @$info_header->telephone;
-$lien_facebook=       @$info_header->lien_fb;
+$telephone    =       @$info_header->telephone; 
+$email    =       @$info_header->email;
+$lien_facebook=       @$info_header->lien_fb; 
 $lien_twitter =       @$info_header->twitter;
+// $instagram =       @$info_header->instagram;
+$lien_linkedin =       @$info_header->lien_linkedin;
 $youtube      =       @$info_header->youtube;
 $instagram    =       @$info_header->instagram;
 $titre_service=       @$info_header->titre_service;

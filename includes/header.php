@@ -98,15 +98,15 @@
                                 <li><i class="far fa-map-marker-alt"></i><?=  $region .','.$ville .','. $quartier ?></li>
                                 <li><i class="far fa-envelope"></i><a href="mailto:<?= $emal_entreprise ?>"><?= $emal_entreprise ?></a></li>
                                 <li><i class="far fa-phone-alt"></i><a href="tel:<?= $telephone  ?>"><?= $telephone ?></a></li>
-                                <li><i class="far fa-clock"></i><?=  date('Y') ?></li>
+                                <li><i class="far fa-clock"></i><?= date("D"). ' - '.date("h.i A") ?></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-auto">
                         <div class="social-style1">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="<?= $lien_facebook ?>"><i class="fab fa-facebook-f"></i></a>
+                            <a href="<?= $lien_linkedin ?>"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="<?= $instagram ?>"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>

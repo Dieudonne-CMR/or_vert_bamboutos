@@ -1,9 +1,10 @@
 <?php
 
-$id_website= '7220708820';
+// $id_website= '7220708820';
 
 //------------- Permet de recuperer les informations d'une boutique
-function info_boutique($id_website){ 
+function info_boutique(){ 
+  global $id_website;
 
     $url_akila= "https://akila.store/info_boutique";
     

@@ -121,11 +121,11 @@
                             <div class="auther-img">
                                 <img src="assets/img/about/about-author.png" alt="about">
                             </div>
-                            <div class="auther-content">
+                            <?php /*<div class="auther-content">
                                 <h6 class="name">Thomas Walkar</h6>
                                 <span class="designation">foundateur - CEO</span>
                                 <img src="assets/img/about/contact-signature.png" alt="contact">
-                            </div>
+                            </div> */?>
                         </div>
                         <div class="team-media">
                             <h2 class="contact-title">Compétences professionnelles</h2>
@@ -134,22 +134,27 @@
                                 <div class="media-body">
 
                                     <h3 class="media-title">Numéro de téléphone:</h3>
+                                    <?php 
+                                    $start_time = date("h.i A", strtotime("09:00")); // Formate 09:00 en "09.00 AM"
+                                    $end_time = date("h.i A", strtotime("18:00"));  // Formate 18:00 en "06.00 PM"
+                                    // Afficher les horaires
+                                    ?>
 
-                                    <p class="media-info"><a href="tel:+88013004451">+88 013 00 44 51</a> <br> Mon - Sat: 09.00 to 06.00</p>
+                                    <p class="media-info"><a href="tel:<?= $telephone  ?>"><?= $telephone  ?></a> <br> <?= date("D") ?> - <?=" $start_time to $end_time "; ?></p>
                                 </div>
                             </div>
                             <div class="media-style1">
                                 <div class="media-icon"><img src="assets/img/icon/icon-1-2.png" alt="icon"></div>
                                 <div class="media-body">
                                     <h3 class="media-title">Addresse Email:</h3>
-                                    <p class="media-info"><a href="mailto:example@domain.com">example@domain.com</a> <br> <a href="mailto:officename@example.com">officename@example.com</a></p>
+                                    <p class="media-info"><a href="<?= $email?>"><?= $email?></a> <br> <a href="mailto:<?= $email?>"><?= $email?></a></p>
                                 </div>
                             </div>
                             <div class="media-style1">
                                 <div class="media-icon"><img src="assets/img/icon/icon-1-3.png" alt="icon"></div>
                                 <div class="media-body">
                                     <h3 class="media-title">Locatoin:</h3>
-                                    <p class="media-info">5919 Trussville Crossings Pkwy, Birmingham, United Kingdom</p>
+                                    <p class="media-info"><?=  $region .','.$ville .','. $quartier ?></p>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +162,9 @@
                 </div>
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29518.147468872132!2d90.35144910000001!3d22.362370900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1725012606149!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <?= $google_map_entreprise ?>
+            <?php /*
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29518.147468872132!2d90.35144910000001!3d22.362370900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1725012606149!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */?>
             </div>
         </div>
     </section>
