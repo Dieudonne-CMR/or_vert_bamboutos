@@ -100,7 +100,6 @@
                 </div>
             </div>
             <div class="row">
-           <?php var_dump($produit)?>
                 <?php foreach( $produit as $value):?>
    
                     <div class="col-xl-3 col-lg-4 col-md-6">

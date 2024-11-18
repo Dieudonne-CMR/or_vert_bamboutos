@@ -310,11 +310,12 @@
     <!--==============================
     <?php include "includes/header.php" ?>
     Breadcumb
+    <?php var_dump($detail_produit) ; ?>
     ============================== -->
     <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Nos produits</h1>
+                <h1 class="breadcumb-title"><?= $detail_produit-> nom_art ?></h1>
             </div> 
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
@@ -375,7 +376,7 @@
                   <span class="product-rating__total">Revoir (03)</span>
                   <span class="available"><i class="far fa-check"></i>Disponible</span>
                 </div>
-                <h2 class="product-title">Pot d'huile de noix de coco</h2>
+                <h2 class="product-title"><?= $detail_produit -> nom_art ?></h2>
                 <div class="actions">
                     <div class="quantity">
                       <div class="quantity__field quantity-container">
@@ -424,20 +425,16 @@
                 <div class="description">
                     <h3 class="description-title h5">description</h3>
                   <p class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit ame
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                  <?= $detail_produit->description ?>
                   </p>
-                  <p class="text mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod
+                    <?php /*<p class="text mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod
                     orci. Cum
                     sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ultricies
                     aliquam. Done ultricies nec, pellent, consectetur adipiscing elit. Ieuismod orci. Cum sociis natoque
                     penatibus et magnis dis parturient montes
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci</p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci</p> */ ?>
                      
-                    <div class="d-flex mb-5">
+                   <div class="d-flex mb-5">
                         <div class="list-style1 me-5">
                             <h3 class="description-title h5">Love veg, not waste</h3>
                             <ul class="list-unstyled">

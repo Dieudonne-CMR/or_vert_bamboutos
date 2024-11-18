@@ -123,8 +123,8 @@
                     <?php if ($key<4) :?>
                 <div class="col-auto">
                     <div class="service-style1">
-                        <div class="service-img2"><img src="<?= $img_service . $values->image ?>" alt="service thumbnail" style="width: 100%; height: 350px; object-fit: cover;"></div>
-                        <div class="service-img"><img src="<?= $img_service . $values->image ?>" alt="service thumbnail" style="width: 100%; height: 350px; object-fit: cover;"></div>
+                        <div class="service-img2"><img src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
+                        <div class="service-img"><img src="<?= $img_service . $values->image ?>" alt="service thumbnail"></div>
                         <div class="service-inner">
                             <div class="service-icon"><img src="assets/img/icon/service-icon-1-1.png" alt="icon"></div>
                             <h3 class="service-title h5"><a href="service-details/<?= $values->matricule_service ?>"><?= $values->nom ?></a></h3>
@@ -230,7 +230,7 @@
                             <?php foreach($article as $key=>$val1) :
                                if($key<3) { ?>                            
                             <div class="col-auto">
-                                <a href="blog-details/<?= $val1->matricule?>"><img src="<?= $url_image.$val1->photo ?>" alt="Blog Image" style="width: 100%; height: 350px; object-fit: cover;"></a>
+                                <a href="blog-details/<?= $val1->matricule?>"><img src="<?= $url_image.$val1->photo ?>" alt="Blog Image"></a>
                             </div>
                               <?php }else{
                                 break;

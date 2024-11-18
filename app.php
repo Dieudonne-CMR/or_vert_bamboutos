@@ -30,7 +30,6 @@ endif;
 //------- Route page boutique
 if(@$url[0]=='product'):
     $produit =  recup_produict();
-    var_dump($produit);
     include_once("template/$url[0].php");
 endif;
 
