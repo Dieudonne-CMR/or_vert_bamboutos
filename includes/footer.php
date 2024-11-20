@@ -1,4 +1,4 @@
-<footer class="footer-wrapper  footer-layout1" data-bg-src="assets/img/bg/footer-bg-1-1.jpg">
+<footer class="footer-wrapper  footer-layout1" data-bg-src="https://th.bing.com/th/id/OIP.FYc1qShz3zy5EAumUb5l7QHaEK?rs=1&pid=ImgDetMain">
         <div class="footer-top">
             <div class="container">
                 <div class="row g-5">
@@ -6,7 +6,7 @@
                         <div class="media-style1">
                             <div class="media-icon"><img src="assets/img/icon/icon-1-1.png" alt="icon"></div>
                             <div class="media-body">
-                                <h3 class="media-title">Phone No:</h3>
+                                <h3 class="media-title">Téléphone:</h3>
                                 <p class="media-info"><a href="tel:<?= $telephone ?>"><?= $telephone ?></a> <br> <?=  date('y') ?></p>
                             </div>
                         </div>
@@ -33,51 +33,41 @@
             </div>
         </div>
 
-        <?php /*<div class="widget-area">
+        <div class="widget-area">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-4 col-md-6">
                         <div class="widget footer-widget">
                             <div class="vs-widget-about">
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo-2.png" alt="logo"></a>
+                                    <a href="home"><img src="<?= $lien_logo . $logo ?>" style="height: 8rem; border-radius: 20px" alt="logo"></a>
                                 </div>
-                                <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in cididunt ut labore et dolo aliqua.</p>
+                                <p class="footer-text"><?= $decription_entreprise ?></p>
                                 <div class="footer-social">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="<?= $lien_facebook ?>"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="<?= $lien_twitter ?>"><i class="fab fa-twitter"></i></a>
+                                    <a href="<?= $instagram ?>"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-2 col-md-4">
                         <div class="widget widget_categories  footer-widget">
-                            <h3 class="widget_title">Company</h3>
+                            <h3 class="widget_title">Lien </h3>
                             <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="team.html">Our products</a></li>
-                                <li><a href="services.html">Our cases</a></li>
-                                <li><a href="blog.html">News & events</a></li>
+                                <li><a href="about">A propos</a></li>
+                                <li><a href="product">Notre Boutique</a></li>
+                                <li><a href="service">Nos Sercices</a></li>
+                                <li><a href="blog">Blog</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-md-3">
-                        <div class="widget widget_categories  footer-widget">
-                            <h3 class="widget_title">Categories</h3>
-                            <ul>
-                                <li><a href="about.html">Microgreen</a></li>
-                                <li><a href="services.html">Agricultural products</a></li>
-                                <li><a href="blog.html">Crops farming</a></li>
-                                <li><a href="blog.html">Uncategorized</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                   
                     <div class="col-xl-4">
                         <div class="widget widget_newsletter footer-widget">
-                            <h4 class="widget_title">Subscribe Newsletter</h4>
+                            <h4 class="widget_title">S'abonner à la lettre d'information</h4>
                             <form class="newsletter-form">
-                                <p class="form_text">Enter your email and get recent news & recent offers update.</p>
+                                <p class="form_text">Saisissez votre adresse électronique et recevez les dernières nouvelles et les offres récentes.</p>
                                 <div class="search-btn">
                                     <input class="form-control" type="email" placeholder="Enter your email....">
                                     <button type="submit" class="icon-btn"><i class="fas fa-paper-plane"></i></button>
@@ -87,13 +77,13 @@
                     </div>
                 </div>
             </div>
-        </div> */?>
+        </div> 
 
         <div class="copyright-wrap">
             <div class="container">
                 <div class="row justify-content-xl-between justify-content-center align-items-center">
                     <div class="col-auto">
-                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a href="home">Farmix</a>. All Rights Reserved By <a href="https://akilaweb.net">Akila Web </a></p>
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a href="home">Or Vert des Bamboutos</a>. Tous droits réservés par <a href="https://akilaweb.net">Akila Web </a></p>
                     </div>
                     <div class="col-auto">
                         <div class="copyright-menu">

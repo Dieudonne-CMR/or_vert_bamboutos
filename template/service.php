@@ -340,11 +340,11 @@
     <!--==============================
     Faq Area
     ============================== -->
-    <section class="faq-layout1 space">
+       <section class="faq-layout1 space">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-6">
-                <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                    <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
                         <span class="sec-subtitle">Une question s'il vous plaît ?</span>
                         <h2 class="sec-title">Questions et réponses courantes</h2>
                     </div>
@@ -353,63 +353,48 @@
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Une alimentation 100% naturelle et 100% biologique ?
+                              Quels sont les principaux produits fabriqués à base d’avocat par L'Or Vert des Bamboutos Sarl ?
                               </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-
-                              L'avocat est un fruit extrêmement nutritif et populaire, apprécié dans une multitude de plats,  
-                              Mais lorsqu'on parle d'un avocat 100% naturel et 100% biologique, il s'agit de deux aspects essentiels : 
-                              l naturel fait référence à l'absence de traitements chimiques et 
-                              le biologique qui renvoie à des méthodes de culture respectueuses de l'environnement.                               
-
+                              <div class="accordion-body">Nous produisons de l'huile végétale d'avocat, du thé à base de feuilles d'avocat, du jus d'avocat, du compost issu des déchets d'avocat et une gamme de cosmétiques tels que des huiles pour le corps, des baumes de massage et des shampoings.
                               </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Quels produits agricoles sont produits ?
+                              Pourquoi choisir les produits à base d’avocat pour sa consommation ?
                               </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-
-                              Nous produisons des produits végétaux tels que <br/>
-                              Les fruits : l'avocat, bananes, oranges, mangue, plantains <br />
-                              Les légumineuses : pois, lentilles, haricots, pois chiches                               
-
+                                L’avocat est riche en nutriments essentiels tels que les acides gras, les vitamines A, E, et K, ainsi que les antioxydants. Ces éléments favorisent une bonne santé cardiovasculaire, hydratent la peau et les cheveux, et offrent des bienfaits anti-inflammatoires.
                                 </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Quels sont les 5 principaux produits fabriqués à partir de l’avocat ?
+                                Où cultivez-vous vos avocats ?
                               </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Les pprincipaux produits fabriqués à partir de l’avocat sont les suivants : Huile d’avocat, Thé d’avocat, Jus d’avocat, Compost à base de déchets d’avocat , Baume de massage à l’avocat
-
+                                Nos avocats proviennent des Bamboutos, une région fertile située à l’ouest du Cameroun, notamment dans l’arrondissement de Babadjou. Cette région est réputée pour ses conditions climatiques favorables et son sol riche, garantissant des fruits de qualité supérieure.
                                 </div>
                             </div>
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              Quel produit agricole est le plus important et pourquoi ?
+                              Les produits à base d’avocat sont-ils 100 % biologiques ?
                               </button>
                             </h2>
-                             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                L'avocat est souvent considéré comme le produit agricole le plus important au monde. Voici pourquoi : <br\>                    
-                                Utilisation diversifiée : En plus de son utilisation directe pour l'alimentation humaine, 
-                                il est aussi largement utilisé pour la fabrication de produits cosmétique. 
-                             </div>
-                             </div>
-
+                                Oui, tous nos produits sont garantis 100 % biologiques. Nous utilisons des pratiques agricoles respectueuses de l’environnement, sans produits chimiques, pour préserver la qualité et les bienfaits naturels de l’avocat.
+                                </div>
                             </div>
                           </div>
                         </div>
@@ -419,23 +404,20 @@
                     <div class="faq-img">
                       <div class="faq-img1">
                         <img src="https://th.bing.com/th/id/R.21b7f66240529332a988f702a0ca85f6?rik=n9n6cK1DPPa%2brw&pid=ImgRaw&r=0" alt="faq 1">
-
                       </div>
                       <div class="faq-img2">
                         <img src="https://th.bing.com/th/id/R.60f7bdca69381852a5243a6b8077b859?rik=ejZwaap%2f7GXWoA&pid=ImgRaw&r=0" alt="faq 1">
                       </div>
                       <div class="media-box1">
                         <span class="media-info">100%</span>
-                        <p class="media-text">Satisfaction des clients</p>
+                        <p class="media-text">clients satisfaction</p>
                       </div>
                     </div>
                   </div>
             </div>
         </div>
     </section>
-    <!--==============================
-    Brand Area
-    ============================== -->
+   
     <?php include "includes/section_partenaire.php" ?>
 
 

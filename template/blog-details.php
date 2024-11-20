@@ -12,10 +12,18 @@
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  
+            <?php $meer = strip_tags( $detai_post->content) ?>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content=" <?= $detai_post->titre ?>" />
+        <meta property="og:description"
+            content=" <?= strip_tags( $detai_post->content) ?>" />
+        <meta property="og:image"
+    content="<?= $url_image . $detai_post->photo ?>" />
 
     <!--==============================
 	  Google Fonts
+
+      
 	============================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -105,14 +113,15 @@
                                 <div class="col-xl-auto text-xl-end">
                                     <span class="share-links-title">Partager:</span>
                                     <ul class="social-links">
-                                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="<?= 'https://www.facebook.com/sharer/sharer.php?u='.url()?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="<?='https://twitter.com/intent/tweet?text='.url() ?>" target="_blank"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <?php /*
+                        
                         <div class="vs-comments-wrap">
                             <h2 class="blog-inner-title">3 Comments</h2>
                             <ul class="comment-list">
