@@ -1,4 +1,5 @@
-<footer class="footer-wrapper  footer-layout1" data-bg-src="https://th.bing.com/th/id/OIP.FYc1qShz3zy5EAumUb5l7QHaEK?rs=1&pid=ImgDetMain">
+<div>
+    <footer class="footer-wrapper  footer-layout1" data-bg-src="assets/img/bg/footer-bg-1-1.jpg">
         <div class="footer-top">
             <div class="container">
                 <div class="row g-5">
@@ -32,7 +33,7 @@
                 </div>
             </div>
         </div>
-
+    
         <div class="widget-area">
             <div class="container">
                 <div class="row justify-content-center">
@@ -44,9 +45,9 @@
                                 </div>
                                 <p class="footer-text"><?= $decription_entreprise ?></p>
                                 <div class="footer-social">
-                                    <a href="<?= $lien_facebook ?>"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="<?= $lien_twitter ?>"><i class="fab fa-twitter"></i></a>
-                                    <a href="<?= $instagram ?>"><i class="fab fa-instagram"></i></a>
+                                    <a href="<?= !empty($lien_facebook) ? $lien_facebook :'www.facebook.com' ?>">"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="<?= !empty($lien_linkedin) ? $lien_linkedin: 'www.linkedin.com' ?>"><i class="fab fa-twitter"></i></a>
+                                    <a href="<?= !empty($instagram) ? $instagram :'www.instagramm.com' ?>"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +63,7 @@
                             </ul>
                         </div>
                     </div>
-                   
+                    
                     <div class="col-xl-4">
                         <div class="widget widget_newsletter footer-widget">
                             <h4 class="widget_title">S'abonner à la lettre d'information</h4>
@@ -78,7 +79,7 @@
                 </div>
             </div>
         </div> 
-
+    
         <div class="copyright-wrap">
             <div class="container">
                 <div class="row justify-content-xl-between justify-content-center align-items-center">
@@ -89,7 +90,7 @@
                         <div class="copyright-menu">
                             <ul class="list-unstyled">
                                 <li><a href="#">Sitemap</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="contact">Contact</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                             </ul>
                         </div>
@@ -98,3 +99,4 @@
             </div>
         </div>
     </footer>  
+</div>

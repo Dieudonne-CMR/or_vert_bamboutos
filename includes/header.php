@@ -4,7 +4,7 @@
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
                 <a href="home">
-                <img src="<?= $lien_logo . $logo ?>" alt="logo" style="position: absolute; top: 0px; max-width: 80px;">
+                <img src="<?= $lien_logo . $logo ?>" alt="logo" style="position: absolute; top: 0px; max-width: 80px; border-radius: 10%;">
                 </a>
             </div>
             <div class="vs-mobile-menu">
@@ -45,7 +45,7 @@
     <!--==============================
     Cart Side bar
     ============================== -->
-    <div class="sideCart-wrapper offcanvas-wrapper d-none d-lg-block">
+    <?php /*<div class="sideCart-wrapper offcanvas-wrapper d-none d-lg-block">
         <div class="sidemenu-content">
         <button class="closeButton border-theme bg-theme-hover sideMenuCls2"><i class="far fa-times"></i></button>
         <div class="widget widget_shopping_cart">
@@ -84,7 +84,7 @@
             </div>
         </div>
         </div>
-    </div>
+    </div> */?>
     <!--==============================
     Header Area
     ==============================-->
@@ -104,9 +104,9 @@
                     </div>
                     <div class="col-auto">
                         <div class="social-style1">
-                            <a href="<?= $lien_facebook ?>"><i class="fab fa-facebook-f"></i></a>
-                            <a href="<?= $lien_linkedin ?>"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="<?= $instagram ?>"><i class="fab fa-instagram"></i></a>
+                            <a href="<?= !empty($lien_facebook) ? $lien_facebook :'www.facebook.com' ?>"><i class="fab fa-facebook-f"></i></a>
+                            <a href="<?= !empty($lien_linkedin) ? $lien_linkedin: 'www.linkedin.com' ?>"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="<?= !empty($instagram) ? $instagram :'www.instagramm.com' ?>"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                             <div class="col-auto">
                                 <div class="header-logo">
                                     <a href="home"> 
-                                        <img src="<?= $lien_logo . $logo ?>" alt="logo" style="position: absolute; top: 0px; max-width: 80px;">
+                                        <img src="<?= $lien_logo . $logo ?>" alt="logo" style="border-radius: 10%; position: absolute; top: 0px; max-width: 80px;">
                                         <!-- <img src="assets/img/logo.png" alt="logo"> -->
                                     </a>
                                 </div>
