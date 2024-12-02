@@ -25,7 +25,7 @@
                         <a href="about">A Propos</a>
                     </li>
                     <li>
-                        <a href="service">Service</a>
+                        <a href="service">Nos produits</a>
                     </li>
                     <li>
                         <a href="product">Boutique</a>
@@ -102,10 +102,12 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto"> 
                         <div class="social-style1">
                             <a href="<?= !empty($lien_facebook) ? $lien_facebook :'www.facebook.com' ?>"><i class="fab fa-facebook-f"></i></a>
                             <a href="<?= !empty($lien_linkedin) ? $lien_linkedin: 'www.linkedin.com' ?>"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="<?= !empty($lien_twitter) ? $lien_twitter: 'www.twitter.com' ?>"><i class="fab fa-twitter"></i></a>
+                            <a href="<?= !empty($whatsapp) ? 'https://api.whatsapp.com/send/?phone='.$whatsapp.'&text= Bonjour je viens de visiter votre site '.$nom_entreprise .' jai besoin de vos services': '' ?>"><i class="fab fa-whatsapp"></i></a>
                             <a href="<?= !empty($instagram) ? $instagram :'www.instagramm.com' ?>"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>

@@ -292,10 +292,10 @@
                                     <span class="price"><?= $value ->prix_reel ?> Fcfa</span>
                                 </div>
                                 <div class="project-content">
-                                    <h3 class="project-title"><a href="service-details.php"><?= $value ->nom_art ?></a></h3>
+                                    <h3 class="project-title"><a href="product-details/<?=  $value -> mat_article ?>"><?= $value ->nom_art ?></a></h3>
                                     <p class="project-text"><i class="far fa-map-marker-alt"></i><?= court_text($value ->courte_description, 22)?></p>
                                     <div class="link-btn">
-                                        <a href="#">Lire plus<i class="fas fa-angle-double-right"></i></a>
+                                        <a href="product-details/<?=  $value -> mat_article ?>">Acheter<i class="fas fa-angle-double-right"></i></a>
                                     </div>
                                 </div>
                             </div>
