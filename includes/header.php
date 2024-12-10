@@ -147,10 +147,10 @@
                                             <a href="about">A Propos</a>
                                         </li>
                                         <li>
-                                            <a href="service">Nos produits</a>
+                                            <a href="service"> Services</a>
                                         </li>
                                         <li>
-                                            <a href="product">Boutique</a>
+                                            <a href="product">Nos produits</a>
                                         </li>
                                         <li>
                                             <a href="blog">blog</a>
