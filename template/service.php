@@ -79,7 +79,8 @@
     <!--==============================
     Service Area
     ============================== -->
-    <div class="service-layout1 space">
+     <div class="service-layout1 space">
+        <?php /*
         <div class="container">
             <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2" data-autoplay="true" data-arrows="false">
              <?php                                                                                                        foreach($services as $values ) : ?>
@@ -99,8 +100,36 @@
                         </div>
                     </div>
                 </div>
-             <?php endforeach?>    
-                <?php /*
+             <?php endforeach?>  */ ?>
+        <div class="container">
+            <div class="row">
+             <?php foreach($services as $values): ?>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                 <div class="service-style1">
+                    <div class="service-img2">
+                        <img id="im1" src="<?= $img_service . $values->image ?>" alt="service thumbnail" class="img-fluid">
+                    </div>
+                    <div class="service-img">
+                        <img id="im1" src="<?= $img_service . $values->image ?>" alt="service thumbnail" class="img-fluid">
+                    </div>
+                    <div class="service-inner">
+                        <div class="service-icon">
+                            <img src="assets/img/icon/service-icon-1-1.png" alt="icon">
+                        </div>
+                        <h3 class="service-title h5">
+                            <a href="service-details/<?= $values->matricule_service ?>"><?= $values->nom ?></a>
+                        </h3>
+                        <?php include "reduire-texte.php" ?>
+                        <p class="service-text"><?= $values->description ?></p>
+                    </div>
+                    <div class="link-btn">
+                        <a href="service-details/<?= $values->matricule_service ?>">Lire plus<i class="far fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+              <?php endforeach; ?>
+    
+            <?php /*
                 <div class="col-auto">
                     <div class="service-style1">
                         <div class="service-img2"><img src="assets/img/service/service-1-2.jpg" alt="service thumbnail"></div>

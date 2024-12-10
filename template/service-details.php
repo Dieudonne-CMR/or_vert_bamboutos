@@ -1,4 +1,3 @@
-<?php include "includes/main_header/main_header.php" ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
