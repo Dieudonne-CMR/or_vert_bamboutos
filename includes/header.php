@@ -147,7 +147,7 @@
                                             <a href="about">A Propos</a>
                                         </li>
                                         <li>
-                                            <a href="service">Service</a>
+                                            <a href="service">Nos produits</a>
                                         </li>
                                         <li>
                                             <a href="product">Boutique</a>
