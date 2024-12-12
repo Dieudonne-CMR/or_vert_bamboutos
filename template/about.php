@@ -1,4 +1,4 @@
-<?php include "includes/main_header/main_header.php" ?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -61,7 +61,7 @@
     <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">À PROPOS DE NOUS</h1>
+                <h1 class="breadcumb-title"><?= $offre[0]->titre ?></h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
@@ -75,7 +75,42 @@
     <!--==============================
     About Area
     ============================== -->
-    <?php include "includes/section_about.php" ?>
+    <section class="about-layout1 space">
+        <div class="container">
+            <div class="row gx-5 justify-content-end">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="<?= $Lien_image_offres.  $offre[0]->img_banniere  ?>" style="border-radius: 2%" alt="about-image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                            <span class="sec-subtitle">Bienvenue chez <?= $nom_entreprise ?></span>
+                            <?php /*<h2 class="sec-title">Agriculture & Organic Product Farm</h2> */?>
+                        </div>
+                        <p class="about-text"> <?= $offre[0]->content ?></p>
+                    </div>
+                    <div class="auther-info">
+                        <div class="auther-inner">
+                            <?php /*<div class="auther-img">
+                                <img src="assets/img/about/about-author.png" alt="about">
+                            </div> */?>
+                            <?php /*<div class="auther-content">
+                                <h6 class="name">Thomas Walkar</h6>
+                                <span class="designation">founde - CEO</span>
+                            </div> */?>
+                        </div>
+                        <div class="author-signature">
+                            <img src="assets/img/about/about-signature.png" alt="about-signature">
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="shape-mockup moving z-index-n1 d-none d-xl-block" style="right: 9%; bottom: 22%;"><img src="assets/img/shep/about-shep-1.png" alt="shapes"></div>
+    </section>
     <!--==============================
     Process Area
     ============================== -->

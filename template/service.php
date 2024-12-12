@@ -62,7 +62,7 @@
     <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
         <div class="container z-index-common">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">Nos Services</h1>
+                <h1 class="breadcumb-title">Services</h1>
             </div>
             <div class="breadcumb-menu-wrap">
                 <ul class="breadcumb-menu">
@@ -102,6 +102,9 @@
                 </div>
              <?php endforeach?>  */ ?>
         <div class="container">
+            <div class="breadcumb-content text-black" style=" text-align: center; margin-bottom: 50px;">
+                <h1 class="sec-title"><?= $titre_service ?></h1>
+            </div>
             <div class="row">
              <?php foreach($services as $values): ?>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
@@ -273,7 +276,8 @@
     <!--==============================
     Faq Area
     ============================== -->
-       <section class="faq-layout1 space">
+       <section class="faq-layout1 space mb-4"  style="background-color: #f0f5f4;
+">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-6">

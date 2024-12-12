@@ -91,12 +91,12 @@
                                     </select>
                                 </form>
                             </div>
-                            <div class="col-auto">
+                            <?php /*<div class="col-auto">
                                 <div class="nav" role=tablist>
                                     <a href="#" class="icon-btn" id="tab-shop-list" data-bs-toggle="tab" data-bs-target="#tab-list" role="tab" aria-controls="tab-grid" aria-selected="false"><i class="fas fa-list"></i></a>
                                     <a href="#" class="icon-btn active" id="tab-shop-grid" data-bs-toggle="tab" data-bs-target="#tab-grid" role="tab" aria-controls="tab-grid" aria-selected="true"><i class="fas fa-th"></i></a>
                                 </div>
-                            </div>
+                            </div> */?>
                         </div>
                     </div>
                 </div>
@@ -106,33 +106,35 @@
    
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="product-style1">
-                            <div class="product-img">
-                                <img src="<?= $image_produit . $value->lien_img_vedette ?>" alt="product img">
-                            </div>
-                            <div class="product-meta">30% Off</div>
-                            <div class="product-about">
-                                <p class="text"><?=  recup_detail_cat($value ->mat_categorie_art)[0]  -> libelle; ?></p>
-                                <h2 class="product-title"><a href="product-details/<?=  $value -> mat_article ?>"><?= $value ->nom_art ?></a></h2>
-                                <span class="price"> <del><?=  $value ->prix_fictif ?></del><?=  $value ->prix_reel ?></span>
-                                <div class="rating"> 
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                            <a href="product-details/<?=  $value -> mat_article ?>">
+                                <div class="product-img">
+                                    <img src="<?= $image_produit . $value->lien_img_vedette ?>" alt="product img">
                                 </div>
-                            </div>
-                            <div class="social-style">
-                                <ul>
-                                    <li>
-                                        <a class="main-icon" href="#"><i class="far fa-shopping-basket"></i></a>
-                                        <ul class="sub-list">
-                                            <li><a href="#"><i class="fas fa-exchange"></i></a></li>
-                                            <li><a href="#"><i class="far fa-heart"></i></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div class="product-meta">30% Off</div>
+                                <div class="product-about">
+                                    <p class="text"><?=  recup_detail_cat($value ->mat_categorie_art)[0]  -> libelle; ?></p>
+                                    <h2 class="product-title"><a href="product-details/<?=  $value -> mat_article ?>"><?= $value ->nom_art ?></a></h2>
+                                    <span class="price"> <del><?=  $value ->prix_fictif ?></del><?=  $value ->prix_reel ?></span>
+                                    <div class="rating"> 
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="social-style">
+                                    <ul>
+                                        <li>
+                                            <a class="main-icon" href="#"><i class="far fa-shopping-basket"></i></a>
+                                            <ul class="sub-list">
+                                                <li><a href="#"><i class="fas fa-exchange"></i></a></li>
+                                                <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 <?php endforeach ?>

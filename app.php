@@ -26,6 +26,21 @@ endif;
 
 //--------Route page Apropos
 if(@$url[0]=='about' ):
+    info_offres();
+    // var_dump($offres);
+    $offre=[];
+    $i=0;
+    foreach(info_offres() as $value):
+        if($value->page_vente=='non'):
+            $i++;
+            if($i==1):
+                $offre[]= $value;
+            else:
+                break;
+            endif;
+        endif;
+    endforeach;
+    // var_dump($offre);
     include_once("template/$url[0].php");
 endif;
 

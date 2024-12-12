@@ -60,7 +60,7 @@
     <!--==============================
     Breadcumb
     ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb/breadcumb-bg.png">
+    <div class="breadcumb-wrapper " data-bg-src="<?=$img_service.$det_service[0]->image ?>">
         <div class="container z-index-common">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title"><?= $det_service[0] -> nom ?></h1>
@@ -81,14 +81,14 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="service-content">
-                        <h2 class="service-title h1"><?= $det_service[0]->nom ?></h2>
                         <?php /*<p class="service-text"><?= $det_service[0]->description ?>
                         </p> */ ?>
                         <div class="service-img1">
                             <img src="<?=$img_service.$det_service[0]->image ?>" alt="service img">
                         </div>
-                        <p class="service-text"><?= $det_service[0]->description ?>
-                        </p>
+
+                        <h2 class="service-title h1"><?= $det_service[0]->nom ?></h2>
+                        <p class="service-text"><?= $det_service[0]->description ?></p>
                         <?php /*
                         <h4 class="service-title">Causes of Water Losses</h4>
                         <p class="service-text">dolorem ipsuquia dolor sit amet, consectetur, adipisci velit. Lorem ipsum dolor sit amet, porro quisquam est, qui dolorem.</p>
